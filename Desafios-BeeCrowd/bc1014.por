@@ -1,22 +1,23 @@
+/*
+
+Calcule o consumo médio de um automóvel sendo fornecidos a distância total percorrida (em Km) e o total de combustível gasto (em litros).
+
+*/
 programa {
   funcao inicio() {
-    cadeia nomeVendedor
-    real salarioFixo
-    real totalVendas // em dinheiro
-    real totalReceber
-    real comissaoVendas
+    real consumoMedio
+    real distanciaTotal
+    real combustivelTotal
+    escreva("=====================================================================")
+    escreva("\nQual foi a distância percorrida (Km)? ")
+    leia(distanciaTotal)
+    escreva("=====================================================================")
+    escreva("\nE quanto de combustível no total que foi gasto durante o percurso? ")
+    leia(combustivelTotal)
+    escreva("=====================================================================")
+    consumoMedio = (distanciaTotal / combustivelTotal)
 
-    escreva("Digite o nome do vendedor: ")
-    leia(nomeVendedor)
-    escreva("Digite o salário do vendedor: ")
-    leia(salarioFixo)
-    escreva("Digite o total de vendas em dinheiro(R$): ")
-    leia(totalVendas)
-
-    comissaoVendas = totalVendas * 15 / 100
-    totalReceber = comissaoVendas + salarioFixo
-
-    escreva("O vendedor receberá " , totalReceber)
-
+    escreva("\nO consumo médio do automóvel foi de " + consumoMedio + " km/l.")
+    escreva("\n=====================================================================")
   }
 }
