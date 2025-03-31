@@ -8,7 +8,6 @@ necessários.
 */
 
 programa {
-  inclua biblioteca Matematica --> mat
   funcao inicio() {
     real areaTriangulo, baseTriangulo, alturaTriangulo
 
