@@ -71,9 +71,8 @@ programa {
       
       caso contrario:  
       escreva("Esse exercício não existe!\n")
-    }
+    } 
     inicio()
-  }
 
   funcao exercicioA () {
     // a) salario_diario = salario/dias 
