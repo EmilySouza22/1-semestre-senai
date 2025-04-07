@@ -4,7 +4,7 @@ Calculadora Simples: Crie uma calculadora simples que peça ao usuário dois nú
 */
 programa {
   funcao inicio() {
-    inteiro numA, numB
+    real numA, numB
     cadeia realizarOperacao
 
     escreva("\nDigite o primeiro número: ")
@@ -16,28 +16,28 @@ programa {
     leia(realizarOperacao)
     
     se(realizarOperacao == '+'){
-      inteiro resultado 
+      real resultado 
       resultado = numA + numB
       escreva("\nO resultado da operação será: " , resultado)
       escreva("\n==========================================")
       retorne inicio()
     }
     se(realizarOperacao == '-'){
-      inteiro resultado 
+      real resultado 
       resultado = numA - numB
       escreva("\nO resultado da operação será: " , resultado)
       escreva("\n==========================================")
       retorne inicio()
     }
     se(realizarOperacao == '/'){
-      inteiro resultado 
+      real resultado 
       resultado = numA / numB
       escreva("\nO resultado da operação será: " , resultado)
       escreva("\n==========================================")
       retorne inicio()
     }
     se(realizarOperacao == '*'){
-      inteiro resultado 
+      real resultado 
       resultado = numA * numB
       escreva("\nO resultado da operação será: " , resultado)
       escreva("\n==========================================")
