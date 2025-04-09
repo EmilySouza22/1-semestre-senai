@@ -1,18 +1,23 @@
 /*
-5. Uma loja só dá desconto se o cliente comprar mais de 3 itens ou se o valor total
-for maior que R$ 100.
+5. Você é um detetive cibernético e precisa descobrir se dois suspeitos dizem a
+mesma coisa, mas com tipos diferentes.
 
-Mostre:
-"Desconto aplicado!" ou
-"Sem desconto dessa vez."
+let suspeito1 = "42";
+let suspeito2 = 42;
+
+Use operadores de comparação ( == e === ) para responder:
+"Eles dizem a mesma coisa, mas de formas diferentes." ou
+"Eles são exatamente iguais." ou
+"Eles são diferentes."
 */
 
-let quantidadeItens = Number(prompt("Quantos itens o senhor(a) deseja comprar?"))
-let valorTotal = Number(prompt("Quanto deu a compra?"));
+let suspeito1 = "42";
+let suspeito2 = 42;
 
-if(quantidadeItens > 3 || valorTotal > 100){
-   console.log("Desconto aplicado!")
+if(suspeito1 == suspeito2){
+   console.log("Eles dizem a mesma coisa, mas de formas diferentes.") 
+} else if (suspeito1 === suspeito2){
+    console.log("Eles são exatamente iguais.")
 } else {
-    console.log("Sem desconto dessa vez.")
+    console.log("Eles são diferentes.")
 }
-
