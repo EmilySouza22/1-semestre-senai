@@ -1,18 +1,22 @@
 /*
-5. Uma loja só dá desconto se o cliente comprar mais de 3 itens ou se o valor total
-for maior que R$ 100.
+8. Você é um astronauta tentando pousar no Planeta JavaScript. 
+A nave só pousa se o combustível for maior que 50 
+e o clima for "bom".
 
-Mostre:
-"Desconto aplicado!" ou
-"Sem desconto dessa vez."
+Desafio:
+let combustivel;
+let clima;
+
+Exiba:
+"Pouso autorizado!" ou
+"Abortar missão!"
 */
 
-let quantidadeItens = Number(prompt("Quantos itens o senhor(a) deseja comprar?"))
-let valorTotal = Number(prompt("Quanto deu a compra?"));
+let combustivel = prompt("Quanto de combustível a nave possui?");
+let clima = prompt("Como está o clima? Bom ou ruim?");
 
-if(quantidadeItens > 3 || valorTotal > 100){
-   console.log("Desconto aplicado!")
+if(combustivel > 50 && clima == 'bom'){
+    console.log("Pouso autorizado!")
 } else {
-    console.log("Sem desconto dessa vez.")
+    console.log("Abortar missão!")
 }
-
