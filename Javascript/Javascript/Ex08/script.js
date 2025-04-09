@@ -11,7 +11,6 @@ Exiba:
 "Pouso autorizado!" ou
 "Abortar missão!"
 */
-
 let combustivel = prompt("Quanto de combustível a nave possui?");
 let clima = prompt("Como está o clima? Bom ou ruim?");
 
