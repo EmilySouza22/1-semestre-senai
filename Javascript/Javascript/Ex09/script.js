@@ -1,18 +1,20 @@
 /*
-5. Uma loja só dá desconto se o cliente comprar mais de 3 itens ou se o valor total
-for maior que R$ 100.
+9. Você entrou em um jogo de presente secreto. Se você tirou "Carlos", você deve
+comprar um livro. Se tirou "Ana", um chocolate. Qualquer outro nome, um
+presente surpresa!
 
-Mostre:
-"Desconto aplicado!" ou
-"Sem desconto dessa vez."
+Resultado esperado:
+"Compre um livro 📚"
+"Compre um chocolate 🍫"
+"Compre um presente surpresa 🎁"
 */
 
-let quantidadeItens = Number(prompt("Quantos itens o senhor(a) deseja comprar?"))
-let valorTotal = Number(prompt("Quanto deu a compra?"));
+let nomeSorteado = prompt("Qual nome você tirou no jogo de presente secreto?")
 
-if(quantidadeItens > 3 || valorTotal > 100){
-   console.log("Desconto aplicado!")
+if(nomeSorteado == 'Carlos'){
+    console.log("Compre um livro 📚")
+} else if (nomeSorteado == 'Ana'){
+    console.log("Compre um chocolate 🍫")
 } else {
-    console.log("Sem desconto dessa vez.")
+    console.log("Compre um presente surpresa 🎁")
 }
-
