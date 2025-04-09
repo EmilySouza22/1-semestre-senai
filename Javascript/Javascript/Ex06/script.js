@@ -1,24 +1,17 @@
 /*
-6. Um robô serve café conforme o pedido. Ele só aceita "café", "capuccino" ou
-"expresso". Qualquer outro pedido, ele responde educadamente.
+5. Uma loja só dá desconto se o cliente comprar mais de 3 itens ou se o valor total
+for maior que R$ 100.
 
-Responda com:
-"Servindo café ☕"
-"Servindo capuccino 🧋"
-"Servindo expresso 🔥"
-"Desculpe, não temos esse tipo de café 😔"
+Mostre:
+"Desconto aplicado!" ou
+"Sem desconto dessa vez."
 */
 
-let pedido = prompt("Cardápio: (cafe), (capuccino) e (expresso)")
+let quantidadeItens = Number(prompt("Quantos itens o senhor(a) deseja comprar?"))
+let valorTotal = Number(prompt("Quanto deu a compra?"));
 
-if(pedido == "cafe"){
-    console.log("Servindo café...☕")
-} else if(pedido == "capuccino"){
-    console.log("Servindo capuccino...🧋")
-} else if(pedido == "expresso"){
-    console.log("Servindo expresso...🔥")
-}else{
-    console.log("Desculpe, não temos esse tipo de café 😔")
+if(quantidadeItens > 3 || valorTotal > 100){
+   console.log("Desconto aplicado!")
+} else {
+    console.log("Sem desconto dessa vez.")
 }
-
-

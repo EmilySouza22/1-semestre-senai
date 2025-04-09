@@ -1,23 +1,22 @@
 /*
-5. Você é um detetive cibernético e precisa descobrir se dois suspeitos dizem a
-mesma coisa, mas com tipos diferentes.
+7. Um robô serve café conforme o pedido. Ele só aceita "café", "capuccino" ou
+"expresso". Qualquer outro pedido, ele responde educadamente.
 
-let suspeito1 = "42";
-let suspeito2 = 42;
-
-Use operadores de comparação ( == e === ) para responder:
-"Eles dizem a mesma coisa, mas de formas diferentes." ou
-"Eles são exatamente iguais." ou
-"Eles são diferentes."
+Responda com:
+"Servindo café ☕"
+"Servindo capuccino 🧋"
+"Servindo expresso 🔥"
+"Desculpe, não temos esse tipo de café 😔"
 */
 
-let suspeito1 = "42";
-let suspeito2 = 42;
+let pedido = prompt("Cardápio: (cafe), (capuccino) e (expresso)")
 
-if(suspeito1 == suspeito2){
-   console.log("Eles dizem a mesma coisa, mas de formas diferentes.") 
-} else if (suspeito1 === suspeito2){
-    console.log("Eles são exatamente iguais.")
-} else {
-    console.log("Eles são diferentes.")
+if(pedido == "cafe"){
+    console.log("Servindo café...☕")
+} else if(pedido == "capuccino"){
+    console.log("Servindo capuccino...🧋")
+} else if(pedido == "expresso"){
+    console.log("Servindo expresso...🔥")
+}else{
+    console.log("Desculpe, não temos esse tipo de café 😔")
 }
