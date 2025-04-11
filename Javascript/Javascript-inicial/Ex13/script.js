@@ -14,5 +14,5 @@ let temConvite = prompt("Você tem convite? (1)sim ou (0)não")
 if(nome == 'Joana' && temConvite == true){
     console.log("Pode entrar! Aproveite!")
 } else {
-    console.log("Não pode entrar!")
+    console.log("Não pode entrar!") 
 }
