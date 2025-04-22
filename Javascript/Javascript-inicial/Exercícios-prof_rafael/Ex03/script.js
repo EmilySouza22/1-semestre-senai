@@ -14,3 +14,6 @@ Caso seja maior que um dia, apresentar também em dias;
 Caso seja maior que 30 dias, apresentar também em meses
 Caso seja maior que 12 meses, apresentar também em anos
 */
+
+let distancia = Number(prompt("Qual a distância do trajeto? (KM)?"))
+
