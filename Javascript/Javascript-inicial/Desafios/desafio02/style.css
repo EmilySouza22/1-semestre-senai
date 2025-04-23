@@ -1,0 +1,63 @@
+*{
+    font-family: Verdana;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divPai{
+    height: 100%;
+    width: 100%;
+
+}
+
+.dadosAluno{
+    width: 100vh;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(129, 60, 219, 0.541);
+    border-radius: 5px;
+}
+
+.dadosHobbies{
+    width: 100vh;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(129, 60, 219, 0.541);
+    border-radius: 5px;
+}
+
+.dadosExtras{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(129, 60, 219, 0.541);
+    border-radius: 5px;
+
+    h2{
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 150px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+}
+
+.imagem{
+    width: 120px;
+    height: 180px;
+}
+
+title{
+    display: none;
+}
