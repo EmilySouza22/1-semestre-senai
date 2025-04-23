@@ -112,16 +112,18 @@ body{
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
 
-    .github{
+    .blockSociais{
         height: 40px;
-        width: 150px;
-        text-align: center;
-        line-height: 40px;
-        color: white;
+        width: 140px;
         background-color: rgba(122, 72, 170, 0.966);
-        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .github{
+        text-align: center;
+        color: white;
         text-decoration: none;
         border-radius: 5px;
+        line-height: 40px;
     }
 
     img{
