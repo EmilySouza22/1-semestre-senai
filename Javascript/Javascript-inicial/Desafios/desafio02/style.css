@@ -1,43 +1,53 @@
 *{
     font-family: Verdana;
+}
+
+html{
+    background: rgb(106, 110, 109);
+}
+
+.divPai{ 
+    height: 150vh;
+    width: 100vw;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.divPai{
-    height: 100%;
-    width: 100%;
-
-}
-
 .dadosAluno{
-    width: 100vh;
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(129, 60, 219, 0.541);
+    width: 50vh;
+    height: 50vh;
+    background-color: palegoldenrod;
     border-radius: 5px;
 }
 
 .dadosHobbies{
-    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
     height: 50vh;
     justify-content: center;
     align-items: center;
-    background-color: rgba(129, 60, 219, 0.541);
+    background-color: palegoldenrod;
     border-radius: 5px;
 }
 
 .dadosExtras{
-    width: 100vh;
+    width: 50vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(129, 60, 219, 0.541);
+    background-color: palegoldenrod;
     border-radius: 5px;
 
     h2{
@@ -53,11 +63,19 @@
     }
 }
 
+.exercicios{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: palegoldenrod;
+    border-radius: 5px;
+    gap: 10px;
+}
+
 .imagem{
     width: 120px;
     height: 180px;
-}
-
-title{
-    display: none;
 }

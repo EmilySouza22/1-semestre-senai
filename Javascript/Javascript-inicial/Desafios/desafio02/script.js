@@ -13,3 +13,8 @@ function exercicio002(){
     let media = (num1+num2)/2
     alert("O resultado da média entre " + num1 + " + " + num2 + " será " + media);   
 }
+
+const screenWidth = window.screen.width;
+const screenHeight = window.screen.height;
+
+console.log(`Largura: ${screenWidth}px, Altura: ${screenHeight}px`);
