@@ -113,6 +113,9 @@ body{
     border-radius: 5px;
 
     .blockSociais{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         height: 40px;
         width: 140px;
         background-color: rgba(122, 72, 170, 0.966);
