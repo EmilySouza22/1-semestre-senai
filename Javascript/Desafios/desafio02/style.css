@@ -1,15 +1,22 @@
 *{
-    font-family: Verdana;
+    font-family: "Nexa";
 }
 
-html{
-    background: rgb(106, 110, 109);
+@font-face {
+    font-family: "Nexa";
+    src: url("fonts/nexaregular.otf");
+    font-weight: 400;
+    font-style: normal;    
+}
+
+body{
+    background: rgb(45, 46, 46);
 }
 
 .divPai{ 
     height: 150vh;
     width: 100vw;
-    gap: 10px;
+    gap: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,9 +29,21 @@ html{
     justify-content: center;
     align-items: center;
     width: 50vh;
-    height: 50vh;
-    background-color: palegoldenrod;
+    height: 100vh;
+    background-color: rgb(154, 112, 194);
     border-radius: 5px;
+
+    h1{
+        margin-bottom: 10px;
+    }
+    p{  
+        text-align: center;
+        margin: 0px;
+        border-radius: 5px;
+        height: 20px;
+        width: 200px;
+        margin-bottom: 5px;
+    }
 }
 
 .dadosHobbies{
@@ -33,33 +52,81 @@ html{
     justify-content: center;
     align-items: center;
     width: 50vh;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    background-color: palegoldenrod;
+    height: 100vh;
+    background-color: rgb(154, 112, 194);
     border-radius: 5px;
+
+    h3{
+        font-size: 30px;
+        margin: 10px ;
+    }
+    ol{
+        margin-block-start: 0px; 
+        margin-block-end: 0px;
+        margin-bottom: 20px;
+    }
 }
 
-.dadosExtras{
-    width: 50vh;
-    height: 100vh;
+.likes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: palegoldenrod;
+    width: 50vh;
+    height: 100vh;
+    background-color: rgb(154, 112, 194);
     border-radius: 5px;
 
-    h2{
-        justify-content: center;
-        align-items: center;
+    h3{
+       font-size: 30px; 
     }
-    img{
-        width: 150px;
+    p{
+        margin: 0px;
+    }
+    
+
+    /* TAMANHO DAS IMAGENS */
+    .imagem1{
+        width: 120px;
+        height: 180px;
     }
 
-    p{
-        font-size: 12px;
+    .imagem2{
+        width: 120px;
+        height: 150px;
+    }
+
+    .imagem3{
+        width: 130px;
+        height: 110px;
+    }
+}
+
+.sociais{
+    width: 50vh;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(154, 112, 194);
+    border-radius: 5px;
+
+    .github{
+        height: 40px;
+        width: 150px;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        background-color: rgba(122, 72, 170, 0.966);
+        margin-bottom: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    img{
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -70,12 +137,17 @@ html{
     flex-direction:row;
     justify-content: center;
     align-items: center;
-    background-color: palegoldenrod;
+    background-color: rgb(154, 112, 194);
     border-radius: 5px;
     gap: 10px;
-}
 
-.imagem{
-    width: 120px;
-    height: 180px;
+    button{
+        height: 30px;
+        width: 120px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        background-color: rgba(122, 72, 170, 0.966);
+    }
 }
