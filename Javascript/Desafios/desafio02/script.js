@@ -82,52 +82,9 @@ function exercicio008(){
         10: "Parabéns seu personagem é: R2D2, com as habilidades de invadir sistemas imperiais",
     }
 
-//     let personagem1 = "Parabéns seu personagem é: Ahsoka, com as habilidades de liderança e combate com dois sabres de luz"
-//     let personagem2 = "Parabéns seu personagem é: Grogu, com o poder da telecinese"
-//     let personagem3 = "Parabéns seu personagem é: Mandaloriano, com de treinamento de guerrilheiro e habilidade com armamentos"
-//     let personagem4 = "Parabéns seu personagem é: Darth vader, com o domínio do lado sombrio e resistência física"
-//     let personagem5 = "Parabéns seu personagem é: Padmé, com a habilidade de negociar e unir facções"
-//     let personagem6 = "Parabéns seu personagem é: Luke, com o domínio completo da força!"
-//     let personagem7 = "Parabéns seu personagem é: Leia, com o uso de blaster e táticas de guerrilha."
-//     let personagem8 = "Parabéns seu personagem é: Han Solo, com as habilidade de naves e sistemas."
-//     let personagem9 = "Parabéns seu personagem é: Palpatine, com as habilidades de mestre sith e manipulação."
-//     let personagem10 = "Parabéns seu personagem é: R2D2, com as habilidades de invadir sistemas imperiais"
-
     let personagemAleatorio = Math.floor(Math.random() * (10 - 1) + 1);
     alert(personagens[personagemAleatorio]);
 
-//     switch(personagemAleatorio){
-//         case 1:
-//             alert(personagem1);
-//             break;
-//         case 2:
-//             alert(personagem2);
-//             break;
-//         case 3:
-//             alert(personagem3);
-//             break;
-//         case 4:
-//             alert(personagem4);
-//             break;
-//         case 5:
-//             alert(personagem5);
-//             break;
-//         case 6:
-//             alert(personagem6);
-//             break;
-//         case 7:
-//             alert(personagem7);
-//             break;
-//         case 8:
-//             alert(personagem8);
-//             break;
-//         case 9:
-//             alert(personagem9);
-//             break;
-//         case 10:
-//             alert(personagem10);
-//         break;
-//     }
 }
 
 function exercicio009(){
@@ -222,6 +179,27 @@ function exercicio009(){
     checkSign();
 }
 
+/*
+
+Jogo do Par ou Ímpar
+Objetivo: O usuário joga contra o computador para ver quem vence no jogo de
+par ou ímpar.
+
+*/
 function exercicio010(){
-    
+    let escolhaUsuario = prompt("Escolha par ou ímpar");
+    let numeroUsuario = Number(prompt("Insira um número de 0 a 10"))
+
+    let numeroComputador = Math.floor(Math.random() * (10 - 1) + 1)
+    console.log(numeroComputador)
+
+    somaNumeros = numeroComputador + numeroUsuario
+
+    if(somaNumeros % 2 === 0 && escolhaUsuario === "par"){
+        alert("Você venceu! Escolheu par e o número sorteado foi " + somaNumeros)
+    }else if(somaNumeros % 2 != 0 && escolhaUsuario === "ímpar"){
+        alert("Você venceu! Escolheu ímpar e o número sorteado foi " + somaNumeros)
+    }else{
+        alert("O computador venceu! O número sorteado foi " + somaNumeros)
+    }
 }
