@@ -13,10 +13,6 @@ body{
     background: rgb(45, 46, 46);
 }
 
-#background{
-    margin: -10px 0 0 0;
-}
-
 #background #video{
     margin-top: 0;
     position: fixed;
@@ -33,7 +29,7 @@ body{
 .divPai{
     height: 180vh;
     width: 100%;
-    gap: 5px;
+    gap: 0.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +42,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 110vh;
+    height: 50%;
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
 
@@ -56,15 +52,13 @@ body{
     }
     p{  
         text-align: center;
-        margin: 0px;
-        border-radius: 5px;
-        height: 20px;
-        width: 200px;
+        margin: 0;
+        height: 25%;
         margin-bottom: 5px;
         color: rgba(224, 221, 228, 0.849);
     }
     img{
-        width: 25px;
+        width: 26px;
         height: 25px;
     }
     .titleAluno{
@@ -82,7 +76,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 100vh;
+    height: 50%;
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
 
@@ -115,10 +109,11 @@ body{
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 100vh;
+    height: 50%;
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
     gap: 15px;
+    padding: 40px 0 40px 0;
 
     h3{
        font-size: 30px;
@@ -183,6 +178,7 @@ body{
     align-items: center;
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
+    gap: 8px;
 
     .blockSociais{
         display: flex;
@@ -192,8 +188,9 @@ body{
         width: 140px;
         background-color: rgba(122, 72, 170, 0.966);
         border-radius: 5px;
+        
     }
-    .github{
+    .github, .linkedin{
         text-align: center;
         color: rgba(224, 221, 228, 0.849);
         text-decoration: none;
@@ -208,8 +205,8 @@ body{
 }
 
 .exercicios{
-    width: 50vh;
-    height: 100vh;
+    width: 25%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
@@ -217,12 +214,12 @@ body{
     align-items: center;
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
-    gap: 6px;
-    padding: 0;
+    gap: 8px;
+    padding: 40px 0 40px 0;
 
     button{
-        height: 30px;
-        width: 120px;
+        height: 50px;
+        width: 130px;
         border: none;
         border-radius: 5px;
         color: rgba(224, 221, 228, 0.849);
