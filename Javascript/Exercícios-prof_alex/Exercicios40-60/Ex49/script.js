@@ -8,16 +8,16 @@ Exemplo de Saída: "Capitão Carlos, o Invencível das Sombras"
 
 */
 
-let personagem1 = "Ahsoka"
-let personagem2 = "Grogu"
-let personagem3 = "Mandaloriano"
-let personagem4 = "Darth vader"
-let personagem5 = "Padmé"
-let personagem6 = "Luke"
-let personagem7 = "Leia"
-let personagem8 = "Han Solo"
-let personagem9 = "Palpatine"
-let personagem10 = "R2D2"
+let personagem1 = "Ahsoka, com as habilidades de liderança e combate com dois sabres de luz "
+let personagem2 = "Grogu, com o poder da telecinese"
+let personagem3 = "Mandaloriano, com de treinamento de guerrilheiro e habilidade com armamentos"
+let personagem4 = "Darth vader, com o domínio do lado sombrio e resistência física"
+let personagem5 = "Padmé, com a habilidade de negociar e unir facções"
+let personagem6 = "Luke, com o domínio completo da força!"
+let personagem7 = "Leia, com o uso de blaster e táticas de guerrilha."
+let personagem8 = "Han Solo, com as habilidade de naves e sistemas."
+let personagem9 = "Palpatine, com as habilidades de mestre sith e manipulação."
+let personagem10 = "R2D2, com as habilidades de invadir sistemas imperiais"
 
 let personagemAleatorio = Math.floor(Math.random() * (10 - 1) + 1);
 
