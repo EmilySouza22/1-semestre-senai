@@ -13,9 +13,26 @@ body{
     background: rgb(45, 46, 46);
 }
 
-.divPai{ 
-    height: 150vh;
-    width: 100vw;
+#background{
+    margin: -10px 0 0 0;
+}
+
+#background #video{
+    margin-top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    min-width: auto;
+    min-height: auto;
+    height: auto;
+    width: auto;
+    opacity: 100%;
+    z-index: -1;
+}
+
+.divPai{
+    height: 180vh;
+    width: 100%;
     gap: 5px;
     display: flex;
     flex-direction: column;
@@ -28,13 +45,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vh;
-    height: 100vh;
+    width: 25%;
+    height: 110vh;
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
 
     h1{
-        margin-bottom: 10px;
+        margin: 0 0 0 0;
+        line-height: 30px;
     }
     p{  
         text-align: center;
@@ -43,6 +61,18 @@ body{
         height: 20px;
         width: 200px;
         margin-bottom: 5px;
+        color: rgba(224, 221, 228, 0.849);
+    }
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    .titleAluno{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px 0 20px 0;
+        gap: 8px;
     }
 }
 
@@ -51,7 +81,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vh;
+    width: 25%;
     height: 100vh;
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
@@ -64,6 +94,18 @@ body{
         margin-block-start: 0px; 
         margin-block-end: 0px;
         margin-bottom: 20px;
+        color: rgba(224, 221, 228, 0.849);
+    }
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    .titleHobbies{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px 0 10px 0;
+        gap: 2px;
     }
 }
 
@@ -72,28 +114,58 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vh;
+    width: 25%;
     height: 100vh;
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
+    gap: 15px;
 
     h3{
-       font-size: 30px; 
+       font-size: 30px;
+       margin: 10px;
     }
-    p{
-        margin: 0px;
+    p{  
+        display: flex;
+        justify-content: center;
+        font-size: 90%;
+        margin: 3px 0 8px 0;
+        color: rgba(224, 221, 228, 0.849);
     }
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    .titleLikes{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px 0 0 0;
+        gap: 2px;
+    }
+    .like{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 36%;
+        height: 100%;
+        background-color: rgba(122, 72, 170, 0.966);
+        border-radius: 5px;
+        margin: 0 0 5% 0;
+        padding-top: 5%;
+    }
+    
     
 
     /* TAMANHO DAS IMAGENS */
     .imagem1{
         width: 120px;
-        height: 180px;
+        height: 120px;
     }
 
     .imagem2{
         width: 120px;
-        height: 150px;
+        height: 120px;
     }
 
     .imagem3{
@@ -103,8 +175,8 @@ body{
 }
 
 .sociais{
-    width: 50vh;
-    height: 100vh;
+    width: 25%;
+    height: 30%;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -123,7 +195,7 @@ body{
     }
     .github{
         text-align: center;
-        color: white;
+        color: rgba(224, 221, 228, 0.849);
         text-decoration: none;
         border-radius: 5px;
         line-height: 40px;
@@ -139,19 +211,21 @@ body{
     width: 50vh;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction:row;
     justify-content: center;
     align-items: center;
     background-color: rgb(154, 112, 194);
     border-radius: 5px;
-    gap: 10px;
+    gap: 6px;
+    padding: 0;
 
     button{
         height: 30px;
         width: 120px;
         border: none;
         border-radius: 5px;
-        color: white;
+        color: rgba(224, 221, 228, 0.849);
         cursor: pointer;
         background-color: rgba(122, 72, 170, 0.966);
     }
