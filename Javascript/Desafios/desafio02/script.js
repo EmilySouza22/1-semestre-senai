@@ -186,6 +186,7 @@ Objetivo: O usuário joga contra o computador para ver quem vence no jogo de
 par ou ímpar.
 
 */
+
 function exercicio010(){
     let escolhaUsuario = prompt("Escolha par ou ímpar");
     let numeroUsuario = Number(prompt("Insira um número de 0 a 10"))
@@ -201,5 +202,39 @@ function exercicio010(){
         alert("Você venceu! Escolheu ímpar e o número sorteado foi " + somaNumeros)
     }else{
         alert("O computador venceu! O número sorteado foi " + somaNumeros)
+    }
+}
+
+/*
+
+Contador de Cliques por Segundo
+Descrição: Conta quantos cliques o usuário deu.
+Entradas: Cliques em botão.
+Exemplo de Saída: “Você clicou 32 vezes!” Ao clicar no botão de resultado
+
+*/
+
+function exercicio011(){
+
+}
+
+/*
+
+Jogo do Número Secreto
+Descrição: Usuário tenta adivinhar um número aleatório de 1 a 100.
+Entradas: Número digitado.
+Exemplo de Saída: “Tente novamente.”
+
+*/
+
+function exercicio012(){
+    let escolhaUsuario = Number(prompt("Tente adivinhar o número de 1 a 100"));
+    
+    let numeroSorteado = Math.floor(Math.random() * (100 - 1) + 1);
+
+    if(escolhaUsuario === numeroSorteado){
+        alert("Parabéns, você acertou!");
+    }else{
+        alert("Tente novamente! O número era: " + numeroSorteado);
     }
 }
