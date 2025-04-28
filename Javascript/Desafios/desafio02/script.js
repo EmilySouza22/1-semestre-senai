@@ -409,7 +409,25 @@ function exercicio018(){ /*Calcular o fatorial de um número.*/
         (Lembre-se de que o fatorial de um número n é o produto de todos os inteiros de 1 a n ).
         Exemplo = Fatorial de 5 → 5*4*3*2*1 = 120
     */
+    let numeroInteiro = Number(prompt("Insira um número inteiro"));
+    let fatorial;
+    let index = 0;
+    let subtraendo = 1;
+    const fatoracao = [];
 
+    while(index < numeroInteiro){
+        // numeroInteiro[5] * numeroInteiro[5-1] * numeroInteiro[4-1] * numeroInteiro[3-1] * numeroInteiro[2-1]
+        if(fatorial /*tava aqui*/){
+            fatorial = numeroInteiro * (numeroInteiro - subtraendo);
+        }
+        
+        
+        fatoracao.push(fatorial)
+        console.log(fatoracao)
+        index++;
+        subtraendo++;
+    }
+    alert(`O resultado do fatorial de ${numeroInteiro} será ${fatorial}`);
 }
 
 function exercicio019(){ /*Quiz sobre o próprio site*/
