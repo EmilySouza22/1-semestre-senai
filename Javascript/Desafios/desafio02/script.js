@@ -3,7 +3,7 @@ function exercicio001(){
     let num2 = Number(prompt("Digite o segundo número: "));
 
     let soma = num1 + num2;
-    alert("O resultado da soma entre " + num1 + " + " + num2 + " será " + soma);
+    alert(`O resultado da soma entre ${num1} + ${num2} será ${soma}`);
 }
 
 function exercicio002(){
@@ -11,18 +11,18 @@ function exercicio002(){
     let num2 = Number(prompt("Digite o segundo número: "));
     
     let media = (num1+num2)/2
-    alert("O resultado da média entre " + num1 + " + " + num2 + " será " + media);   
+    alert(`O resultado da média entre ${num1} e ${num2} será ${media}`);   
 }
 
 function exercicio003(){
     let nomeUsuario = prompt("Qual é o seu nome?");
-    alert("Olá, " + nomeUsuario + "! Seja bem vindo!")
+    alert(`Olá, ${nomeUsuario}! Seja bem vindo(a)!`)
 }
 
 function exercicio004(){
     let temperaturaCelsius = Number(prompt("Digite o grau em Celsius!"));
     let temperaturaFahrenheit = (temperaturaCelsius * (9/5)) + 32;
-    alert("A temperatura convertida será " + temperaturaFahrenheit + " graus Fahrenheit!")
+    alert(`A temperatura convertida será ${temperaturaFahrenheit} graus fahrenheit!`)
 }
 
 function exercicio005(){
@@ -31,9 +31,8 @@ function exercicio005(){
     let nota3 = Number(prompt("Digite sua terceira nota"));
 
     let media = (nota1 + nota2 + nota3) / 3
-    media = media.toFixed(2) 
 
-    alert("A média das notas será: " + media)
+    alert(`A média das notas será: ${media.toFixed(2)}`)
 }
 
 function exercicio006(){
@@ -87,7 +86,7 @@ function exercicio008(){
 
 }
 
-function exercicio009(){
+function exercicio009(){ //modificar dps usando DRY
     let signoUsuario;
 
     function checkSign(signoUsuario){
@@ -179,15 +178,14 @@ function exercicio009(){
     checkSign();
 }
 
-/*
-
-Jogo do Par ou Ímpar
-Objetivo: O usuário joga contra o computador para ver quem vence no jogo de
-par ou ímpar.
-
-*/
-
 function exercicio010(){
+
+    /*
+        Jogo do Par ou Ímpar
+        Objetivo: O usuário joga contra o computador para ver quem vence no jogo de
+        par ou ímpar.
+    */
+
     let escolhaUsuario = prompt("Escolha par ou ímpar");
     let numeroUsuario = Number(prompt("Insira um número de 0 a 10"))
 
@@ -201,40 +199,261 @@ function exercicio010(){
     }else if(somaNumeros % 2 != 0 && escolhaUsuario === "ímpar"){
         alert("Você venceu! Escolheu ímpar e o número sorteado foi " + somaNumeros)
     }else{
-        alert("O computador venceu! O número sorteado foi " + somaNumeros)
+        alert(`O computador venceu! O número sorteado foi ${somaNumeros}`)
     }
 }
 
-/*
-
-Contador de Cliques por Segundo
-Descrição: Conta quantos cliques o usuário deu.
-Entradas: Cliques em botão.
-Exemplo de Saída: “Você clicou 32 vezes!” Ao clicar no botão de resultado
-
-*/
-
+let contador011 = 0;
 function exercicio011(){
+    /*
+        Contador de Cliques por Segundo
+        Descrição: Conta quantos cliques o usuário deu.
+        Entradas: Cliques em botão.
+        Exemplo de Saída: “Você clicou 32 vezes!” Ao clicar no botão de resultado
+    */
 
+    contador011++;
+    alert(`Você clicou ${contador011} vezes.`)
 }
 
-/*
-
-Jogo do Número Secreto
-Descrição: Usuário tenta adivinhar um número aleatório de 1 a 100.
-Entradas: Número digitado.
-Exemplo de Saída: “Tente novamente.”
-
-*/
-
 function exercicio012(){
-    let escolhaUsuario = Number(prompt("Tente adivinhar o número de 1 a 100"));
-    
-    let numeroSorteado = Math.floor(Math.random() * (100 - 1) + 1);
+    /*
+        Jogo do Número Secreto
+        Descrição: Usuário tenta adivinhar um número aleatório de 1 a 100.
+        Entradas: Número digitado.
+        Exemplo de Saída: “Tente novamente.”
+    */
 
+    let escolhaUsuario = Number(prompt("Tente adivinhar o número de 1 a 100"));
+    let numeroSorteado = Math.floor(Math.random() * (100 - 1) + 1);
     if(escolhaUsuario === numeroSorteado){
         alert("Parabéns, você acertou!");
     }else{
         alert("Tente novamente! O número era: " + numeroSorteado);
     }
+}
+
+function exercicio013(){
+    /*
+        Gerador de Senhas Aleatórias
+        Descrição: Cria senhas com letras, números e símbolos.
+        Entradas: Comprimento desejado.
+        Exemplo de Saída: “Senha gerada: aX$7v!2d”
+    */
+
+    let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*";
+
+    function gerarSenha(){
+        let tamanhoSenha;
+        tamanhoSenha = Number(prompt("Insira o tamanho da senha."));
+        const charsetTamanho = charset.length;
+        let senha =  "N";
+        let index = 0;
+
+        while(index < tamanhoSenha){
+            senha += charset.charAt(Math.floor(Math.random() * charsetTamanho));
+            index++;
+        }
+        alert(`Senha Aleatória: ${senha}`)
+    }
+
+    gerarSenha();
+}
+
+function exercicio014(){ // modificar tentativas
+    /*
+        Jogo da Forca
+        Descrição: O clássico jogo da forca com palavras ocultas.
+        Entradas: Letras digitadas.
+        Exemplo de Saída: “_ _ R R A M _ (Tentativas restantes: 3)”
+    */
+    
+    function jogoForca(){
+        let letra;
+        let tentativas = 0;
+        const palavraSecreta = "FUTEBOL";
+        const letrasCertas = new Array(palavraSecreta.length);
+        const tentativasMax = 3;
+
+        while(true) {
+            letra = prompt("Digite a letra para adivinhar a palavra");
+            const letraMaiuscula = letra.toUpperCase();
+            if(palavraSecreta.includes(letraMaiuscula)){
+                const index = palavraSecreta.indexOf(letraMaiuscula);
+                letrasCertas[index] = letraMaiuscula;
+            }
+            return;
+        }   
+    }
+
+    jogoForca();
+}
+
+function exercicio015(){
+    /*
+        Mini Quiz de Conhecimentos Gerais
+        Descrição: Perguntas de múltipla escolha com pontuação final.
+        Entradas: Alternativa selecionada.
+        Exemplo de Saída: “Você acertou 3 de 5 perguntas.”
+    */
+    const quiz = {
+        1: {
+            pergunta: "Em JavaScript, qual método é utilizado para combinar dois ou mais arrays?", 
+            alternativas: "a) push() \n b) concat() \n c) join() \n d) slice()", 
+            alternativaCorreta: ["concat", "b"]
+        },
+        2: {
+            pergunta: "Na eletrônica, qual componente armazena carga elétrica?", 
+            alternativas: "a) resistor \n b) diodo \n c) capacitor \n d) indutor", 
+            alternativaCorreta: ["capacitor", "c"]
+        },
+        3: {
+            pergunta: "Em sistemas operacionais, qual algoritmo de escalonamento favorece o processo com o menor tempo de execução?", 
+            alternativas: "a) Round Robin \n b) SJF (Shortest Job First) \n c) FIFO \n d) Prioridade", 
+            alternativaCorreta: ["SJF", "b"]
+        },
+        4: {
+            pergunta: "Qual é o nome da camada do modelo OSI responsável pelo roteamento de pacotes?", 
+            alternativas: "a) Transporte \n b) Sessão \n c) Rede \n d) Aplicação", 
+            alternativaCorreta: ["Rede", "c"]
+        },
+        5: {
+            pergunta: "Em física, qual a unidade de medida do campo elétrico?", 
+            alternativas: "a) Newton por Coulomb \n b) Joule \n c) Watt \n d) Ohm", 
+            alternativaCorreta: ["Newton por Coulomb", "a"]
+        },
+        6: {
+            pergunta: "Em bancos de dados relacionais, qual comando é usado para remover uma tabela?", 
+            alternativas: "a) DELETE \n b) DROP \n c) REMOVE \n d) TRUNCATE", 
+            alternativaCorreta: ["DROP", "b"]
+        },
+        7: {
+            pergunta: "Em Python, qual é a estrutura de dados que mantém a ordem de inserção e permite chaves únicas?", 
+            alternativas: "a) set \n b) list \n c) dictionary \n d) tuple", 
+            alternativaCorreta: ["dictionary", "c"]
+        },
+        8: {
+            pergunta: "Em C, qual operador é usado para acessar o valor apontado por um ponteiro?", 
+            alternativas: "a) & (e comercial) \n b) * (asterisco) \n c) -> (seta) \n d) % (porcentagem)", 
+            alternativaCorreta: ["*", "b"]
+        },
+        9: {
+            pergunta: "Em C, qual biblioteca padrão deve ser incluída para usar a função printf?", 
+            alternativas: "a) stdlib.h \n b) stdio.h \n c) string.h \n d) math.h", 
+            alternativaCorreta: ["stdio.h", "b"]
+        },
+        10: {
+            pergunta: "Em C, qual é o operador utilizado para incrementar o valor de uma variável em uma unidade?", 
+            alternativas: "a) += \n b) ++ \n c) -- \n d) =", 
+            alternativaCorreta: ["++", "b"]
+        }
+        
+    }
+
+    alert("Mini Quiz de Conhecimentos Gerais")
+
+    let acertos = 0; 
+    let perguntasMax = 5; 
+    let alternativaSelecionada; 
+    index = 0;
+
+    const perguntasUsadas = [];
+    while(index < perguntasMax){
+        let numeroPergunta = Math.floor(Math.random() * Object.keys(quiz).length) + 1;
+        if(perguntasUsadas.indexOf(numeroPergunta) !== -1){
+            continue;
+        }else{
+            perguntasUsadas.push(numeroPergunta)
+        }
+        index++;
+        alternativaSelecionada = prompt(quiz[numeroPergunta].pergunta + " \n " + quiz[numeroPergunta].alternativas);
+        if(quiz[numeroPergunta].alternativaCorreta.includes(alternativaSelecionada)){
+            alert("Boa acertou!");
+            acertos++;
+        }else{
+            alert("Que pena, você errou!");
+            continue;
+        }
+    }
+    alert(`Você acertou ${acertos} de ${perguntasMax}`)
+}
+
+function exercicio016(){
+    /*
+        Simulador de Sorte do Dia
+        Descrição: Exibe uma mensagem motivacional aleatória.
+        Entradas: Clique em botão.
+        Exemplo de Saída: “Hoje é um ótimo dia para começar algo novo.”
+    */
+}
+
+function exercicio017(){
+    /*
+        Decisômetro (Sim/Não/Talvez)
+        Descrição: Responde aleatoriamente com “Sim”, “Não” ou “Talvez”.
+        Entradas: Clique em botão.
+        Exemplo de Saída: “Talvez”
+    */
+}
+
+function exercicio018(){
+    /*
+        Mapa de Humor com Emojis
+        Descrição: Escolha o emoji que representa seu humor do dia.
+        Entradas: Clique em emoji.
+        Exemplo de Saída: “Você está se sentindo: 😎”
+    */
+}
+
+function exercicio019(){
+    /*
+        Quiz sobre o próprio site
+        Descrição: Faça perguntas sobre o que o usuário acabou de ver ou clicar.
+        Entradas: Alternativas múltiplas.
+        Exemplo de Saída: “Você acertou! A respostaCorreta era: botão azul.”
+    */
+}
+
+function exercicio020(){
+    /*
+        Decodificador de Mensagem
+        Descrição: Substitui as vogais de uma frase por símbolos.
+        Entradas: Texto simples (ex: "olá mundo").
+        Exemplo de Saída: "ol@ m*nd#"
+    */
+
+    function substituirVogal(digito){
+        if(!digito || digito === " "){
+            return digito;
+        }
+
+        const numberset = "0123456789";
+        if(numberset.includes(digito)){
+            return digito;
+        }
+        
+        const vowelset = "aáàâãäeéèêëiíìîïoóòôõöuúùûü"
+        const charset = "!@#$%&*-+=~?"
+        digito = digito.toLowerCase()
+        if(vowels.includes(digito)){
+            return charset.charAt(Math.floor(Math.random() * charset.length));
+        }else{
+            return digito;
+        }
+    }
+
+    const mensagem = prompt("Digite algo.");
+    const letrasArray = [...mensagem];
+    const mensagemCodificada = letrasArray.map(substituirVogal);
+    alert(mensagemCodificada.join(""));
+}
+
+function exercicio021(){
+    /*
+        Ex47 Calcular o fatorial de um número. Solicite ao usuário que insira um número inteiro.
+        Calcule o fatorial desse número e exiba o resultado em um alert. 
+        (Lembre-se de que o fatorial de um número n é o produto de todos os inteiros de 1 a n ).
+        Exemplo = Fatorial de 5 → 5*4*3*2*1 = 120
+    */
+
 }
