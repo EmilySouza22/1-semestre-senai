@@ -385,6 +385,17 @@ function exercicio016(){
         Entradas: Clique em botão.
         Exemplo de Saída: “Hoje é um ótimo dia para começar algo novo.”
     */
+    const mensagensMotivacionais = {
+        1:"Acredite em você e nada será impossível.",
+        2:"Cada pequeno passo é um progresso.",
+        3:"Força hoje, recompensa amanhã.",
+        4:"Sonhe alto, comece agora.",
+        5:"Desafios criam oportunidades.",
+        6:"Sua persistência vai levar ao sucesso."
+    }
+    let nmrMensagem;
+    nmrMensagem = Math.floor(Math.random() * Object.keys(mensagensMotivacionais).length) + 1;
+    alert(`${mensagensMotivacionais[nmrMensagem]}`);
 }
 
 function exercicio017(){
