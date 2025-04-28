@@ -405,15 +405,19 @@ function exercicio017(){
         Entradas: Clique em botão.
         Exemplo de Saída: “Talvez”
     */
+    const respostas = ["sim", "não", "talvez"];
+    let respostaAleatoria = Math.floor(Math.random() * respostas.length);
+    alert(`${respostas[respostaAleatoria]}`);
 }
 
 function exercicio018(){
     /*
-        Mapa de Humor com Emojis
-        Descrição: Escolha o emoji que representa seu humor do dia.
-        Entradas: Clique em emoji.
-        Exemplo de Saída: “Você está se sentindo: 😎”
+        Calcular o fatorial de um número. Solicite ao usuário que insira um número inteiro.
+        Calcule o fatorial desse número e exiba o resultado em um alert. 
+        (Lembre-se de que o fatorial de um número n é o produto de todos os inteiros de 1 a n ).
+        Exemplo = Fatorial de 5 → 5*4*3*2*1 = 120
     */
+
 }
 
 function exercicio019(){
@@ -423,6 +427,7 @@ function exercicio019(){
         Entradas: Alternativas múltiplas.
         Exemplo de Saída: “Você acertou! A respostaCorreta era: botão azul.”
     */
+
 }
 
 function exercicio020(){
@@ -446,7 +451,7 @@ function exercicio020(){
         const vowelset = "aáàâãäeéèêëiíìîïoóòôõöuúùûü"
         const charset = "!@#$%&*-+=~?"
         digito = digito.toLowerCase()
-        if(vowels.includes(digito)){
+        if(vowelset.includes(digito)){
             return charset.charAt(Math.floor(Math.random() * charset.length));
         }else{
             return digito;
@@ -457,14 +462,4 @@ function exercicio020(){
     const letrasArray = [...mensagem];
     const mensagemCodificada = letrasArray.map(substituirVogal);
     alert(mensagemCodificada.join(""));
-}
-
-function exercicio021(){
-    /*
-        Ex47 Calcular o fatorial de um número. Solicite ao usuário que insira um número inteiro.
-        Calcule o fatorial desse número e exiba o resultado em um alert. 
-        (Lembre-se de que o fatorial de um número n é o produto de todos os inteiros de 1 a n ).
-        Exemplo = Fatorial de 5 → 5*4*3*2*1 = 120
-    */
-
 }
