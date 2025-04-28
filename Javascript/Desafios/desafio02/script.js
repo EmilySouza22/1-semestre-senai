@@ -1,4 +1,4 @@
-function exercicio001(){
+function exercicio001(){ /*Soma*/
     let num1 = Number(prompt("Digite o primeiro número: "));
     let num2 = Number(prompt("Digite o segundo número: "));
 
@@ -6,7 +6,7 @@ function exercicio001(){
     alert(`O resultado da soma entre ${num1} + ${num2} será ${soma}`);
 }
 
-function exercicio002(){
+function exercicio002(){ /*Média Simples*/
     let num1 = Number(prompt("Digite o primeiro número: "));
     let num2 = Number(prompt("Digite o segundo número: "));
     
@@ -14,18 +14,18 @@ function exercicio002(){
     alert(`O resultado da média entre ${num1} e ${num2} será ${media}`);   
 }
 
-function exercicio003(){
+function exercicio003(){ /*Alterando o nome no alert*/
     let nomeUsuario = prompt("Qual é o seu nome?");
     alert(`Olá, ${nomeUsuario}! Seja bem vindo(a)!`)
 }
 
-function exercicio004(){
+function exercicio004(){ /*Conversão Celsius para Fahrenheit*/
     let temperaturaCelsius = Number(prompt("Digite o grau em Celsius!"));
     let temperaturaFahrenheit = (temperaturaCelsius * (9/5)) + 32;
     alert(`A temperatura convertida será ${temperaturaFahrenheit} graus fahrenheit!`)
-}
+} 
 
-function exercicio005(){
+function exercicio005(){ /*Média de 3 notas*/
     let nota1 = Number(prompt("Digite sua primeira nota"));
     let nota2 = Number(prompt("Digite sua segunda nota"));
     let nota3 = Number(prompt("Digite sua terceira nota"));
@@ -35,7 +35,7 @@ function exercicio005(){
     alert(`A média das notas será: ${media.toFixed(2)}`)
 }
 
-function exercicio006(){
+function exercicio006(){ /*IMC*/
     let pesoUsuario = Number(prompt("Insira seu peso."))
     let alturaUsuario = Number(prompt("Insira sua altura."))
 
@@ -52,7 +52,7 @@ function exercicio006(){
     }
 }
 
-function exercicio007(){
+function exercicio007(){ /*Ano bissexto*/
     let anoAleatorio = Number(prompt("Insira um ano."));
 
     resto1 = anoAleatorio % 4
@@ -67,7 +67,7 @@ function exercicio007(){
     }
 }
 
-function exercicio008(){
+function exercicio008(){ /*Personagem Aleatório*/
     const personagens = {
         1: "Parabéns seu personagem é: Ahsoka, com as habilidades de liderança e combate com dois sabres de luz",
         2: "Parabéns seu personagem é: Grogu, com o poder da força",
@@ -86,11 +86,11 @@ function exercicio008(){
 
 }
 
-function exercicio009(){ //modificar dps usando DRY
+function exercicio009(){ /*Mensagens dos Signos*/ //--------->modificar dps usando DRY
     let signoUsuario;
 
     function checkSign(signoUsuario){
-        signoUsuario = prompt("Digite seu signo!")
+        signoUsuario = prompt("Digite seu signo!");
 
         switch(signoUsuario){
             case "áries":
@@ -178,10 +178,9 @@ function exercicio009(){ //modificar dps usando DRY
     checkSign();
 }
 
-function exercicio010(){
+function exercicio010(){ /*Jogo do Par ou Ímpar com o PC*/
 
     /*
-        Jogo do Par ou Ímpar
         Objetivo: O usuário joga contra o computador para ver quem vence no jogo de
         par ou ímpar.
     */
@@ -204,9 +203,8 @@ function exercicio010(){
 }
 
 let contador011 = 0;
-function exercicio011(){
+function exercicio011(){ /*Contador de Cliques por Segundo*/
     /*
-        Contador de Cliques por Segundo
         Descrição: Conta quantos cliques o usuário deu.
         Entradas: Cliques em botão.
         Exemplo de Saída: “Você clicou 32 vezes!” Ao clicar no botão de resultado
@@ -216,9 +214,8 @@ function exercicio011(){
     alert(`Você clicou ${contador011} vezes.`)
 }
 
-function exercicio012(){
+function exercicio012(){ /*Jogo do Número Secreto*/ 
     /*
-        Jogo do Número Secreto
         Descrição: Usuário tenta adivinhar um número aleatório de 1 a 100.
         Entradas: Número digitado.
         Exemplo de Saída: “Tente novamente.”
@@ -233,9 +230,8 @@ function exercicio012(){
     }
 }
 
-function exercicio013(){
+function exercicio013(){ /*Gerador de Senhas Aleatórias*/
     /*
-        Gerador de Senhas Aleatórias
         Descrição: Cria senhas com letras, números e símbolos.
         Entradas: Comprimento desejado.
         Exemplo de Saída: “Senha gerada: aX$7v!2d”
@@ -260,9 +256,8 @@ function exercicio013(){
     gerarSenha();
 }
 
-function exercicio014(){ // modificar tentativas
+function exercicio014(){ /*Jogo da Forca*/  //------------> modificar tentativas 
     /*
-        Jogo da Forca
         Descrição: O clássico jogo da forca com palavras ocultas.
         Entradas: Letras digitadas.
         Exemplo de Saída: “_ _ R R A M _ (Tentativas restantes: 3)”
@@ -289,9 +284,8 @@ function exercicio014(){ // modificar tentativas
     jogoForca();
 }
 
-function exercicio015(){
+function exercicio015(){ /*Mini Quiz de Conhecimentos Gerais*/
     /*
-        Mini Quiz de Conhecimentos Gerais
         Descrição: Perguntas de múltipla escolha com pontuação final.
         Entradas: Alternativa selecionada.
         Exemplo de Saída: “Você acertou 3 de 5 perguntas.”
@@ -378,9 +372,8 @@ function exercicio015(){
     alert(`Você acertou ${acertos} de ${perguntasMax}`)
 }
 
-function exercicio016(){
+function exercicio016(){ /*Simulador de Sorte do Dia*/
     /*
-        Simulador de Sorte do Dia
         Descrição: Exibe uma mensagem motivacional aleatória.
         Entradas: Clique em botão.
         Exemplo de Saída: “Hoje é um ótimo dia para começar algo novo.”
@@ -398,9 +391,8 @@ function exercicio016(){
     alert(`${mensagensMotivacionais[nmrMensagem]}`);
 }
 
-function exercicio017(){
+function exercicio017(){ /*Decisômetro (Sim/Não/Talvez)*/
     /*
-        Decisômetro (Sim/Não/Talvez)
         Descrição: Responde aleatoriamente com “Sim”, “Não” ou “Talvez”.
         Entradas: Clique em botão.
         Exemplo de Saída: “Talvez”
@@ -410,9 +402,9 @@ function exercicio017(){
     alert(`${respostas[respostaAleatoria]}`);
 }
 
-function exercicio018(){
-    /*
-        Calcular o fatorial de um número. Solicite ao usuário que insira um número inteiro.
+function exercicio018(){ /*Calcular o fatorial de um número.*/
+    /* 
+        Solicite ao usuário que insira um número inteiro.
         Calcule o fatorial desse número e exiba o resultado em um alert. 
         (Lembre-se de que o fatorial de um número n é o produto de todos os inteiros de 1 a n ).
         Exemplo = Fatorial de 5 → 5*4*3*2*1 = 120
@@ -420,9 +412,8 @@ function exercicio018(){
 
 }
 
-function exercicio019(){
+function exercicio019(){ /*Quiz sobre o próprio site*/
     /*
-        Quiz sobre o próprio site
         Descrição: Faça perguntas sobre o que o usuário acabou de ver ou clicar.
         Entradas: Alternativas múltiplas.
         Exemplo de Saída: “Você acertou! A respostaCorreta era: botão azul.”
@@ -430,9 +421,8 @@ function exercicio019(){
 
 }
 
-function exercicio020(){
+function exercicio020(){ /*Decodificador de Mensagem*/
     /*
-        Decodificador de Mensagem
         Descrição: Substitui as vogais de uma frase por símbolos.
         Entradas: Texto simples (ex: "olá mundo").
         Exemplo de Saída: "ol@ m*nd#"
