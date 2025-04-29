@@ -349,9 +349,10 @@ function exercicio015(){ /*Mini Quiz de Conhecimentos Gerais*/
     let acertos = 0; 
     let perguntasMax = 5; 
     let alternativaSelecionada; 
-    index = 0;
 
     const perguntasUsadas = [];
+
+    index = 0;
     while(index < perguntasMax){
         let numeroPergunta = Math.floor(Math.random() * Object.keys(quiz).length) + 1;
         if(perguntasUsadas.indexOf(numeroPergunta) !== -1){
@@ -409,25 +410,27 @@ function exercicio018(){ /*Calcular o fatorial de um número.*/
         (Lembre-se de que o fatorial de um número n é o produto de todos os inteiros de 1 a n ).
         Exemplo = Fatorial de 5 → 5*4*3*2*1 = 120
     */
+
     let numeroInteiro = Number(prompt("Insira um número inteiro"));
-    let fatorial;
-    let index = 0;
-    let subtraendo = 1;
-    const fatoracao = [];
+    let fatorial = 1;
 
-    while(index < numeroInteiro){
-        // 4 = 4*3*2*1 = 24
-        console.log(numeroInteiro)
-        resultado = numeroInteiro * (numeroInteiro - subtraendo)
-        
-        fatoracao.push(fatorial)
-        console.log(fatoracao)
-        
+    if(!numeroInteiro && numeroInteiro != 0){
+        return alert("Número inválido");
+    }else{
+        if(numeroInteiro == 0 || numeroInteiro == 1){
+            fatorial = 1;
+            return alert(`O resultado do fatorial de ${numeroInteiro} será ${fatorial}`);
+        }
 
-        index++;
-        subtraendo++;
+        let index = numeroInteiro;
+        let resultado = 1;
+
+        while(index > 1){
+            resultado = resultado * index;
+            index--;
+        }
+        alert(`O resultado do fatorial de ${numeroInteiro} será ${resultado}`);
     }
-    alert(`O resultado do fatorial de ${numeroInteiro} será ${fatorial}`);
 }
 
 function exercicio019(){ /*Quiz sobre o próprio site*/
@@ -520,4 +523,24 @@ function exercicio020(){ /*Decodificador de Mensagem*/
     const letrasArray = [...mensagem];
     const mensagemCodificada = letrasArray.map(substituirVogal);
     alert(mensagemCodificada.join(""));
+}
+
+function exercicio021(){
+    
+
+}
+
+function exercicio022(){
+}
+
+function exercicio023(){
+
+}
+
+function exercicio024(){
+
+}
+
+function exercicio025(){
+
 }
