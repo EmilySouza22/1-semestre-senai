@@ -416,14 +416,14 @@ function exercicio018(){ /*Calcular o fatorial de um número.*/
     const fatoracao = [];
 
     while(index < numeroInteiro){
-        // numeroInteiro[5] * numeroInteiro[5-1] * numeroInteiro[4-1] * numeroInteiro[3-1] * numeroInteiro[2-1]
-        if(fatorial /*tava aqui*/){
-            fatorial = numeroInteiro * (numeroInteiro - subtraendo);
-        }
-        
+        // 4 = 4*3*2*1 = 24
+        console.log(numeroInteiro)
+        resultado = numeroInteiro * (numeroInteiro - subtraendo)
         
         fatoracao.push(fatorial)
         console.log(fatoracao)
+        
+
         index++;
         subtraendo++;
     }
@@ -436,7 +436,57 @@ function exercicio019(){ /*Quiz sobre o próprio site*/
         Entradas: Alternativas múltiplas.
         Exemplo de Saída: “Você acertou! A respostaCorreta era: botão azul.”
     */
+    const perguntas = {
+        1: {
+            pergunta:"Quantos exercícios o site tem? ",
+            alternativas:"a)15 b)17 c)19 d)21",
+            alternativaCerta:["d" , "21"]
+        },
+        2: {
+            pergunta:"Qual é o nome da minha gata?",
+            alternativas:"a)Bela b)Nina c)Ruby d)Mima",
+            alternativaCerta:["b" , "nina"] 
+        },
+        3: {
+            pergunta:"O fundo do site é: ",
+            alternativas:"a)Galáxia b)Coração c)Estrela d)Natureza",
+            alternativaCerta:["a" , "galaxia"]
+        },
+        4: {
+            pergunta:"Meu jogo favorito é: ",
+            alternativas:"a)Minecraft b)Roblox c)Fortnite d)Tetris",
+            alternativaCerta:["d" , "tetris"]
+        },
+        5: {
+            pergunta:"Qual é a minha saga favorita? ",
+            alternativas:"a)Harry Potter b)Percy Jackson c)Star Wars d)Jogos Vorazes",
+            alternativaCerta:["c" , "star wars"]
+        }
+    }
+    
+    numeroPerguntas = Math.floor(Math.random() * Object.keys(perguntas).length) + 1;
+    let perguntasMax = 3;
+    let acertos = 0;
+    let index = 0;
+    perguntasRepetidas = []
+    while(index < perguntasMax){
+        let alternativaUsuario = prompt(`${perguntas[numeroPerguntas].pergunta} \n ${perguntas[numeroPerguntas].alternativas}`);
 
+        if(!alternativaUsuario || alternativaUsuario == " "){
+            return;
+        }
+        if(perguntas[numeroPerguntas].alternativaCerta.includes(alternativaUsuario) || perguntasRepetidas !== -1){
+            
+            console.log(perguntasRepetidas)
+            acertos++;
+            index++;
+            continue;
+        }else{
+            index++;
+            continue;
+        }
+    }
+    alert(`Você acertou ${acertos} de ${perguntasMax}`)
 }
 
 function exercicio020(){ /*Decodificador de Mensagem*/
