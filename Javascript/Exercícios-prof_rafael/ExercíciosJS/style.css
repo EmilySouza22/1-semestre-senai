@@ -1,0 +1,38 @@
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(96, 91, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divPai{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(139, 78, 197);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia;
+    border-radius: 5px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(123, 57, 184);
+    cursor: pointer;
+}
+
+.botoes{
+    width: 100vh;
+    height: 100vh;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
