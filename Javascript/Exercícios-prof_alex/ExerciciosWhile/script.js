@@ -211,7 +211,12 @@ function exercicio17(){
 function exercicio18(){
     /*
         18. Conte de 1 a 30, pulando os múltiplos de 4.
-    */  
+    */
+    let index = 1;
+    while(index <= 30){
+        index % 4 != 0 ? alert(`1 a 30, pulando múltiplos de 4: ${index}`) : false
+        index++;
+    }
 }
 
 function exercicio19(){
