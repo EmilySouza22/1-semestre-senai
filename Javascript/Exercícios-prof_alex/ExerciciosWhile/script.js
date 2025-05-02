@@ -222,7 +222,14 @@ function exercicio18(){
 function exercicio19(){
     /*
         19. Some os números de 1 a 100, mas pare se a soma passar de 400
-    */  
+    */
+    let index = 1;
+    let soma = 0;
+    while(index <= 100 && soma < 400){
+        alert(`Soma: ${soma} + ${index} = ${soma + index}`)
+        soma = soma + index
+        index++;
+    }
 }
 
 function exercicio20(){
