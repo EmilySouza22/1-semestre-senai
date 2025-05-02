@@ -235,7 +235,8 @@ function exercicio19(){
 function exercicio20(){
     /*
         20. Simule uma senha com 3 tentativas
-    */  
+    */
+
 }
 
 function exercicio21(){
@@ -247,7 +248,15 @@ function exercicio21(){
 function exercicio22(){
     /*
         22. Conte até 100, mas exiba uma mensagem especial no 50.
-    */  
+    */
+    let index = 1;
+    while(index <= 100){
+        alert(`Contando... ${index}`)
+        if(index === 50){
+            alert(`Parabéns, você é adotado!`)
+        }
+        index++;
+    }
 }
 
 function exercicio23(){
