@@ -311,7 +311,20 @@ function exercicio25(){
 function exercicio26(){
     /*
         26. Conte de 1 a 10 e diga se o número é menor ou maior que 5.
-    */  
+    */
+    let index = 1;
+    let max = 10;
+    let numComparativo = 5;
+    while(index <= max){
+        if(index < numComparativo){
+            alert(`${index} é menor que 5`);
+        }else if(index === numComparativo){
+            alert(`${index} é igual a 5`);
+        }else{
+            alert(`${index} é maior que 5`);
+        }
+        index++;
+    }
 }
 
 function exercicio27(){
