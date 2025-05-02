@@ -198,7 +198,14 @@ function exercicio16(){
 function exercicio17(){
     /*
         17. Conte quantos múltiplos de 6 existem até 100.
-    */  
+    */
+    let index = 1;
+    let quantidade = 0;
+    while(index <= 100){
+        index % 6 === 0 ? quantidade++ : false;
+        index++;
+    }
+    alert(`Quantidade de múltiplos de 6, entre 1 a 100: ${quantidade}`);
 }
 
 function exercicio18(){
