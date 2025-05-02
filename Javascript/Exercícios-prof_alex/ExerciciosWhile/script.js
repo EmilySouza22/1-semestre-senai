@@ -236,7 +236,11 @@ function exercicio20(){
     /*
         20. Simule uma senha com 3 tentativas
     */
-
+    let index = 3;
+    while(index >= 1){
+        alert(`Senha errada! Você tem mais ${index} tentativas`)
+        index--;
+    }
 }
 
 function exercicio21(){
