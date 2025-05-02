@@ -185,6 +185,14 @@ function exercicio16(){
     /*
         16. Conte quantos números pares existem entre 1 e 50.
     */
+    let index = 1;
+    let max = 50;
+    let quantidade = 0;
+    while(index <= max){
+        index % 2 === 0 ? quantidade++ : false;
+        index++;
+    }
+    alert(`Quantidade de números pares entre 1 e 50: ${quantidade}`)
 }
 
 function exercicio17(){
