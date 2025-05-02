@@ -172,5 +172,119 @@ function exercicio15(){
     /*
         15. Calcule a multiplicação de 1 a 5 (fatorial de 5).
     */
-    
+    let index = 5;
+    let resultado = 1;
+    while(index > 1){
+        resultado = resultado * index;
+        alert(`Fatorial de 5: ${resultado}`);
+        index--;
+    }
+}
+
+function exercicio16(){
+    /*
+        16. Conte quantos números pares existem entre 1 e 50.
+    */
+}
+
+function exercicio17(){
+    /*
+        17. Conte quantos múltiplos de 6 existem até 100.
+    */  
+}
+
+function exercicio18(){
+    /*
+        18. Conte de 1 a 30, pulando os múltiplos de 4.
+    */  
+}
+
+function exercicio19(){
+    /*
+        19. Some os números de 1 a 100, mas pare se a soma passar de 400
+    */  
+}
+
+function exercicio20(){
+    /*
+        20. Simule uma senha com 3 tentativas
+    */  
+}
+
+function exercicio21(){
+    /*
+        21. Conte os números de 1 a 50, mas pare se chegar a 30.
+    */  
+}
+
+function exercicio22(){
+    /*
+        22. Conte até 100, mas exiba uma mensagem especial no 50.
+    */  
+}
+
+function exercicio23(){
+    /*
+        23. Conte de 10 a 0 e diga “Lançamento!” ao final.
+    */  
+}
+
+function exercicio24(){
+    /*
+        24. Conte até 30 e diga “Pulando!” para múltiplos de 7
+    */  
+}
+
+function exercicio25(){
+    /*
+        25. Conte de 1 a 20 e diga “Especial!” para múltiplos de 2 e 3 ao mesmo tempo.
+    */  
+}
+
+function exercicio26(){
+    /*
+        26. Conte de 1 a 10 e diga se o número é menor ou maior que 5.
+    */  
+}
+
+function exercicio27(){
+    /*
+        27. Faça um loop que pare ao chegar em um número aleatório entre 1 e 10 (simulado).
+    */  
+}
+
+function exercicio28(){
+    /*
+        28. Mostre todos os divisores de um número X (por exemplo, 24).
+    */  
+}
+
+function exercicio29(){
+    /*
+        29. Some apenas os números ímpares entre 1 e 20.
+    */  
+}
+
+function exercicio30(){
+    /*
+        30. Conte os múltiplos de 9 entre 1 e 100.
+    */  
+}
+
+function exercicio31(){
+    /*
+        31. Conte os números de 50 até 0 que não são múltiplos de 5.
+    */  
+}
+
+function exercicio32(){
+    /*
+        32.  Calcule a soma dos números pares até 100.
+    */  
+}
+
+function exercicio32(){
+    /*
+        33.  Simule o funcionamento de um semáforo (verde → amarelo → vermelho).
+    */  
 }
