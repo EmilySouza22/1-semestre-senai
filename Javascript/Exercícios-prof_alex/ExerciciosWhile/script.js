@@ -288,7 +288,12 @@ function exercicio23(){
 function exercicio24(){
     /*
         24. Conte até 30 e diga “Pulando!” para múltiplos de 7
-    */  
+    */
+    let index = 1;
+    while(index <= 30){
+        alert(`Contando até 30: ${index % 7 === 0 ? `Pulando!`: index}`);
+        index++;
+    }
 }
 
 function exercicio25(){
