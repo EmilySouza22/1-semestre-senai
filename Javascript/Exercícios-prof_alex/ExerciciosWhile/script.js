@@ -118,21 +118,49 @@ function exercicio10(){
 }
 
 function exercicio11(){
-
+    /*
+        11. Faça um loop que mostre os números de 1 a 10 com a frase “Número: X”.
+    */
+    let index = 1;
+    const max = 10;
+    while(index <= max){
+        alert(`Número: ${index}`);
+        index++;
+    } 
 }
 
 function exercicio12(){
-    
+    /*
+        12. Conte até 20 e exiba “Fizz” para múltiplos de 3
+    */
+    let index = 0;
+    let max = 20;
+    while(index <= max){
+        alert(`Fizz ${index}`);
+        index += 3;
+    }
 }
 
 function exercicio13(){
-    
+    /*
+        13. Conte até 20 e exiba “Buzz” para múltiplos de 5.
+    */
+    let index = 0;
+    let max = 20;
+    while(index <= max){
+        alert(`Buzz ${index}`);
+        index += 5;
+    }
 }
 
 function exercicio14(){
-    
+    /*
+        14. Calcule a soma dos números de 1 a 10.
+    */
 }
 
 function exercicio15(){
-    
+    /*
+        15. Calcule a multiplicação de 1 a 5 (fatorial de 5).
+    */    
 }
