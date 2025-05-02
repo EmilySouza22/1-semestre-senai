@@ -299,7 +299,13 @@ function exercicio24(){
 function exercicio25(){
     /*
         25. Conte de 1 a 20 e diga “Especial!” para múltiplos de 2 e 3 ao mesmo tempo.
-    */  
+    */
+    let index = 1;
+    let max = 20;
+    while(index <= max){
+        alert(`Contando... ${index % 2 === 0 && index % 3 === 0 ? `Especial` : index}`);
+        index++;
+    }
 }
 
 function exercicio26(){
