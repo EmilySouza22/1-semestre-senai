@@ -157,10 +157,20 @@ function exercicio14(){
     /*
         14. Calcule a soma dos números de 1 a 10.
     */
+    let n1 = 1;
+    let n2 = 2;
+    let max = 10;
+    
+    while(n1 < max){
+        alert(`Soma: ${n1 + n2}`);
+        n2++;
+        n1++;
+    }
 }
 
 function exercicio15(){
     /*
         15. Calcule a multiplicação de 1 a 5 (fatorial de 5).
-    */    
+    */
+    
 }
