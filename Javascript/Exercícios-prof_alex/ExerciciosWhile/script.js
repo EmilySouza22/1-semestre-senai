@@ -232,7 +232,7 @@ function exercicio19(){
     }
 }
 
-function exercicio20(){
+function exercicio20(){ //confirmar
     /*
         20. Simule uma senha com 3 tentativas
     */
@@ -246,7 +246,15 @@ function exercicio20(){
 function exercicio21(){
     /*
         21. Conte os números de 1 a 50, mas pare se chegar a 30.
-    */  
+    */
+    let index = 1;
+    while(index <= 50){
+        alert(`Contando... ${index}`)
+        if(index === 30){
+            index = 51;
+        }
+        index++;
+    }
 }
 
 function exercicio22(){
