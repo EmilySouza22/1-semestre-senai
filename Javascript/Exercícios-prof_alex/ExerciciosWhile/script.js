@@ -262,7 +262,15 @@ function exercicio22(){
 function exercicio23(){
     /*
         23. Conte de 10 a 0 e diga “Lançamento!” ao final.
-    */  
+    */
+    let index = 10;
+    while(index >= 0){
+        alert(`Contagem Regressiva: ${index}!`)
+        if(index === 0){
+            alert(`Lançamento!`)
+        }
+        index--;
+    }
 }
 
 function exercicio24(){
