@@ -238,8 +238,11 @@ function exercicio20(){ //confirmar
     */
     let index = 3;
     while(index >= 1){
-        alert(`Senha errada! Você tem mais ${index} tentativas`)
+        alert(`Senha errada! Você tem mais ${index} tentativas`);
         index--;
+    }
+    if(!index){
+        alert(`Suas tentativas acabaram...`)
     }
 }
 
@@ -330,41 +333,42 @@ function exercicio26(){
 function exercicio27(){
     /*
         27. Faça um loop que pare ao chegar em um número aleatório entre 1 e 10 (simulado).
-    */  
+    */
+
 }
 
 function exercicio28(){
     /*
         28. Mostre todos os divisores de um número X (por exemplo, 24).
-    */  
+    */
 }
 
 function exercicio29(){
     /*
         29. Some apenas os números ímpares entre 1 e 20.
-    */  
+    */
 }
 
 function exercicio30(){
     /*
         30. Conte os múltiplos de 9 entre 1 e 100.
-    */  
+    */
 }
 
 function exercicio31(){
     /*
         31. Conte os números de 50 até 0 que não são múltiplos de 5.
-    */  
+    */
 }
 
 function exercicio32(){
     /*
         32.  Calcule a soma dos números pares até 100.
-    */  
+    */
 }
 
 function exercicio32(){
     /*
         33.  Simule o funcionamento de um semáforo (verde → amarelo → vermelho).
-    */  
+    */
 }
