@@ -432,3 +432,116 @@ function exercicio33(){
         33.  Simule o funcionamento de um semáforo (verde → amarelo → vermelho).
     */
 }
+
+function exercicio34(){
+    /*
+        34. Simule a carga de uma bateria de 0% a 100% de 10 em 10.
+    */
+    let index = 0;
+    let max = 100;
+    while(index <= max){
+        alert(`Bateria: ${index}%`);
+        index += 10;
+    }
+}
+
+function exercicio35(){
+    /*
+        35. Simule a descarga de uma bateria de 100% a 0%
+    */
+    
+}
+
+function exercicio36(){
+    /*
+        36. Crie um cronômetro de 0 a 60 segundos (simulado)
+    */
+    
+}
+
+function exercicio37(){
+    /*
+        37. Simule a contagem de um cofre com 5 tentativas de código.
+    */
+    
+}
+
+function exercicio38(){
+    /*
+        38. Simule um personagem andando 10 passos com console.log.
+    */
+    
+}
+
+function exercicio39(){
+    /*
+        39.  Simule uma barra de carregamento (ex: “█” aumentando)
+    */
+    
+}
+
+function exercicio40(){
+    /*
+        40. Simule o consumo de um carro até acabar o combustível.
+    */
+    
+}
+
+function exercicio41(){
+    /*
+        41. Conte de 1 até 100, mas pule todos os múltiplos de 8.
+    */
+    
+}
+
+function exercicio42(){
+    /*
+        42.  Simule um dado que deve cair 6 para o loop parar (sem aleatório real).
+    */
+    
+}
+
+function exercicio43(){
+    /*
+        43. Conte de 1 até 100 e diga “Número primo” para os primos (sem validar ainda)
+    */
+    
+}
+
+function exercicio44(){
+    /*
+        44. Calcule quantas vezes é necessário somar 1 até que a soma seja maior que
+        1000.
+    */
+    
+}
+
+function exercicio45(){
+    /*
+        45. Simule um processo de “download” aumentando de 10% em 10%
+    */
+    
+}
+
+function exercicio46(){
+    /*
+        46. Simule um tempo de espera de um processo (tempo fictício de 1 a 5
+        segundos)
+    */
+    
+}
+
+function exercicio47(){
+    /*
+        47. Simule a abertura de um cofre com senha correta na 4ª tentativa.
+    */
+    
+}
+
+function exercicio48(){
+    /*
+        48. Conte até 100 e diga "Múltiplo de 3", "Múltiplo de 5" ou ambos (FizzBuzz
+        simplificado com while)
+    */
+    
+}
