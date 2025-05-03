@@ -449,7 +449,12 @@ function exercicio35(){
     /*
         35. Simule a descarga de uma bateria de 100% a 0%
     */
-    
+    let index = 100;
+    let min = 0;
+    while(index >= min){
+        alert(`Bateria descarregando: ${index}%`)
+        index--;
+    }
 }
 
 function exercicio36(){
