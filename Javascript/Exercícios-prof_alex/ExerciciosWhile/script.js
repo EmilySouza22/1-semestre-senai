@@ -459,7 +459,7 @@ function exercicio35(){
 
 function exercicio36(){
     /*
-        36. Crie um cronômetro de 0 a 60 segundos (simulado)
+        36. Crie um cronômetro de 0 a 60 segundos (simulado).
     */
     
 }
@@ -468,7 +468,26 @@ function exercicio37(){
     /*
         37. Simule a contagem de um cofre com 5 tentativas de código.
     */
-    
+    const codigoCofre = Math.floor(Math.random() * 9) + 1;
+    console.log(codigoCofre);
+    let codigoUsuario;
+    let index = 4;
+    let min = 0;
+    while(index >= min){
+        codigoUsuario = parseInt(prompt(`Insira o código do cofre [1 dígito]`));
+        if(typeof codigoUsuario !== 'number' || codigoUsuario >= 10 || isNaN(codigoUsuario)){
+            alert(`Inválido`);
+            index = -1;
+        }else{
+            if(codigoUsuario === codigoCofre){
+                alert(`Você abriu o cofre.`);
+                index = -1;
+            }else{
+                alert(`Você tem mais ${index} tentativas restantes.`);
+            }
+        }
+        index--;
+    }
 }
 
 function exercicio38(){
