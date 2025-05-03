@@ -352,6 +352,15 @@ function exercicio28(){
     /*
         28. Mostre todos os divisores de um número X (por exemplo, 24).
     */
+    let numUsuario = prompt(`Digite um número para saber seus divisores.`);
+
+    let index = 0;
+    while(index <= numUsuario){
+        if(numUsuario % index === 0){
+            alert(`Os divisores de ${numUsuario} são ${index}`);
+        }
+        index++;
+    }
 }
 
 function exercicio29(){
