@@ -414,6 +414,17 @@ function exercicio32(){
     /*
         32.  Calcule a soma dos números pares até 100.
     */
+    let max = 100;
+    let index = 1;
+    let contador = 0;
+    while(index <= max){
+        if(index % 2 === 0){
+            console.log(`Somando... ${index} + ${contador} = ${index + contador}`);
+            contador = contador + index;
+        }
+        index++;
+    }
+    alert(`Soma final de números pares até 100: ${contador}`)
 }
 
 function exercicio33(){
