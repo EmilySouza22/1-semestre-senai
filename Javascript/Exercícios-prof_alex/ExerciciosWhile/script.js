@@ -399,6 +399,15 @@ function exercicio31(){
     /*
         31. Conte os números de 50 até 0 que não são múltiplos de 5.
     */
+    let index = 50;
+    let naoMultiplos = 0;
+    while(index >= 0){
+        if(index % 5 !== 0){
+            naoMultiplos++;
+        }
+        index--;
+    }
+    alert(`Quantos números de 50 a 0 não são múltiplos de 5? Resposta: ${naoMultiplos}`)
 }
 
 function exercicio32(){
@@ -407,7 +416,7 @@ function exercicio32(){
     */
 }
 
-function exercicio32(){
+function exercicio33(){
     /*
         33.  Simule o funcionamento de um semáforo (verde → amarelo → vermelho).
     */
