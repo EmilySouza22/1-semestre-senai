@@ -232,7 +232,7 @@ function exercicio19(){
     }
 }
 
-function exercicio20(){ //confirmar
+function exercicio20(){
     /*
         20. Simule uma senha com 3 tentativas
     */
@@ -334,7 +334,18 @@ function exercicio27(){
     /*
         27. Faça um loop que pare ao chegar em um número aleatório entre 1 e 10 (simulado).
     */
-
+    let numRandom;
+    numRandom = Math.floor(Math.random() * 10) + 1;
+    let index = 1;
+    let max = 10;
+    while(index < max){
+        alert(`Contando... ${index}`);
+        if(index == numRandom){
+            index = 11;
+        }
+        index++;
+    }
+    alert(`O número aleatório foi: ${numRandom}`)
 }
 
 function exercicio28(){
