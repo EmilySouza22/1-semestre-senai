@@ -368,11 +368,12 @@ function exercicio29(){
         29. Some apenas os números ímpares entre 1 e 20.
     */
     let index = 1;
+    let n = 0;
     let max = 20;
-    let n = 1;
     while(index <= max){
-        if(index % 2 != 0){
-            alert(`Soma 1 a 20, números ímpares: ${index}`);
+        if(index % 2 !== 0){
+            alert(`Soma 1 a 20, números ímpares: ${index} + ${n} = ${index + n}`);
+            n += index;
         }
         index++;
     }
