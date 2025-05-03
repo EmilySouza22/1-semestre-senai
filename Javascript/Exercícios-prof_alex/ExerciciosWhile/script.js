@@ -383,6 +383,16 @@ function exercicio30(){
     /*
         30. Conte os múltiplos de 9 entre 1 e 100.
     */
+    let index = 1;
+    let max = 100;
+    let multiplos = 0;
+    while(index <= max){
+        if(index % 9 === 0){
+            multiplos++;
+        }
+        index++;
+    }
+    alert(`Quantidade múltiplos de 9, entre 1 a 100: ${multiplos}`)
 }
 
 function exercicio31(){
