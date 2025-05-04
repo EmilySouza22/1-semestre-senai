@@ -431,6 +431,12 @@ function exercicio33(){
     /*
         33.  Simule o funcionamento de um semáforo (verde → amarelo → vermelho).
     */
+    let semaforo = ['verde', 'amarelo','vermelho'];
+    let contador = 0;
+    while(contador < semaforo.length){
+        alert(`Semáforo está ${semaforo[contador]}`);
+        contador++;
+    }
 }
 
 function exercicio34(){
