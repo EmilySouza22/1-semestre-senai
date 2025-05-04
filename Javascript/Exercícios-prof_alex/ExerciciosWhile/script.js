@@ -526,7 +526,7 @@ function exercicio39(){
     let index = 0;
     while(index <= maxBateria){
         if(index > 0){
-            alert(`Bateria: [ ${index}% ${bateria} ]`);
+            console.log(`Bateria: [ ${index}% ${bateria} ]`);
             bateria += '█';
         }
         index += 10;
@@ -627,14 +627,24 @@ function exercicio46(){
         46. Simule um tempo de espera de um processo (tempo fictício de 1 a 5
         segundos)
     */
+    let tempo = 0;
+    let max = 5;
+    const processamento = setInterval(() => {
+        console.log(`Tempo de processamento: ${tempo}s`);
+        tempo++;
 
+        if(tempo > max){
+            console.log(`Processamento finalizado.`);
+            clearInterval(processamento);
+        }
+    }, 1000);
 }
 
 function exercicio47(){
     /*
         47. Simule a abertura de um cofre com senha correta na 4ª tentativa.
     */
-    
+
 }
 
 function exercicio48(){
