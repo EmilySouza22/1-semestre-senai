@@ -644,7 +644,13 @@ function exercicio47(){
     /*
         47. Simule a abertura de um cofre com senha correta na 4ª tentativa.
     */
-
+    let tentativas = 0;
+    let tentativaCorreta = 4;
+    while(tentativas < tentativaCorreta){
+        console.log(`Você está tentando abrir o cofre...`)
+        tentativas++;
+    }
+    console.log(`Você conseguiu abrir o cofre na ${tentativas}ª tentativa.`)
 }
 
 function exercicio48(){
