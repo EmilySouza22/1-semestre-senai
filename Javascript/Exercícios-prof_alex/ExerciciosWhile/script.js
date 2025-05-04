@@ -537,6 +537,14 @@ function exercicio40(){
     /*
         40. Simule o consumo de um carro até acabar o combustível.
     */
+
+    let combustivelTotal = 250;
+    while(combustivelTotal > 0){
+        let kmRodados = Math.floor(Math.random() * 10) + 1; 
+        alert(`Você andou ${kmRodados}km(s), Tanque total: ${combustivelTotal}L`);
+        combustivelTotal = combustivelTotal - (kmRodados / 0.1);
+    }
+    alert(`Acabou o combustível.`)
 }
 
 function exercicio41(){
@@ -557,7 +565,15 @@ function exercicio42(){
     /*
         42.  Simule um dado que deve cair 6 para o loop parar (sem aleatório real).
     */
-    
+    let index = 0;
+    let maxDado = 6;
+    while(index <= maxDado){
+        alert(`Número dado: ${index}`)
+        if(index === maxDado){
+            index = 7;
+        }
+        index++;
+    }
 }
 
 function exercicio43(){
