@@ -461,7 +461,6 @@ function exercicio36(){
     /*
         36. Crie um cronômetro de 0 a 60 segundos (simulado).
     */
-    
 }
 
 function exercicio37(){
@@ -494,7 +493,12 @@ function exercicio38(){
     /*
         38. Simule um personagem andando 10 passos com console.log.
     */
-    
+    let index = 0;
+    let maxPassos = 10;
+    while(index <= maxPassos){
+        console.log(`Seu personagem andou ${index} passos`);
+        index++;
+    }
 }
 
 function exercicio39(){
