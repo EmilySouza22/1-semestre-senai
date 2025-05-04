@@ -461,6 +461,16 @@ function exercicio36(){
     /*
         36. Crie um cronômetro de 0 a 60 segundos (simulado).
     */
+    let tempo = 0;
+    let maxCronometro = 10;
+    const cronometro = setInterval(() => {
+        console.log(`Cronômetro: ${tempo} segundos`);
+        tempo++;
+
+        if (tempo > maxCronometro) {
+            clearInterval(cronometro);
+        }
+    }, 1000);
 }
 
 function exercicio37(){
