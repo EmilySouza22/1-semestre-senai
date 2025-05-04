@@ -537,14 +537,20 @@ function exercicio40(){
     /*
         40. Simule o consumo de um carro até acabar o combustível.
     */
-    
 }
 
 function exercicio41(){
     /*
         41. Conte de 1 até 100, mas pule todos os múltiplos de 8.
     */
-    
+    let index = 1;
+    let max = 100;
+    while(index <= max){
+        if(index % 8 !== 0){
+            alert(`Contando até 100, sem múltiplos de 8: ${index}`)
+        }
+        index++;
+    }
 }
 
 function exercicio42(){
