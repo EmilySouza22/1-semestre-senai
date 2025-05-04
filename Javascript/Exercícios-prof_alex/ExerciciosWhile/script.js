@@ -605,6 +605,12 @@ function exercicio45(){
     /*
         45. Simule um processo de “download” aumentando de 10% em 10%
     */
+    let download = 0;
+    let max = 100;
+    while(download <= max){
+        alert(`Download: ${download}% de 100%`);
+        download += 10;
+    }
     
 }
 
