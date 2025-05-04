@@ -578,9 +578,19 @@ function exercicio42(){
 
 function exercicio43(){
     /*
-        43. Conte de 1 até 100 e diga “Número primo” para os primos (sem validar ainda)
+        43. Conte de 1 até 100 e diga “Número primo” para os primos (sem validar ainda).
     */
-    
+    let index = 1;
+    let max = 100;
+    while(index <= max){
+        console.log(index !== 2)
+        if((index % 2 === 0 || index === 1) && index !== 2){
+            alert(`Contagem 1 a 100, ${index}`);
+        }else{
+            alert(`Contagem 1 a 100, Número primo`);
+        }
+        index++;
+    }
 }
 
 function exercicio44(){
