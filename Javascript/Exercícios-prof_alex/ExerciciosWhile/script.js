@@ -515,7 +515,16 @@ function exercicio39(){
     /*
         39.  Simule uma barra de carregamento (ex: “█” aumentando)
     */
-    
+    let bateria = '█';
+    let maxBateria = 100;
+    let index = 0;
+    while(index <= maxBateria){
+        if(index > 0){
+            alert(`Bateria: [ ${index}% ${bateria} ]`);
+            bateria += '█';
+        }
+        index += 10;
+    }
 }
 
 function exercicio40(){
