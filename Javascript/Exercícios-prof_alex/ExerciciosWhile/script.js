@@ -658,4 +658,18 @@ function exercicio48(){
         48. Conte até 100 e diga "Múltiplo de 3", "Múltiplo de 5" ou ambos (FizzBuzz
         simplificado com while)
     */
+    let contador = 0;
+    let contadorMax = 100;
+    while(contador <= contadorMax){
+        if(contador % 3 !== 0 && contador % 5 !== 0){
+            console.log(`${contador}`);
+        }else if(contador % 3 === 0 && contador % 5 !== 0){
+            console.log(`${contador} é múltiplo de 3`);
+        }else if(contador % 5 === 0 && contador % 3 !== 0){
+            console.log(`${contador} é múltiplo de 5`);
+        }else{
+            console.log(`${contador} é múltiplo de 3 e de 5`);
+        }
+        contador++;
+    }
 }
