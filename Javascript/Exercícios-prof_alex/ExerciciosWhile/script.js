@@ -598,7 +598,15 @@ function exercicio44(){
         44. Calcule quantas vezes é necessário somar 1 até que a soma seja maior que
         1000.
     */
-    
+    let index = 1;
+    let n = 1;
+    let resultado;
+    while(index <= 1000){
+        resultado = n + index
+        console.log(`Somando 1 até 1000: ${n} + ${index} = ${resultado}`);
+        index++;
+    }
+    alert(`É necessário ${index} vezes.`);
 }
 
 function exercicio45(){
@@ -619,7 +627,7 @@ function exercicio46(){
         46. Simule um tempo de espera de um processo (tempo fictício de 1 a 5
         segundos)
     */
-    
+
 }
 
 function exercicio47(){
@@ -634,5 +642,4 @@ function exercicio48(){
         48. Conte até 100 e diga "Múltiplo de 3", "Múltiplo de 5" ou ambos (FizzBuzz
         simplificado com while)
     */
-    
 }
