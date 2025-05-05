@@ -29,4 +29,7 @@ button{
     color: rgb(3, 3, 3);
     background: linear-gradient(90deg, rgb(139, 67, 221) 35%, rgb(28, 42, 172) 100%);
     cursor: pointer;
+    color: rgb(172, 168, 168);
+    font-size: 15px;
+    font-weight: bold;
 }
