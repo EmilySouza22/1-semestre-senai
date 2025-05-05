@@ -99,7 +99,7 @@ body{
 
     h3{
         font-size: 30px;
-        margin: 10px ;
+        margin: 0 10px 0 10px;
     }
     ol{
         margin-block-start: 0px; 
@@ -119,8 +119,8 @@ body{
         gap: 2px;
     }
     .gifGato img{
-        width: 160px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
         padding: 0 0 0 60px;
     }
     .containerLado{
