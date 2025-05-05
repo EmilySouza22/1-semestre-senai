@@ -355,13 +355,16 @@ function exercicio015(){ /*Mini Quiz de Conhecimentos Gerais*/
     index = 0;
     while(index < perguntasMax){
         let numeroPergunta = Math.floor(Math.random() * Object.keys(quiz).length) + 1;
+
         if(perguntasUsadas.indexOf(numeroPergunta) !== -1){
             continue;
         }else{
             perguntasUsadas.push(numeroPergunta)
         }
         index++;
+
         alternativaSelecionada = prompt(quiz[numeroPergunta].pergunta + " \n " + quiz[numeroPergunta].alternativas);
+
         if(quiz[numeroPergunta].alternativaCorreta.includes(alternativaSelecionada)){
             alert("Boa acertou!");
             acertos++;
@@ -442,8 +445,8 @@ function exercicio019(){ /*Quiz sobre o próprio site*/
     const perguntas = {
         1: {
             pergunta:"Quantos exercícios o site tem? ",
-            alternativas:"a)15 b)17 c)19 d)21",
-            alternativaCerta:["d" , "21"]
+            alternativas:"a)15 b)17 c)19 d)20",
+            alternativaCerta:["d" , "20"]
         },
         2: {
             pergunta:"Qual é o nome da minha gata?",
@@ -464,32 +467,41 @@ function exercicio019(){ /*Quiz sobre o próprio site*/
             pergunta:"Qual é a minha saga favorita? ",
             alternativas:"a)Harry Potter b)Percy Jackson c)Star Wars d)Jogos Vorazes",
             alternativaCerta:["c" , "star wars"]
+        },
+        6: {
+            pergunta:"Qual é a minha idade? ",
+            alternativas:"a)18 b)19 c)20 d)21",
+            alternativaCerta:["c" , "20"]
         }
     }
     
-    numeroPerguntas = Math.floor(Math.random() * Object.keys(perguntas).length) + 1;
-    let perguntasMax = 3;
+    const perguntasMax = 3;
     let acertos = 0;
     let index = 0;
-    perguntasRepetidas = []
+    const perguntasRepetidas = [];
     while(index < perguntasMax){
-        let alternativaUsuario = prompt(`${perguntas[numeroPerguntas].pergunta} \n ${perguntas[numeroPerguntas].alternativas}`);
+        let numeroPerguntas = Math.floor(Math.random() * Object.keys(perguntas).length) + 1;
 
+        if(perguntasRepetidas.indexOf(numeroPerguntas) !== -1){
+            continue;
+        }else{
+            perguntasRepetidas.push(numeroPerguntas);
+        }
+        index++;
+
+        let alternativaUsuario = prompt(`${perguntas[numeroPerguntas].pergunta} \n ${perguntas[numeroPerguntas].alternativas}`);
+    
         if(!alternativaUsuario || alternativaUsuario == " "){
             return;
         }
-        if(perguntas[numeroPerguntas].alternativaCerta.includes(alternativaUsuario) || perguntasRepetidas !== -1){
-            
-            console.log(perguntasRepetidas)
+        if(perguntas[numeroPerguntas].alternativaCerta.includes(alternativaUsuario)){
             acertos++;
-            index++;
             continue;
         }else{
-            index++;
             continue;
         }
     }
-    alert(`Você acertou ${acertos} de ${perguntasMax}`)
+    alert(`Você acertou ${acertos} de ${perguntasMax}`);
 }
 
 function exercicio020(){ /*Decodificador de Mensagem*/
@@ -523,24 +535,4 @@ function exercicio020(){ /*Decodificador de Mensagem*/
     const letrasArray = [...mensagem];
     const mensagemCodificada = letrasArray.map(substituirVogal);
     alert(mensagemCodificada.join(""));
-}
-
-function exercicio021(){
-    
-
-}
-
-function exercicio022(){
-}
-
-function exercicio023(){
-
-}
-
-function exercicio024(){
-
-}
-
-function exercicio025(){
-
 }
