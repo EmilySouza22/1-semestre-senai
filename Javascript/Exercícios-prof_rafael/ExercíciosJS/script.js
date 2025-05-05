@@ -37,41 +37,72 @@ function exercicio3(){ //Média 3 notas
 function exercicio4(){ //Pontuação time
     let vitorias = Number(prompt("Insira o número de vitórias."));
     let empates = Number(prompt("Insira o número de vitórias."));
-
     let pontos = vitorias * 3 + empates;
     alert(`A pontuação do time será: ${pontos} pontos.`);
 }
 
 function exercicio5(){ //Cálculo do dano crítico em um jogo
-
+    let dano = Number(prompt(`Insira o dano`));
+    const critico = dano * 1.5;
+    alert(`Você tomou ${critico} de dano crítico.`);
 }
 
 function exercicio6(){ //Cálculo do dano crítico em um jogo + bonus
-    
+    let dano = Number(prompt(`Insira o dano`));
+    let bonus = Number(prompt(`Insira o dano bônus`));
+    const critico = dano * 1.5 + bonus;
+    alert(`Você tomou ${critico} de dano crítico.`);
 }
 
 function exercicio7(){ //Média ponderada de duas notas
-    
+    let nota1 = Number(prompt(`Insira sua primeira nota:`));
+    let peso1 = Number(prompt(`Digite o peso da primeira prova`));        
+    let nota2 = Number(prompt(`Insira sua segunda nota:`));
+    let peso2 = Number(prompt(`Digite o peso da segunda prova`));
+    const mediaPonderada = (nota1 * peso1 + nota2 * peso2) / (peso1 + peso2);
+    alert(`A média ponderada das suas notas foi ${mediaPonderada}`);
 }
 
 function exercicio8(){ //Poupança
-    
+    let salario = Number(prompt(`Digite seu sálario:`));
+    let luz = Number(prompt(`Digite o valor da luz`));
+    let agua = Number(prompt(`Digite o valor da agua`));
+    let aluguel = Number(prompt(`Digite o valor da aluguel`));
+    let internet = Number(prompt(`Digite o valor da internet`));
+    let gasolina = Number(prompt(`Digite o valor da gasolina`));
+    const poupanca = salario - (aluguel + luz + agua + internet + gasolina);
+
+    alert(`Saldo poupança: R$${poupanca}`);
 }
 
 function exercicio9(){ //Café por alunos
-    
+    let alunos = Number(prompt(`Insira o número de alunos`));   
+    let cafe = Number(prompt(`Insira a quantidade de café`));  
+    const cafePerCapita = cafe/alunos;
+
+    alert(`Café per Capita: ${cafePerCapita}`);
 }
 
 function exercicio10(){ //Café por alunos + extra
-    
+    let alunos = Number(prompt(`Insira o número de alunos`));   
+    let cafe = Number(prompt(`Insira a quantidade de café`));
+    let extra = Number(prompt(`Insira a quantidade de extra`));   
+    const cafePerCapita = (extra + cafe)/alunos;
+
+    alert(`Café per Capita: ${cafePerCapita}`);
 }
 
 /**
  * 3 - Criação de programas com operadores matemáticos [3.1 até 3.17]
  */
 
-function exercicio11(){ 
+function exercicio11(){ //Calculando área
+    const pi = 3.14159; 
+    let raioCirculo = Number(prompt(`Digite o raio do círculo para calcular a área.`));
+
+    const areaCirculo = pi * (raioCirculo ** 2);
     
+    alert(`A área do círculo será ${areaCirculo} metros quadrados`);
 }
 
 function exercicio12(){
