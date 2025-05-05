@@ -101,6 +101,19 @@ body{
         margin: 10px 0 10px 0;
         gap: 2px;
     }
+    .gifGato img{
+        width: 160px;
+        height: 160px;
+        padding: 0 0 0 60px;
+    }
+    .containerLado{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 200px;
+        gap: 10px;
+    }
 }
 
 .likes{
@@ -142,8 +155,8 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 36%;
-        height: 100%;
+        width: 180px;
+        height: 150px;
         background-color: rgba(122, 72, 170, 0.966);
         border-radius: 5px;
         margin: 0 0 5% 0;
