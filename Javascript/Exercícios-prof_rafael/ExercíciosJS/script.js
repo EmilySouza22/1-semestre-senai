@@ -150,7 +150,16 @@ function exercicio16(){
 }
 
 function exercicio17(){
-    
+    let corre = 0;
+    let maxCorre = 4;
+    let valoresCorres = [];
+    while(corre <= maxCorre){
+        let valorCorre = Number(prompt(`Digite o valor da corrida`));
+        valoresCorres.push(valorCorre);
+        corre++;
+    }
+    let valorDia = valoresCorres[0] +  valoresCorres[1] + valoresCorres[2] + valoresCorres[3] + valoresCorres[4]
+    alert(`O valor tirado no dia foi ${valorDia} reais`);
 }
 
 function exercicio18(){
