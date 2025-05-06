@@ -64,3 +64,15 @@ function somatorioPares() {
     }
     alert(`A soma dos números pares de 1 a 20 é ${somatorio}`);
 }
+
+function fatorial(){
+    let numero = Number(prompt(`Insira um número`));
+    let contador = 5;
+    let min = 1;
+    let fatorial = numero;
+    while(contador > min){
+        fatorial = fatorial * (contador - min);
+        contador--;
+    }
+    alert(`A fatorial de ${numero} é ${fatorial}`);
+}
