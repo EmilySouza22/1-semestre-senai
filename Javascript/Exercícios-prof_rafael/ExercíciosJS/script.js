@@ -106,12 +106,32 @@ function exercicio11(){ //Calculando área
 }
 
 function exercicio12(){
-    
+    let altura = Number(prompt(`Insira a altura: `));
+    let base = Number(prompt(`Insira a base: `));
+
+    areaTriangulo = (base * altura)**2;
+
+    alert(`A área do triângulo vai ser ${areaTriangulo}`);
 }
 
 function exercicio13(){
-    
+    let nome = prompt(`Digite seu nome`);
+    let sobrenome = prompt(`Digite seu nome`);
+
+    alert(`Olá ${nome} ${sobrenome}`);
 }
+
 function exercicio14(){
+    let num1 = Number(prompt(`Digite o primeiro número`));
+    let num2 = Number(prompt(`Digite o segundo número`));
+
+    quadrado1 = num1 ** 2;
+    quadrado2 = num2 ** 2;
+    somaQuadrados = quadrado1 + quadrado2
+
+    alert(`A soma dos quadrados de ${num1} e ${num2} será ${somaQuadrados}`);
+}
+
+function exercicio15(){
     
 }
