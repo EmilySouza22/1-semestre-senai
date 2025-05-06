@@ -42,3 +42,12 @@ function senha(){
         alert(`Você errou sua senha muitas vezes. Sua conta foi bloqueada`);
     }
 }
+
+function numeroDigitado(){
+    let numeroDigitado = Number(prompt(`Insira um número`));
+    let digito = 0;
+    while(digito < String(numeroDigitado).length){
+        digito++;
+    }
+    alert(`Dígitos: ${digito}`)
+}
