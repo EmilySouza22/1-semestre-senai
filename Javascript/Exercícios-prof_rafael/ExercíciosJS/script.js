@@ -133,5 +133,10 @@ function exercicio14(){
 }
 
 function exercicio15(){
-    
+    let num1 = Number(prompt(`Digite um número para saber sua raíz e o seu quadrado`));
+
+    const resultadoRaiz = Math.sqrt(num1 , 2);
+    const resultadoQuadrado = Math.pow(num1 , 2);
+
+    alert(`Número: ${num1}, Raíz: ${resultadoRaiz} e Quadrado: ${resultadoQuadrado}`);
 }
