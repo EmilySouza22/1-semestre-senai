@@ -140,3 +140,23 @@ function exercicio15(){
 
     alert(`Número: ${num1}, Raíz: ${resultadoRaiz} e Quadrado: ${resultadoQuadrado}`);
 }
+
+function exercicio16(){
+    let num1 = Number(prompt(`Digite o primeiro número`));
+    let num2 = Number(prompt(`Digite o segundo número`));
+
+    let media = (num1 + num2) / 2;
+    alert(`A média dos números ${num1} e ${num2} será ${media}`);
+}
+
+function exercicio17(){
+    
+}
+
+function exercicio18(){
+    
+}
+
+function exercicio19(){
+    
+}
