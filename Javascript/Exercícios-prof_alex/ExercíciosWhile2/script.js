@@ -62,5 +62,5 @@ function somatorioPares() {
         }
         contador++;
     }
-    alert(`A soma dos números pares é ${somatorio}`);
+    alert(`A soma dos números pares de 1 a 20 é ${somatorio}`);
 }
