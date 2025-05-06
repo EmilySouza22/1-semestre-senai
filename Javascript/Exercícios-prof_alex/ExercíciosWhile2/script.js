@@ -49,5 +49,18 @@ function numeroDigitado(){
     while(digito < String(numeroDigitado).length){
         digito++;
     }
-    alert(`Dígitos: ${digito}`)
+    alert(`Dígitos: ${digito}`);
+}
+
+function somatorioPares() {
+    let contador = 1;
+    let somatorio = 0;
+    while(contador <= 20){
+        if(contador % 2 === 0){
+            alert(`O número ${contador} é par`);
+            somatorio = somatorio + contador;
+        }
+        contador++;
+    }
+    alert(`A soma dos números pares é ${somatorio}`);
 }
