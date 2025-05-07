@@ -76,3 +76,21 @@ function fatorial(){
     }
     alert(`A fatorial de ${numero} é ${fatorial}`);
 }
+
+function numeroSecreto() {
+    let numero_secreto = Math.floor(Math.random() * 20) + 1;
+    let numero_usuario;
+    let tentativas = 0;
+    while(numero_usuario !== numero_secreto && tentativas >= 3){
+        numero_usuario = Number(prompt(`Digite um número`));
+        if(numero_usuario === numero_secreto){
+            alert(`Parabéns, acertou!`);
+        }else if(numero_usuario < numero_secreto){
+            alert(`O número que você digitou é menor`);
+        }else if(numero_usuario > numero_secreto){
+            alert(`O número que você digitou é maior`);
+        }else{
+            alert(`Resposta Inválida`);
+        }
+    }
+}
