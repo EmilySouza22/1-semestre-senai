@@ -1,10 +1,10 @@
 /**
  * Exercícios tirados de /github.com/rafaellindemann/materiaisDeAula-permanente
- * 2 Operadores matemáticos com entrada de dados 
+ * 2 Operadores matemáticos com entrada de dados [2.1 até 2.10]
  */
 
 
-function exercicio1(){ //Quanto você ganha por dia trabalhado?
+function exercicio2_1(){ //Quanto você ganha por dia trabalhado?
     let salario = Number(prompt("Digite quanto você ganha no mês."));
     let dias = 30;
 
@@ -13,7 +13,7 @@ function exercicio1(){ //Quanto você ganha por dia trabalhado?
     alert(`Você ganha por dia ${salario_diario}`);
 }
 
-function exercicio2(){ //Conta da cantina
+function exercicio2_2(){ //Conta da cantina
     let valorCafe = Number(prompt("Digite o valor do café: "));
     let valorCoxinha = Number(prompt("Digite o valor da coxinha: "));
     let valorHalls = Number(prompt("Digite o valor do halls: "));
@@ -24,7 +24,7 @@ function exercicio2(){ //Conta da cantina
     alert(`O valor a pagar na cantina será R$ ${conta}`);
 }
 
-function exercicio3(){ //Média 3 notas
+function exercicio2_3(){ //Média 3 notas
     let nota1 = Number(prompt("Digite sua primeira nota: "));
     let nota2 = Number(prompt("Digite sua segunda nota: "));
     let nota3 = Number(prompt("Digite sua terceira nota: "));
@@ -34,27 +34,27 @@ function exercicio3(){ //Média 3 notas
     alert(`A média será: ${media}`);
 }
 
-function exercicio4(){ //Pontuação time
+function exercicio2_4(){ //Pontuação time
     let vitorias = Number(prompt("Insira o número de vitórias."));
     let empates = Number(prompt("Insira o número de vitórias."));
     let pontos = vitorias * 3 + empates;
     alert(`A pontuação do time será: ${pontos} pontos.`);
 }
 
-function exercicio5(){ //Cálculo do dano crítico em um jogo
+function exercicio2_5(){ //Cálculo do dano crítico em um jogo
     let dano = Number(prompt(`Insira o dano`));
     const critico = dano * 1.5;
     alert(`Você tomou ${critico} de dano crítico.`);
 }
 
-function exercicio6(){ //Cálculo do dano crítico em um jogo + bonus
+function exercicio2_6(){ //Cálculo do dano crítico em um jogo + bonus
     let dano = Number(prompt(`Insira o dano`));
     let bonus = Number(prompt(`Insira o dano bônus`));
     const critico = dano * 1.5 + bonus;
     alert(`Você tomou ${critico} de dano crítico.`);
 }
 
-function exercicio7(){ //Média ponderada de duas notas
+function exercicio2_7(){ //Média ponderada de duas notas
     let nota1 = Number(prompt(`Insira sua primeira nota:`));
     let peso1 = Number(prompt(`Digite o peso da primeira prova`));        
     let nota2 = Number(prompt(`Insira sua segunda nota:`));
@@ -63,7 +63,7 @@ function exercicio7(){ //Média ponderada de duas notas
     alert(`A média ponderada das suas notas foi ${mediaPonderada}`);
 }
 
-function exercicio8(){ //Poupança
+function exercicio2_8(){ //Poupança
     let salario = Number(prompt(`Digite seu sálario:`));
     let luz = Number(prompt(`Digite o valor da luz`));
     let agua = Number(prompt(`Digite o valor da agua`));
@@ -75,7 +75,7 @@ function exercicio8(){ //Poupança
     alert(`Saldo poupança: R$${poupanca}`);
 }
 
-function exercicio9(){ //Café por alunos
+function exercicio2_9(){ //Café por alunos
     let alunos = Number(prompt(`Insira o número de alunos`));   
     let cafe = Number(prompt(`Insira a quantidade de café`));  
     const cafePerCapita = cafe/alunos;
@@ -83,7 +83,7 @@ function exercicio9(){ //Café por alunos
     alert(`Café per Capita: ${cafePerCapita}`);
 }
 
-function exercicio10(){ //Café por alunos + extra
+function exercicio2_10(){ //Café por alunos + extra
     let alunos = Number(prompt(`Insira o número de alunos`));   
     let cafe = Number(prompt(`Insira a quantidade de café`));
     let extra = Number(prompt(`Insira a quantidade de extra`));   
@@ -96,7 +96,7 @@ function exercicio10(){ //Café por alunos + extra
  * 3 - Criação de programas com operadores matemáticos [3.1 até 3.17]
  */
 
-function exercicio11(){ //Calculando área
+function exercicio3_1(){ //Calculando área
     const pi = 3.14159; 
     let raioCirculo = Number(prompt(`Digite o raio do círculo para calcular a área.`));
 
@@ -105,7 +105,7 @@ function exercicio11(){ //Calculando área
     alert(`A área do círculo será ${areaCirculo} metros quadrados`);
 }
 
-function exercicio12(){
+function exercicio3_2(){
     let altura = Number(prompt(`Insira a altura: `));
     let base = Number(prompt(`Insira a base: `));
 
@@ -114,14 +114,14 @@ function exercicio12(){
     alert(`A área do triângulo vai ser ${areaTriangulo}`);
 }
 
-function exercicio13(){
+function exercicio3_3(){
     let nome = prompt(`Digite seu nome`);
     let sobrenome = prompt(`Digite seu nome`);
 
     alert(`Olá ${nome} ${sobrenome}`);
 }
 
-function exercicio14(){
+function exercicio3_4(){
     let num1 = Number(prompt(`Digite o primeiro número`));
     let num2 = Number(prompt(`Digite o segundo número`));
 
@@ -132,7 +132,7 @@ function exercicio14(){
     alert(`A soma dos quadrados de ${num1} e ${num2} será ${somaQuadrados}`);
 }
 
-function exercicio15(){
+function exercicio3_6(){
     let num1 = Number(prompt(`Digite um número para saber sua raíz e o seu quadrado`));
 
     const resultadoRaiz = Math.sqrt(num1 , 2);
@@ -141,7 +141,7 @@ function exercicio15(){
     alert(`Número: ${num1}, Raíz: ${resultadoRaiz} e Quadrado: ${resultadoQuadrado}`);
 }
 
-function exercicio16(){
+function exercicio3_7(){
     let num1 = Number(prompt(`Digite o primeiro número`));
     let num2 = Number(prompt(`Digite o segundo número`));
 
@@ -149,7 +149,7 @@ function exercicio16(){
     alert(`A média dos números ${num1} e ${num2} será ${media}`);
 }
 
-function exercicio17(){
+function exercicio3_8(){
     let corre = 0;
     let maxCorre = 4;
     let valoresCorres = [];
@@ -162,7 +162,7 @@ function exercicio17(){
     alert(`O valor tirado no dia foi ${valorDia} reais`);
 }
 
-function exercicio18(){
+function exercicio3_9(){
     let corre = 0;
     let maxCorre = 4;
     let valoresCorres = [];
@@ -175,7 +175,7 @@ function exercicio18(){
     alert(`O valor tirado no dia foi ${valorDiaComTaxa} reais`);
 }
 
-function exercicio19(){
+function exercicio3_10(){
     let corre = 0;
     let maxCorre = 4;
     let valoresCorres = [];
@@ -189,7 +189,7 @@ function exercicio19(){
     alert(`O valor do salário de Juca será: ${salarioMensal}`);
 }
 
-function exercicio20(){
+function exercicio3_11(){
     let horasTrabalhadas = Number(prompt(`Digite as horas trabalhadas desse mês`));
     let valorHoras = Number(prompt(`Digite o valor da hora trabalhada`));
     let percentualDesconto = Number(prompt(`Digite o percentual de desconto`));
@@ -201,7 +201,7 @@ function exercicio20(){
     console.log(`\n Horas Trabalhadas: ${horasTrabalhadas} \n Salário Bruto: ${salarioBruto} \n Desconto: ${totalDesconto} \n Salário Líquido: ${salarioLiquido}`)
 }
 
-function exercicio21(){
+function exercicio3_12(){
     let num1 = Number(prompt(`Digite um valor`));
     let num2 = Number(prompt(`Digite outro valor`));
 
@@ -211,11 +211,11 @@ function exercicio21(){
     alert(`Valores trocados: Primeiro valor: ${num1} e Segundo Valor ${num2}`);
 }
 
-function exercicio22(){
+function exercicio3_13(){
     //Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor
 }
 
-function exercicio23(){
+function exercicio3_14(){
     let baseRetangulo = Number(prompt(`Digite o valor da base do Retângulo`));
     let alturaRetangulo = Number(prompt(`Digite o valor da altura do Retângulo`));
 
@@ -223,10 +223,57 @@ function exercicio23(){
     alert(`O valor da área do retângulo será ${areaRetangulo}`);
 }
 
-function exercicio24(){
-    
+function exercicio3_15(){
+    //Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade
+    //dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
 }
 
-function exercicio25(){
-    
+function exercicio3_16(){
+    //Escreva um algoritmo para ler o número total de eleitores de um munícipio, o número de votos
+    //brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
+}
+
+function exercicio3_17(){
+    //Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.
+    //Calcular e escrever o valor do novo salário.
+}
+
+/**
+ * 4. Temáticos de física [4.1 até 4.6]
+ */
+
+function exercicio4_1(){ //Celsius ---> Fahrenheit
+    let grausCelsius = Number(prompt(`Digite o valor da temperatura em graus Celsius`));
+    grausFahrenheit = (grausCelsius * (9/5)) + 32;
+    alert(`Conversão Celsius para Fahrenheit: ${grausCelsius}°C ---> ${grausFahrenheit}°F`);
+}
+
+function exercicio4_2(){ //Celsius ---> Kelvin
+    let grausCelsius = Number(prompt(`Digite o valor da temperatura em graus Celsius`));
+    grausKelvin = grausCelsius + 273.15;
+    alert(`Conversão Celsius para Kelvin: ${grausCelsius}°C ---> ${grausKelvin}°K`);
+}
+
+function exercicio4_3(){ //Fahrenheit ---> Celsius
+    let grausFahrenheit = Number(prompt(`Digite o valor da temperatura em graus Fahrenheit`));
+    grausCelsius = (grausFahrenheit - 32) * (5/9);
+    alert(`Conversão Fahrenheit para Celsius: ${grausFahrenheit}°F ---> ${grausCelsius}°C`);
+}
+
+function exercicio4_4(){ //Fahrenheit ---> Kelvin
+    let grausFahrenheit = Number(prompt(`Digite o valor da temperatura em graus Fahrenheit`));
+    grausKelvin = ((grausFahrenheit - 32) * (5/9)) + 273.15;
+    alert(`Conversão Fahrenheit para Kelvin: ${grausFahrenheit}°F ---> ${grausKelvin}°K`);
+}
+
+function exercicio4_5(){ //Kelvin ---> Celsius
+    let grausKelvin = Number(prompt(`Digite o valor da temperatura em graus Kelvin`));
+    grausCelsius = grausKelvin - 273.15;
+    alert(`Conversão Kelvin para Celsius: ${grausKelvin}°K ---> ${grausCelsius}°C`);
+}
+
+function exercicio4_6(){ //Kelvin ---> Fahrenheit
+    let grausKelvin = Number(prompt(`Digite o valor da temperatura em graus Kelvin`));
+    grausFahrenheit = ((grausKelvin - 273.15) * (9/5)) + 32;
+    alert(`Conversão Kelvin para Fahrenheit: ${grausKelvin}°K ---> ${grausFahrenheit}°F`);
 }
