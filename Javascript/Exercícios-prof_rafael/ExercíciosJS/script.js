@@ -106,12 +106,127 @@ function exercicio11(){ //Calculando área
 }
 
 function exercicio12(){
-    
+    let altura = Number(prompt(`Insira a altura: `));
+    let base = Number(prompt(`Insira a base: `));
+
+    areaTriangulo = (base * altura)**2;
+
+    alert(`A área do triângulo vai ser ${areaTriangulo}`);
 }
 
 function exercicio13(){
+    let nome = prompt(`Digite seu nome`);
+    let sobrenome = prompt(`Digite seu nome`);
+
+    alert(`Olá ${nome} ${sobrenome}`);
+}
+
+function exercicio14(){
+    let num1 = Number(prompt(`Digite o primeiro número`));
+    let num2 = Number(prompt(`Digite o segundo número`));
+
+    quadrado1 = num1 ** 2;
+    quadrado2 = num2 ** 2;
+    somaQuadrados = quadrado1 + quadrado2
+
+    alert(`A soma dos quadrados de ${num1} e ${num2} será ${somaQuadrados}`);
+}
+
+function exercicio15(){
+    let num1 = Number(prompt(`Digite um número para saber sua raíz e o seu quadrado`));
+
+    const resultadoRaiz = Math.sqrt(num1 , 2);
+    const resultadoQuadrado = Math.pow(num1 , 2);
+
+    alert(`Número: ${num1}, Raíz: ${resultadoRaiz} e Quadrado: ${resultadoQuadrado}`);
+}
+
+function exercicio16(){
+    let num1 = Number(prompt(`Digite o primeiro número`));
+    let num2 = Number(prompt(`Digite o segundo número`));
+
+    let media = (num1 + num2) / 2;
+    alert(`A média dos números ${num1} e ${num2} será ${media}`);
+}
+
+function exercicio17(){
+    let corre = 0;
+    let maxCorre = 4;
+    let valoresCorres = [];
+    while(corre <= maxCorre){
+        let valorCorre = Number(prompt(`Digite o valor da corrida`));
+        valoresCorres.push(valorCorre);
+        corre++;
+    }
+    let valorDia = valoresCorres[0] +  valoresCorres[1] + valoresCorres[2] + valoresCorres[3] + valoresCorres[4]
+    alert(`O valor tirado no dia foi ${valorDia} reais`);
+}
+
+function exercicio18(){
+    let corre = 0;
+    let maxCorre = 4;
+    let valoresCorres = [];
+    while(corre <= maxCorre){
+        let valorCorre = Number(prompt(`Digite o valor da corrida`));
+        valoresCorres.push(valorCorre);
+        corre++;
+    }
+    let valorDiaComTaxa = (valoresCorres[0] * (25/100)) + (valoresCorres[1] * (25/100)) + (valoresCorres[2] * (25/100)) + (valoresCorres[3] * (25/100)) + (valoresCorres[4] * (25/100)); 
+    alert(`O valor tirado no dia foi ${valorDiaComTaxa} reais`);
+}
+
+function exercicio19(){
+    let corre = 0;
+    let maxCorre = 4;
+    let valoresCorres = [];
+    while(corre <= maxCorre){
+        let valorCorre = 20;
+        valoresCorres.push(valorCorre);
+        corre++;
+    }
+    let valorDiaComTaxa = (valoresCorres[0] * (25/100)) + (valoresCorres[1] * (25/100)) + (valoresCorres[2] * (25/100)) + (valoresCorres[3] * (25/100)) + (valoresCorres[4] * (25/100)); 
+    salarioMensal = valorDiaComTaxa * 20;  
+    alert(`O valor do salário de Juca será: ${salarioMensal}`);
+}
+
+function exercicio20(){
+    let horasTrabalhadas = Number(prompt(`Digite as horas trabalhadas desse mês`));
+    let valorHoras = Number(prompt(`Digite o valor da hora trabalhada`));
+    let percentualDesconto = Number(prompt(`Digite o percentual de desconto`));
+
+    let salarioBruto = horasTrabalhadas * valorHoras;
+    let totalDesconto = (percentualDesconto / 100) * salarioBruto;
+    let salarioLiquido = salarioBruto - totalDesconto;
+
+    console.log(`\n Horas Trabalhadas: ${horasTrabalhadas} \n Salário Bruto: ${salarioBruto} \n Desconto: ${totalDesconto} \n Salário Líquido: ${salarioLiquido}`)
+}
+
+function exercicio21(){
+    let num1 = Number(prompt(`Digite um valor`));
+    let num2 = Number(prompt(`Digite outro valor`));
+
+    let x = num1;
+    num1 = num2
+    num2 = x;
+    alert(`Valores trocados: Primeiro valor: ${num1} e Segundo Valor ${num2}`);
+}
+
+function exercicio22(){
+    //Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor
+}
+
+function exercicio23(){
+    let baseRetangulo = Number(prompt(`Digite o valor da base do Retângulo`));
+    let alturaRetangulo = Number(prompt(`Digite o valor da altura do Retângulo`));
+
+    const areaRetangulo = baseRetangulo * alturaRetangulo;
+    alert(`O valor da área do retângulo será ${areaRetangulo}`);
+}
+
+function exercicio24(){
     
 }
-function exercicio14(){
+
+function exercicio25(){
     
 }
