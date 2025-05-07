@@ -212,12 +212,12 @@ function exercicio3_12(){
 }
 
 function exercicio3_13(){
-    //Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor
+    //Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor.
 }
 
 function exercicio3_14(){
-    let baseRetangulo = Number(prompt(`Digite o valor da base do Retângulo`));
-    let alturaRetangulo = Number(prompt(`Digite o valor da altura do Retângulo`));
+    let baseRetangulo = parseInt(prompt(`Digite o valor da base do Retângulo`));
+    let alturaRetangulo = parseInt(prompt(`Digite o valor da altura do Retângulo`));
 
     const areaRetangulo = baseRetangulo * alturaRetangulo;
     alert(`O valor da área do retângulo será ${areaRetangulo}`);
@@ -226,6 +226,39 @@ function exercicio3_14(){
 function exercicio3_15(){
     //Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade
     //dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
+    let diaNascimento = parseInt(prompt(`Digite o dia que você nasceu`));
+    let mesNascimento = parseInt(prompt(`Digite o mês que você nasceu`) - 1); // -1 pq a contagem de mês começa em 0
+    let anoNascimento = parseInt(prompt(`Digite o ano que você nasceu`));
+
+    const dataNascimento = new Date(anoNascimento, mesNascimento, diaNascimento);
+    const agora = new Date();
+    
+    const milissegundosData = agora.getTime() - dataNascimento.getTime();
+
+    const idadeAnos = milissegundosData / 3.154e+10;
+    const idadeMes = milissegundosData / 2.628e+9;
+    const idadeDias = milissegundosData / 8.64e+7;
+
+    let mesesMilissegundos = idadeMes - idadeAnos;
+    const meses = mesesMilissegundos / 30;
+
+    console.log(idadeMes)
+
+    let diasMilissegundos = idadeDias - idadeMes;
+    const dias = diasMilissegundos / 1;
+
+
+
+    // const idadeAnos = ((((milissegundosData / 1000) / 60) / 60) / 24) / 365;
+    // console.log(idadeAnos);
+    // const idadeMes = ((((milissegundosData / 1000) / 60) / 60) / 24) / 30;
+    // console.log(idadeMes);
+    // const idadeDias = ((((milissegundosData / 1000) / 60) / 60) / 24);
+    // console.log(idadeDias);
+
+
+    // alert(`\n Idade em anos: ${Math.floor(idadeAnos)} anos, \n Idade em meses: ${Math.floor(idadeMes)} meses \n Idade em dias: ${Math.floor(idadeDias)} dias`);
+    // alert(`Você tem exatamente ${Math.floor(idadeAnos)} anos, ${Math.floor(meses)} meses e ${Math.floor(dias)} dias`)
 }
 
 function exercicio3_16(){
