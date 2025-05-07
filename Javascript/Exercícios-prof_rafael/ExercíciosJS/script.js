@@ -188,3 +188,15 @@ function exercicio19(){
     salarioMensal = valorDiaComTaxa * 20;  
     alert(`O valor do salário de Juca será: ${salarioMensal}`);
 }
+
+function exercicio20(){
+    let horasTrabalhadas = Number(prompt(`Digite as horas trabalhadas desse mês`));
+    let valorHoras = Number(prompt(`Digite o valor da hora trabalhada`));
+    let percentualDesconto = Number(prompt(`Digite o percentual de desconto`));
+
+    let salarioBruto = horasTrabalhadas * valorHoras;
+    let totalDesconto = (percentualDesconto / 100) * salarioBruto;
+    let salarioLiquido = salarioBruto - totalDesconto;
+
+    console.log(`\n Horas Trabalhadas: ${horasTrabalhadas} \n Salário Bruto: ${salarioBruto} \n Desconto: ${totalDesconto} \n Salário Líquido: ${salarioLiquido}`)
+}
