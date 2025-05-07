@@ -236,6 +236,11 @@ function exercicio3_16(){
 function exercicio3_17(){
     //Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.
     //Calcular e escrever o valor do novo salário.
+    let salarioMensal = Number(prompt(`Digite quanto você ganha por mês.`));
+    let percentualReajuste = Number(prompt(`Digite o percentual de reajuste.`));
+    let valorReajuste = salarioMensal * (percentualReajuste / 100);
+    let novoSalario = salarioMensal + valorReajuste;
+    alert(`Valor do novo salário: R$ ${novoSalario}`);
 }
 
 /**
@@ -277,3 +282,7 @@ function exercicio4_6(){ //Kelvin ---> Fahrenheit
     grausFahrenheit = ((grausKelvin - 273.15) * (9/5)) + 32;
     alert(`Conversão Kelvin para Fahrenheit: ${grausKelvin}°K ---> ${grausFahrenheit}°F`);
 }
+
+/**
+ * 5. Seleção/Tomada de decisão [5.1 até 5.32]
+ */
