@@ -163,9 +163,28 @@ function exercicio17(){
 }
 
 function exercicio18(){
-    
+    let corre = 0;
+    let maxCorre = 4;
+    let valoresCorres = [];
+    while(corre <= maxCorre){
+        let valorCorre = Number(prompt(`Digite o valor da corrida`));
+        valoresCorres.push(valorCorre);
+        corre++;
+    }
+    let valorDiaComTaxa = (valoresCorres[0] * (25/100)) + (valoresCorres[1] * (25/100)) + (valoresCorres[2] * (25/100)) + (valoresCorres[3] * (25/100)) + (valoresCorres[4] * (25/100)); 
+    alert(`O valor tirado no dia foi ${valorDiaComTaxa} reais`);
 }
 
 function exercicio19(){
-    
+    let corre = 0;
+    let maxCorre = 4;
+    let valoresCorres = [];
+    while(corre <= maxCorre){
+        let valorCorre = 20;
+        valoresCorres.push(valorCorre);
+        corre++;
+    }
+    let valorDiaComTaxa = (valoresCorres[0] * (25/100)) + (valoresCorres[1] * (25/100)) + (valoresCorres[2] * (25/100)) + (valoresCorres[3] * (25/100)) + (valoresCorres[4] * (25/100)); 
+    salarioMensal = valorDiaComTaxa * 20;  
+    alert(`O valor do salário de Juca será: ${salarioMensal}`);
 }
