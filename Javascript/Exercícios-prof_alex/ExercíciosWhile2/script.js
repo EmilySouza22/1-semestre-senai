@@ -67,7 +67,7 @@ function somatorioPares() {
 
 function fatorial(){
     let numero = Number(prompt(`Insira um número`));
-    let contador = 5;
+    let contador = numero;
     let min = 1;
     let fatorial = numero;
     while(contador > min){
