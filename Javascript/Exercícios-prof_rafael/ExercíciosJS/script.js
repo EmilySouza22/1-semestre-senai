@@ -200,3 +200,29 @@ function exercicio20(){
 
     console.log(`\n Horas Trabalhadas: ${horasTrabalhadas} \n Salário Bruto: ${salarioBruto} \n Desconto: ${totalDesconto} \n Salário Líquido: ${salarioLiquido}`)
 }
+
+function exercicio21(){
+    let num1 = Number(prompt(`Digite um valor`));
+    let num2 = Number(prompt(`Digite outro valor`));
+
+    let x = num1;
+    num1 = num2
+    num2 = x;
+    alert(`Valores trocados: Primeiro valor: ${num1} e Segundo Valor ${num2}`);
+}
+
+function exercicio22(){
+    
+}
+
+function exercicio23(){
+    
+}
+
+function exercicio24(){
+    
+}
+
+function exercicio25(){
+    
+}
