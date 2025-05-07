@@ -212,11 +212,15 @@ function exercicio21(){
 }
 
 function exercicio22(){
-    
+    //Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor
 }
 
 function exercicio23(){
-    
+    let baseRetangulo = Number(prompt(`Digite o valor da base do Retângulo`));
+    let alturaRetangulo = Number(prompt(`Digite o valor da altura do Retângulo`));
+
+    const areaRetangulo = baseRetangulo * alturaRetangulo;
+    alert(`O valor da área do retângulo será ${areaRetangulo}`);
 }
 
 function exercicio24(){
