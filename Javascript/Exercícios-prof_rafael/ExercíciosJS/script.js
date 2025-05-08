@@ -305,4 +305,15 @@ function exercicio4_6(){ //Kelvin ---> Fahrenheit
 
 /**
  * 5. Seleção/Tomada de decisão [5.1 até 5.32]
- */
+*/
+
+function exercicio5_1(){
+    let senha = '1234';
+    let senhaUsuario = prompt(`Digite a senha`);
+
+    if(senha === '1234'){
+        alert(`Acesso permitido`);
+    }else{
+        alert(`Acesso negado`);
+    }
+}
