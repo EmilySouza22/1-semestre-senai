@@ -242,23 +242,10 @@ function exercicio3_15(){
     let mesesMilissegundos = idadeMes - idadeAnos;
     const meses = mesesMilissegundos / 30;
 
-    console.log(idadeMes)
-
     let diasMilissegundos = idadeDias - idadeMes;
-    const dias = diasMilissegundos / 1;
+    const dias = (diasMilissegundos / 86400000) * 1e5;
 
-
-
-    // const idadeAnos = ((((milissegundosData / 1000) / 60) / 60) / 24) / 365;
-    // console.log(idadeAnos);
-    // const idadeMes = ((((milissegundosData / 1000) / 60) / 60) / 24) / 30;
-    // console.log(idadeMes);
-    // const idadeDias = ((((milissegundosData / 1000) / 60) / 60) / 24);
-    // console.log(idadeDias);
-
-
-    // alert(`\n Idade em anos: ${Math.floor(idadeAnos)} anos, \n Idade em meses: ${Math.floor(idadeMes)} meses \n Idade em dias: ${Math.floor(idadeDias)} dias`);
-    // alert(`Você tem exatamente ${Math.floor(idadeAnos)} anos, ${Math.floor(meses)} meses e ${Math.floor(dias)} dias`)
+    alert(`Você tem exatamente ${Math.floor(idadeAnos)} anos, ${Math.floor(meses)} meses e ${Math.floor(dias)} dias`);
 }
 
 function exercicio3_16(){
