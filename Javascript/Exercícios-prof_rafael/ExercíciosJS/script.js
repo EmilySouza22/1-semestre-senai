@@ -311,9 +311,22 @@ function exercicio5_1(){
     let senha = '1234';
     let senhaUsuario = prompt(`Digite a senha`);
 
-    if(senha === '1234'){
+    if(senhaUsuario === '1234'){
         alert(`Acesso permitido`);
     }else{
         alert(`Acesso negado`);
+    }
+}
+
+function exercicio5_2(){
+    let numeroA = parseInt(prompt(`Digite um número`));
+    let numeroB = parseInt(prompt(`Digite outro número`));
+
+    if(numeroA > numeroB){
+        alert(`${numeroA} é maior que ${numeroB}`);
+    }else if(numeroB > numeroA){
+        alert(`${numeroB} é maior que ${numeroA}`);
+    }else{
+        alert(`Ambos são iguais`);
     }
 }
