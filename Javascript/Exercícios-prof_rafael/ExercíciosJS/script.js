@@ -362,7 +362,28 @@ function exercicio5_3(){
 }
 
 function exercicio5_4(){
-    
+    let numeroPalestra = prompt(`Digite o n° da palestra: [1] [2] [3] [4] ou [5]`);
+
+    switch(numeroPalestra){
+        case '1':
+            alert(`Animações com Strach, Laboratório 305 - 19h`);
+            break;
+        case '2':
+            alert(`Scratch para gamers, Laboratório 512 - 20h`);
+            break;
+        case '3':
+            alert(`JavaScript para leigos, Laboratório 101 - 19h`);
+            break;
+        case '4':
+            alert(`Tópicos avançados de JavaScript, Laboratório 305 - 20h`);
+            break;
+        case '5':
+            alert(`Vida e carreira, Auditório - 21h`);
+            break;
+        default:
+            alert(`N° Inválido`);
+        break;
+    }
 }
 
 function exercicio5_5(){
