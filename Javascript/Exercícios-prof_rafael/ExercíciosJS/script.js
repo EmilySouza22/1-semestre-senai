@@ -387,11 +387,37 @@ function exercicio5_4(){
 }
 
 function exercicio5_5(){
-    
+    let peso1 = 0.4;
+    let peso2 = 0.6;
+    let peso3 = 1;
+
+    let nota1 = parseFloat(prompt(`Digite a nota da Prova I`));
+    let nota2 = parseFloat(prompt(`Digite a nota da Prova II`));
+    let nota3 = parseFloat(prompt(`Digite a nota da Prova III`));
+
+    const calculoMedia = ((peso1 * nota1) + (peso2 * nota2) + (peso3 * nota3)) / (peso1 + peso2 + peso3);
+
+    if(calculoMedia >= 7.00){
+        alert(`Você passou! Nota: ${calculoMedia.toFixed(1)}`)
+    }else{
+        alert(`Você Reprovou! Nota: ${calculoMedia.toFixed(1)}`)
+    }
 }
 
 function exercicio5_6(){
-    
+    let pontuacao = parseInt(prompt(`Digite a pontuação`));
+
+    if(pontuacao <= 10){
+        alert(`Deu ruim!`);
+    }else if(pontuacao > 10 && pontuacao < 100){
+        alert(`Tá...Continue tentando!`);
+    }else if(pontuacao >= 100 && pontuacao < 200){
+        alert(`Supimpa!`);
+    }else if(pontuacao >= 200){
+        alert(`Mitou!`);
+    }else{
+        alert(`Inválido`);
+    }
 }
 
 function exercicio5_7(){
