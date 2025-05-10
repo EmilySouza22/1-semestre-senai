@@ -330,3 +330,81 @@ function exercicio5_2(){
         alert(`Ambos são iguais`);
     }
 }
+
+function exercicio5_3(){
+    let ultimoDigitoPlaca = parseInt(prompt(`Digite o último número da sua placa`));
+
+    switch(ultimoDigitoPlaca){
+        case 0:
+        case 1:
+            alert(`Não pode rodar na segunda-feira`);
+            break;
+        case 2:
+        case 3:
+            alert(`Não pode rodar na terça-feira`);
+            break;
+        case 4:
+        case 5:
+            alert(`Não pode rodar na quarta-feira`);
+            break;
+        case 6:
+        case 7:
+            alert(`Não pode rodar na quinta-feira`);
+            break;
+        case 8:
+        case 9:
+            alert(`Não pode rodar na sexta-feira`);
+            break;
+        default: 
+            alert(`Dígito inválido`);
+        break;
+    }
+}
+
+function exercicio5_4(){
+    
+}
+
+function exercicio5_5(){
+    
+}
+
+function exercicio5_6(){
+    
+}
+
+function exercicio5_7(){
+    
+}
+
+function exercicio5_8(){
+    
+}
+
+function exercicio5_9(){
+    
+}
+
+function exercicio5_10(){
+    
+}
+
+function exercicio5_11(){
+    
+}
+
+function exercicio5_12(){
+    
+}
+
+function exercicio5_131(){
+    
+}
+
+function exercicio5_14(){
+    
+}
+
+function exercicio5_15(){
+    
+}
