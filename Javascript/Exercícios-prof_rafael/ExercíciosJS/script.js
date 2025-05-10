@@ -421,7 +421,43 @@ function exercicio5_6(){
 }
 
 function exercicio5_7(){
-    
+    let numeroDiarias = parseInt(prompt(`Insira a quantidade de diárias!`));
+    let precoDiaria = 0;
+    let danosMateriais = 150;
+    let descontoDaRecepcionista = 10; 
+    let descontoConvenio = 15;
+
+    if(numeroDiarias === 0 || !numeroDiarias){
+        alert(`Número de diárias inválido!`);
+    }else{
+        if(numeroDiarias <= 5){
+            precoDiaria = 100.00;
+        }else if(numeroDiarias > 5 && numeroDiarias <= 10){
+            precoDiaria = 90.00;
+        }else if(numeroDiarias > 11){
+            precoDiaria = 80.00;
+        }
+
+        const totalDiaria = numeroDiarias * precoDiaria;
+        const valorDesconto = totalDiaria * ((descontoDaRecepcionista / 100) + (descontoConvenio / 100));
+        const valorComDesconto = totalDiaria - valorDesconto;
+        const valorFinal = valorComDesconto + danosMateriais;
+
+        console.log(`---------------------------------------`);
+        console.log(`Nota Fiscal`);
+        console.log(`---------------------------------------`);
+        console.log(`Quantidade de diárias: ${numeroDiarias}`);
+        console.log(`Preço das diárias: ${precoDiaria}`);
+        console.log(`Valor total diárias: ${totalDiaria}`);
+        console.log(`---------------------------------------`);
+        console.log(`Total de Descontos: ${valorDesconto}`);
+        console.log(`Valor com Descontos: ${valorComDesconto}`);
+        console.log(`---------------------------------------`);   
+        console.log(`Valor de Danos: ${danosMateriais}`);
+        console.log(`---------------------------------------`);    
+        console.log(`VALOR FINAL: R$${valorFinal}`);
+        console.log(`---------------------------------------`);
+    }
 }
 
 function exercicio5_8(){
