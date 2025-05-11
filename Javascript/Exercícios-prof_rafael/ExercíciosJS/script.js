@@ -467,7 +467,6 @@ function exercicio5_8(){
         return alert(`Idade inválida`);
     }
 
-    
     if(idade < 16){
         alert(`Menores de 16: NÃO PODEM VOTAR`);
     }else if(idade >=16 && idade < 18){
@@ -480,11 +479,51 @@ function exercicio5_8(){
 }
 
 function exercicio5_9(){
-    
+    let alturaUsuario = parseFloat(prompt(`Digite sua altura:`));
+    let generoUsuario = prompt(`Qual seu gênero: [F]feminino ou [M]Masculino`);
+
+    if(!generoUsuario || generoUsuario === ' '){
+        return alert(`Gênero inválido`);
+    }
+
+    if(!alturaUsuario || alturaUsuario === ' '){
+        return alert(`Altura inválida`);
+    }
+
+    if(generoUsuario === 'F'|| generoUsuario === 'feminino'){
+        const pesoIdealFeminino = (62.1 * alturaUsuario) - 44.7;
+        return alert(`Seu peso ideal é: ${pesoIdealFeminino.toFixed(1)}`);
+    }else if(generoUsuario === 'M'|| generoUsuario === 'masculino'){
+        const pesoIdealMasculino = (72.7 * alturaUsuario) - 58;
+        return alert(`Seu peso ideal é: ${pesoIdealMasculino.toFixed(1)}`);
+    }else{
+        alert(`Gênero inválido`);
+    }
 }
 
 function exercicio5_10(){
-    
+    const estoqueMacas = 200;
+    let precoMaca = 0.30;
+    let quantidadeMaca = parseInt(prompt(`Insira a quantidade de maçãs que você irá comprar.`));
+    let valorFinal;
+    const quantidadeMinima = 1;
+
+    if(!quantidadeMaca || quantidadeMaca === ' '){
+        return alert(`Quantidade inválida`);
+    }
+
+    if(quantidadeMaca >= quantidadeMinima && quantidadeMaca <= estoqueMacas){
+        if(quantidadeMaca >= 12){
+            precoMaca = 0.25;
+            valorFinal = precoMaca * quantidadeMaca;
+        }else{
+            valorFinal = precoMaca * quantidadeMaca;
+        }
+    }else{
+        return alert(`Quantidade inválida`);
+    }
+
+    alert(`Valor total a pagar: R$${valorFinal.toFixed(2)}`);
 }
 
 function exercicio5_11(){
@@ -492,17 +531,5 @@ function exercicio5_11(){
 }
 
 function exercicio5_12(){
-    
-}
-
-function exercicio5_131(){
-    
-}
-
-function exercicio5_14(){
-    
-}
-
-function exercicio5_15(){
     
 }
