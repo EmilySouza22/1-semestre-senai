@@ -443,25 +443,40 @@ function exercicio5_7(){
         const valorComDesconto = totalDiaria - valorDesconto;
         const valorFinal = valorComDesconto + danosMateriais;
 
-        console.log(`---------------------------------------`);
+        console.log(`========================================`);  
         console.log(`Nota Fiscal`);
-        console.log(`---------------------------------------`);
+        console.log(`========================================`);  
         console.log(`Quantidade de diárias: ${numeroDiarias}`);
         console.log(`Preço das diárias: ${precoDiaria}`);
         console.log(`Valor total diárias: ${totalDiaria}`);
-        console.log(`---------------------------------------`);
+        console.log(`========================================`);
         console.log(`Total de Descontos: ${valorDesconto}`);
         console.log(`Valor com Descontos: ${valorComDesconto}`);
-        console.log(`---------------------------------------`);   
+        console.log(`========================================`);   
         console.log(`Valor de Danos: ${danosMateriais}`);
-        console.log(`---------------------------------------`);    
+        console.log(`========================================`);     
         console.log(`VALOR FINAL: R$${valorFinal}`);
-        console.log(`---------------------------------------`);
+        console.log(`========================================`);  
     }
 }
 
 function exercicio5_8(){
+    let idade = parseInt(prompt(`Digite sua idade.`));
+
+    if(!idade || idade === ' '){
+        return alert(`Idade inválida`);
+    }
+
     
+    if(idade < 16){
+        alert(`Menores de 16: NÃO PODEM VOTAR`);
+    }else if(idade >=16 && idade < 18){
+        alert(`Com 16 e 17: VOTO FACULTATIVO`);
+    }else if(idade >= 18 && idade <= 65){
+        alert(`Acima de 18 a 65: VOTO OBRIGATÓRIO`);
+    }else{
+        alert(`Acima de 65: VOTO FACULTATIVO`);
+    }
 }
 
 function exercicio5_9(){
