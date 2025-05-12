@@ -523,13 +523,44 @@ function exercicio5_10(){
         return alert(`Quantidade inválida`);
     }
 
-    alert(`Valor total a pagar: R$${valorFinal.toFixed(2)}`);
+    alert(`Valor total a pagar: 
+        R$${valorFinal.toFixed(2)}`);
 }
 
-function exercicio5_11(){
-    
+function exercicio5_11(){ //Exercício 5_11 e 5_12 aqui
+    const quantidadeLados = parseInt(prompt(`Digite a quantidade de lados do polígono (cm).`));
+
+    if (quantidadeLados < 3) {
+        alert(`Não é um polígono`);
+    } else if (quantidadeLados === 3) {
+        let base = parseInt(prompt(`Qual o valor da base?`));
+        let altura = parseInt(prompt(`Qual o valor da altura?`));
+        const areaTriangulo = (base * altura) / 2;
+        alert(`Triângulo! Valor da área: ${areaTriangulo}`);
+
+    } else if (quantidadeLados === 4) {
+        let lado = parseInt(prompt(`Qual o valor do lado em cm?`));
+        const areaQuadrado = Math.pow(lado,2);
+        alert(`Quadrado! Valor da área: ${areaQuadrado}`);
+
+    } else if (quantidadeLados === 5) {
+        alert(`Pentágono!`);
+
+    } else {
+        alert(`Polígono não identificado`);
+    }
 }
 
-function exercicio5_12(){
-    
+function exercicio5_13(){
+    let numInt1 = parseInt(prompt(`Digite um número inteiro`));
+    let numInt2 = parseInt(prompt(`Digite outro número inteiro`));
+    let numInt3 = parseInt(prompt(`Digite mais um número inteiro`));
+
+    if ((numInt1 > numInt2)&&(numInt1 > numInt3)) {
+        alert(`${numInt1} é o maior.`);
+    } else if((numInt2 > numInt1)&&(numInt2 > numInt3)) {
+        alert(`${numInt2} é o maior.`);
+    } else if((numInt3 > numInt1)&&(numInt3 > numInt2)) {
+        alert(`${numInt3} é o maior.`);
+    }
 }
