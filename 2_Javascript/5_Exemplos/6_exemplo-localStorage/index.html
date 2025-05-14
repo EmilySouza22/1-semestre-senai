@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LocalStorage Exemplo</h1>
+    <label>Digite seu nome:</label>
+    <input type="text" id="nome">
+    <button onclick="salvarNome()"> Salvar nome</button>
+
+    <div>
+        <p id="mensagem">
+
+        </p>
+    </div>
+
+    <script>
+
+        function salvarNome(){
+            let nome = document.getElementById('nome').value;
+            localStorage.setItem('nomeUsuario', nome);
+            exibirMensagem('Nome salvo com sucesso!');
+        }
+
+        function exibirMensagem(mensagem){
+            let pMensagem = document.getElementById('mensagem');
+            pMensagem.textContent = mensagem;
+        }
+
+        window.onload = function () {
+            let nomeArmazenado = localStorage.getItem('nomeUsuario');
+
+            if (nomeArmazenado) {
+                exibirMensagem(`Olá, ${nomeArmazenado}! Seu nome está salvo`);
+            } else {
+                exibirMensagem(`Digite acima e salve seu nome!`)
+            }
+        }
+    </script>
+</body>
+
+</html>
