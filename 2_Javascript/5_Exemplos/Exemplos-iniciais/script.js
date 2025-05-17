@@ -141,13 +141,13 @@ function exemplo9(){ /* For com array */
 
     //mostrando no console a lista de compras
     let listaCompras = ['arroz', 'feijão', 'pão', 'café', 'presunto'];
-    for(let i = 0; i < listaCompras.length; i++){
+    for (let i = 0; i < listaCompras.length; i++) {
         console.log(listaCompras[i]);
     }
 
     //tirando da lista as frutas compradas
     let listaFrutas = ['banana', 'uva', 'maçã', 'laranja', 'melancia', 'morango'];
-    for(i = listaFrutas.length; i != 0; i--){
+    for (i = listaFrutas.length; i != 0; i--) {
         console.log(listaFrutas);
         const jaComprei = listaFrutas.shift();
         console.log(`Acabei de comprar ${jaComprei}! Pode tirar da lista.`);
@@ -174,7 +174,23 @@ function exemplo11(){ /* Exemplo do-while */
 }
 
 function exemplo12(){
-    
+    /*Escreva um loop que percorre o vetor e informa se o aluno passou (nota >= 7) */
+    let alunos = [
+        { nome: 'Maria', nota: 8 },
+        { nome: 'Pedro', nota: 4 },
+        { nome: 'João', nota: 10 },
+        { nome: 'Paulo', nota: 9 },
+        { nome: 'Adriana', nota: 7 },
+        { nome: 'Bianca', nota: 6 }
+    ]
+
+    for (const aluno of alunos) {
+        if (aluno.nota >= 7) {
+            console.log(`\nAluno(a): ${aluno.nome} \nNota: ${aluno.nota} \nSituação: Aprovado`);
+        } else {
+            console.log(`\nAluno(a): ${aluno.nome} \nNota: ${aluno.nota} \nSituação: Reprovado`);
+        }
+    }
 }
 
 function exemplo13(){
