@@ -232,3 +232,24 @@ function exemplo14(){
     alert(calcularVetor([-1,0,6,10], 4));
     alert(calcularVetor([1,2,3,4,5,6,7,8,9], 5));
 }
+
+function exemplo15(){
+    function somarSubVetores(vetorMaior){
+        let novoVetor = [];
+
+        for(let i = 0; i < vetorMaior.length; i++){
+            let soma = 0;
+            let vetorMenor = vetorMaior[i];
+            for(let j = 0; j < vetorMenor.length; j++){
+                let numeroVetor = vetorMenor[j];
+                soma += numeroVetor;
+            }
+            novoVetor.push(soma);
+        }
+
+        console.log(novoVetor)
+    }
+    somarSubVetores([ [1,1] , [1,1,1] , [0,0,0,1] ])
+    somarSubVetores([ [1,1,1] , [2,2,2] , [3,3,3] ])
+    somarSubVetores([ [0,0,1] , [2,0,0] , [0,3,0] ])
+}
