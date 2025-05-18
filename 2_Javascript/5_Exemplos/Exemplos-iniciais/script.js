@@ -193,28 +193,27 @@ function exemplo12(){
     }
 }
 
-function exemplo13(n){
+function exemplo13(){
     /*
-        escreva um função que receberá um valor n e percorrerá um loop
+        Escreva um função que receberá um valor n e percorrerá um loop
         para exibir no console o numero n da sequencia de fibonacci
         [Fibonacci: 0,1,1,2,3,5,8,...]
     */
-    
-    if(n < 2){
-        return n
-    }
+    let max = parseInt(prompt(`Insira para descobrir o Fibonacci do número`));
 
-    let anterior = 1;
-    let penultimo = 0;
-    
-    for( let i=2 ; i<=n ; i++ ){
-        if( i == n) {
-            return penultimo + anterior
+    function fibonacci(n){
+        if(n == 0){
+            return 0;
         }
-
-        let temp = penultimo;
-        penultimo = anterior;
-        anterior = temp + penultimo
+        else if(n == 1){
+            return 1;
+        }
+        else if(n == 2){
+            return 1;
+        }
+    
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
-    alert(`Fibonacci(${n}): ${penultimo}`)
+
+    alert(`Fibonacci(${max}): ${fibonacci(max)}`)
 }
