@@ -184,8 +184,8 @@ function exemplo12(){
         { nome: 'Bianca', nota: 6 }
     ]
 
-    for (const aluno of alunos) {
-        if (aluno.nota >= 7) {
+    for ( const aluno of alunos ) {
+        if ( aluno.nota>=7 ) {
             console.log(`\nAluno(a): ${aluno.nome} \nNota: ${aluno.nota} \nSituação: Aprovado`);
         } else {
             console.log(`\nAluno(a): ${aluno.nome} \nNota: ${aluno.nota} \nSituação: Reprovado`);
@@ -193,6 +193,28 @@ function exemplo12(){
     }
 }
 
-function exemplo13(){
+function exemplo13(n){
+    /*
+        escreva um função que receberá um valor n e percorrerá um loop
+        para exibir no console o numero n da sequencia de fibonacci
+        [Fibonacci: 0,1,1,2,3,5,8,...]
+    */
     
+    if(n < 2){
+        return n
+    }
+
+    let anterior = 1;
+    let penultimo = 0;
+    
+    for( let i=2 ; i<=n ; i++ ){
+        if( i == n) {
+            return penultimo + anterior
+        }
+
+        let temp = penultimo;
+        penultimo = anterior;
+        anterior = temp + penultimo
+    }
+    alert(`Fibonacci(${n}): ${penultimo}`)
 }
