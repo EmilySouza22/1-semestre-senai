@@ -215,5 +215,20 @@ function exemplo13(){
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
-    alert(`Fibonacci(${max}): ${fibonacci(max)}`)
+    alert(`Fibonacci(${max}): ${fibonacci(max)}`);
+}
+
+function exemplo14(){
+
+    function calcularVetor(vetor, multiplicador){
+        const novoVetor = [];
+        for(let i = 0 ; i <= vetor.length ; i++){
+            novoVetor.push(vetor[i] > 5 ? vetor[i] * multiplicador : vetor[i]);  
+        }
+        return novoVetor;
+    }
+
+    alert(calcularVetor([1,5,10], 2));
+    alert(calcularVetor([-1,0,6,10], 4));
+    alert(calcularVetor([1,2,3,4,5,6,7,8,9], 5));
 }
