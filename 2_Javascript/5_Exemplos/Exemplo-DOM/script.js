@@ -7,3 +7,5 @@ function soma(){
     resultado = n1 + n2;
     p.innerText = "Resultado: " + resultado;
 }
+
+

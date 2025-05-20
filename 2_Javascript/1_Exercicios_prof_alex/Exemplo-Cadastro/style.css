@@ -1,0 +1,20 @@
+body{
+    width: 200vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 45, 45);
+}
+
+.blocoInformacoes{
+    width: 80vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 88, 156);
+    border-radius: 10px;
+}
