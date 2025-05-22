@@ -1,3 +1,7 @@
+/* 
+🔸 Parte 1 – Condições simples (sem laço) [1–10] 
+*/
+
 function exercicio1(){
     /* 1. Peça ao usuário sua idade e se ele tem carteira de motorista. Exiba "Pode
     dirigir" se for maior de 18 e tiver carteira. */
@@ -145,6 +149,12 @@ function exercicio10(){
     }
 }
 
+
+/* 
+🔸 Parte 2 – while com condições compostas [11–20] 
+*/
+
+
 function exercicio11(){
     /* 1. Enquanto a senha digitada não for “abc123” e o número de tentativas for
     menor que 3, peça a senha novamente. */
@@ -214,3 +224,45 @@ function exercicio15(){
     }
     alert(`Você acertou!`);
 }
+
+function exercicio16(){
+    /* 6. Peça login e senha até que ambos estejam corretos*/
+    const loginUsuario = 'emily22';
+    const senhaUsuario = '2468';
+
+    let login;
+    let senha;
+    while(loginUsuario != login && senha != senhaUsuario != senha){
+        login = prompt(`Insira o login`);
+        senha = prompt(`Insira a senha`);
+        if(loginUsuario != login && senha != senhaUsuario != senha){
+            alert(`Senha incorreta, tente novamente`);
+        }
+    }
+    alert(`Você conseguiu logar!`);
+}
+
+function exercicio17(){
+    /*7. Pergunte se o usuário deseja continuar (“sim” ou “não”) enquanto a resposta não for “não” */
+    
+}
+
+function exercicio18(){
+    /*8. Solicite dois valores. Continue pedindo até que um seja múltiplo de 3 e o outro maior que 10.*/
+    
+}
+
+function exercicio19(){
+    /* 9. Enquanto o nome digitado não for "admin" ou a senha não for "321", continue pedindo login.*/
+    
+}
+
+function exercicio20(){
+    /* 10. Enquanto não forem preenchidos nome e idade, continue solicitando.*/
+    
+}
+
+
+/*
+    🔸 Parte 3 – for com condições compostas [21–30]
+*/
