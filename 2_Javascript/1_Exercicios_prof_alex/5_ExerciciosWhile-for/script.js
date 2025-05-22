@@ -207,4 +207,10 @@ function exercicio14(){
 
 function exercicio15(){
     /* 5. Solicite um número até que ele esteja entre 10 e 20 ou seja igual a 50. */
+
+    let num = 0;
+    while(!(((num > 10) && (num < 20)) || num === 50)){
+        num = parseInt(prompt(`Digite um número: (1 a 100)`));
+    }
+    alert(`Você acertou!`);
 }
