@@ -249,7 +249,12 @@ function exercicio17(){
 
 function exercicio18(){
     /*8. Solicite dois valores. Continue pedindo até que um seja múltiplo de 3 e o outro maior que 10.*/
-    
+    let valor1 = 0
+    let valor2 = 0;
+    while(valor1 % 3 != 0 || valor2 > 10){
+        valor1 = parseInt(prompt(`Digite o valor`));
+        valor2 = parseInt(prompt(`Digite o valor`));
+    }
 }
 
 function exercicio19(){
