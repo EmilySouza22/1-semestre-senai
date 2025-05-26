@@ -313,12 +313,24 @@ function exercicio22(){
 
 function exercicio23(){
     /* 3. Mostre todos os números entre 1 e 30 que não são divisíveis por 2 e por 3.*/
-    
+    let index = 1;
+    while(index < 30){
+        if(index % 2 !== 0 && index % 3 !== 0){
+            alert(`Não divisíveis por 2 e por 3: ${index}`);
+        }
+        index++;
+    }
 }
 
 function exercicio24(){
     /* 4. De 1 a 100, exiba apenas os que estão entre 10 e 20 ou entre 90 e 100. */
-    
+    let index = 1;
+    while(index < 100){
+        if((index > 10 && index < 20)||(index > 90 && index < 100)){
+            alert(`${index}`);
+        }
+        index++;
+    }
 }
 
 function exercicio25(){
