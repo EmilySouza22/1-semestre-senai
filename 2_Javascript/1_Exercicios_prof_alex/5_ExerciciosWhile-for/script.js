@@ -243,12 +243,12 @@ function exercicio16(){
 }
 
 function exercicio17(){
-    /*7. Pergunte se o usuário deseja continuar (“sim” ou “não”) enquanto a resposta não for “não” */
+    /* 7. Pergunte se o usuário deseja continuar (“sim” ou “não”) enquanto a resposta não for “não” */
     
 }
 
 function exercicio18(){
-    /*8. Solicite dois valores. Continue pedindo até que um seja múltiplo de 3 e o outro maior que 10.*/
+    /* 8. Solicite dois valores. Continue pedindo até que um seja múltiplo de 3 e o outro maior que 10.*/
     let valor1 = 0
     let valor2 = 0;
     while(valor1 % 3 != 0 || valor2 > 10){
@@ -259,7 +259,15 @@ function exercicio18(){
 
 function exercicio19(){
     /* 9. Enquanto o nome digitado não for "admin" ou a senha não for "321", continue pedindo login.*/
-    
+    const nome = 'admin';
+    const senha = '321'
+    let nomePrompt;
+    let senhaPrompt;
+    while(nomePrompt != nome && senhaPrompt != senha){
+        nomePrompt = prompt("Insira o nome");
+        senhaPrompt = prompt("Insira a senha");
+    }
+    alert('Você logou!')
 }
 
 function exercicio20(){
