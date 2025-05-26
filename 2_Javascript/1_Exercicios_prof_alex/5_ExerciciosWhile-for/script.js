@@ -335,17 +335,35 @@ function exercicio24(){
 
 function exercicio25(){
     /* 5. De 0 a 20, imprima apenas os números múltiplos de 4 e não múltiplos de 8. */
-    
+    let index = 0;
+    while(index < 20){
+        if(index % 4 === 0 && index % 8 !== 0){
+            alert(`${index}`);
+        }
+        index++;
+    }
 }
 
 function exercicio26(){
     /* 6. Percorra de 0 a 50 e exiba os números onde (número > 30 e número < 40) ou (número % 10 === 0). */
-    
+    let index = 0;
+    while(index <= 50){
+        if((index > 30 && index < 40) || (index % 10 === 0)){
+            alert(`${index}`);
+        }
+        index++;
+    }
 }
 
 function exercicio27(){
     /* 7. Imprima de 1 a 20 os números pares ou divisíveis por 5.*/
-    
+    let index = 1;
+    while(index <= 20){
+        if(index % 2 === 0 || index % 5 === 0){
+            alert(`${index}`);
+        }
+        index++;
+    }
 }
 
 function exercicio28(){
