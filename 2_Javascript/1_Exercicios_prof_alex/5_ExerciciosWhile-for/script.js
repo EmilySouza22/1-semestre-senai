@@ -273,7 +273,13 @@ function exercicio19(){
 
 function exercicio20(){
     /* 10. Enquanto não forem preenchidos nome e idade, continue solicitando.*/
-    
+    let idade = '';
+    let nome = '';
+    while(idade == '' && nome == ''){
+        nome = prompt(`Insira o nome`);
+        idade = prompt(`Insira a idade`);
+    }
+    alert(`nome: ${nome}, idade: ${idade}`);
 }
 
 
