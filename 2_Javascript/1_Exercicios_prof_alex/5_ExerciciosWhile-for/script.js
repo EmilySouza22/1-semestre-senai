@@ -286,3 +286,67 @@ function exercicio20(){
 /*
     🔸 Parte 3 – for com condições compostas [21–30]
 */
+
+function exercicio21(){
+    /* 1. Imprima todos os números de 1 a 100 que são pares e múltiplos de 3. */
+    let index = 1;
+    while(index <= 100){
+        if(index % 3 === 0){
+            alert(`Múltiplos de 3: ${index}`);
+        }
+        index++;
+    }
+}
+
+function exercicio22(){
+    /* 2. Imprima os números de 1 a 50 que são ímpares ou múltiplos de 7.*/
+    let index = 1;
+    while(index <= 50){
+        if(index % 7 === 0){
+            alert(`É múltiplos de 7: ${index}`);
+        }else if(index % 2 !== 0){
+            alert(`É ímpar: ${index}`);
+        }
+        index++;
+    }
+}
+
+function exercicio23(){
+    /* 3. Mostre todos os números entre 1 e 30 que não são divisíveis por 2 e por 3.*/
+    
+}
+
+function exercicio24(){
+    /* 4. De 1 a 100, exiba apenas os que estão entre 10 e 20 ou entre 90 e 100. */
+    
+}
+
+function exercicio25(){
+    /* 5. De 0 a 20, imprima apenas os números múltiplos de 4 e não múltiplos de 8. */
+    
+}
+
+function exercicio26(){
+    /* 6. Percorra de 0 a 50 e exiba os números onde (número > 30 e número < 40) ou (número % 10 === 0). */
+    
+}
+
+function exercicio27(){
+    /* 7. Imprima de 1 a 20 os números pares ou divisíveis por 5.*/
+    
+}
+
+function exercicio28(){
+    /* 8. Mostre todos os números entre 0 e 100 que sejam múltiplos de 6 e não múltiplos de 9.*/
+    
+}
+
+function exercicio29(){
+    /* 9. De 1 a 50, imprima apenas os números menores que 10 ou maiores que 40.*/
+    
+}
+
+function exercicio30(){
+    /* 10. Percorra os números de 1 a 30. Para cada número, imprima "Especial" se ele for múltiplo de 3 e estiver entre 10 e 25. */
+    
+}
