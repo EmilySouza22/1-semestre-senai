@@ -368,15 +368,33 @@ function exercicio27(){
 
 function exercicio28(){
     /* 8. Mostre todos os números entre 0 e 100 que sejam múltiplos de 6 e não múltiplos de 9.*/
-    
+    let index = 0;
+    while(index <= 100){
+        if(index % 6 === 0 && index % 9 !== 0){
+            alert(`${index}`);
+        }
+        index++;
+    }
 }
 
 function exercicio29(){
     /* 9. De 1 a 50, imprima apenas os números menores que 10 ou maiores que 40.*/
-    
+    let index = 1;
+    while(index <= 50){
+        if(index < 10 || index > 40){
+            alert(`${index}`);
+        }
+        index++;
+    }
 }
 
 function exercicio30(){
     /* 10. Percorra os números de 1 a 30. Para cada número, imprima "Especial" se ele for múltiplo de 3 e estiver entre 10 e 25. */
-    
+    let index = 1;
+    while(index <= 30){
+        if(index % 3 === 0 && (index > 10 && index < 25)){
+            alert(`Especial! ${index}`);
+        }
+        index++;
+    }
 }
