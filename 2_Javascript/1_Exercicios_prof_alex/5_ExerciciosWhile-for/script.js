@@ -245,6 +245,7 @@ function exercicio16(){
 function exercicio17(){
     /* 7. Pergunte se o usuário deseja continuar (“sim” ou “não”) enquanto a resposta não for “não” */
     
+    while(prompt(`Deseja continuar? (sim/não)`) === 'sim'){}
 }
 
 function exercicio18(){
