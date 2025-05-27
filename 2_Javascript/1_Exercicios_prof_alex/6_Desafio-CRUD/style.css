@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(56, 58, 57);
+}
+
+#container_principal{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgb(81, 85, 83);
+    border-radius: 10px;
+}
+
+.titulo{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(201, 202, 204);
+}
+
+.botao-cadastro{
+    background-color: rgb(177, 100, 212);
+    border: none;
+    border-color: 3 solid #5e3371;
+    border-radius: 10px;
+    max-height: 30px;
+    cursor: pointer;
+    color: rgb(201, 202, 204);
+}
+
+.conteudo_lista{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+ol{
+    color: rgb(201, 202, 204);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.editar{
+    cursor: pointer;
+}
+
+.deletar{
+    cursor: pointer;
+}
+
+.conteudo_cadastro{
+    color: rgb(201, 202, 204);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#container_cadastro{
+    display: none;
+}
+
+/* FONTS */
+
+
+  
