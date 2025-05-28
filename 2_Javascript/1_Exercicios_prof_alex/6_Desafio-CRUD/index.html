@@ -15,16 +15,8 @@
         </div>
 
         <div class="conteudo_lista">
-            <ol>
-                <li><span> Item 1 </span>
-                    <img src="img/pencil.svg" alt="ícone de pincel" class="editar">
-                    <img src="img/trash.svg" alt="ícone de lixeira" class="deletar">
-                </li>
-                <li>
-                    <span> Item 2 </span>
-                    <img src="img/pencil.svg" alt="ícone de pincel" class="editar">
-                    <img src="img/trash.svg" alt="ícone de lixeira" class="deletar">
-                </li>
+            <ol id="minhaLista">
+                
             </ol>
         </div>
 
@@ -33,14 +25,15 @@
     <div id="container_cadastro">
         <div class="titulo">
             <h1>Cadastrar item</h1>
-            <button>Voltar</button>
+            <button onclick="chamarVoltar()">Voltar</button>
         </div>
         <div class="conteudo_cadastro">
             <label for="nome"> Nome do item</label>
             <input type="text" name="nome" id="nome">
+            <button onclick="adicionarItem()"> Cadastrar </button>
         </div>
-
     </div>
+
 </body>
 <script src="script.js"></script>
 </html>

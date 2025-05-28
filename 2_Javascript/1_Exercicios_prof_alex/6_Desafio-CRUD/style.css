@@ -71,6 +71,11 @@ li{
 
 #container_cadastro{
     display: none;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgb(81, 85, 83);
+    border-radius: 10px;
 }
 
 /* FONTS */
