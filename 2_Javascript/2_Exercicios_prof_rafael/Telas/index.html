@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');</style>
     <link rel="stylesheet" href="style.css">
     <title>Telas</title>
 </head>
@@ -10,9 +11,11 @@
     <nav>
         <button onclick="mostrarLogin()">Login</button>
         <button onclick="mostrarCadastro()">Cadastro</button>
+        <button onclick="mostrarProdutos()">Produtos</button>
     </nav>
-    <h1>Tela supimpa</h1>
-    <div id="login">
+
+    <h1 class="title">login/register</h1>
+    <section id="login">
         <h2>Login</h2>
         <div class="containerInput">
             <label for="">Nome</label>
@@ -24,10 +27,11 @@
         </div>
         <button>Logar</button>
 
-    </div>
+    </section>
 
-    <div id="cadastro">
-        <h2>Cadastro</h2>
+    <section id="cadastro">
+        
+        <h2 class="title">Cadastro</h2>
         <div class="containerInput">
             <label for="">Nome</label>
             <input type="text">
@@ -40,8 +44,16 @@
             <label for="">Senha</label>
             <input type="password">
         </div>
+
         <button>Logar</button>
-    </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div>
+
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

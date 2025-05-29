@@ -4,24 +4,39 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* border: 1px solid #666; */
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     width: 300px;
     min-height: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497);
+    background-color: #8e55d0;
+    border: 2px solid #4a1982;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497); */
 }
 
 #cadastro{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    border: 2px solid #4a1982;
+    background-color: #8e55d0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-height: 100px;
+}
+
+#produtos{
     display: none;
-    border: 1px solid #666;
-    /* background-color: aqua; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #4a1982;
+    background-color: #8e55d0;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -38,19 +53,22 @@
 input{
     border-radius: 5px;
     height: 25px;
+    outline: 0;
+    border-style: none;
 }
 
 button{
-    background-color: #00ee00;
+    background-color: #7a33cd;
     height: 30px;
+    width: 100px;
     border-radius: 5px;
     border: none;
     padding: 10px;
+    color: azure;
 }
 button:hover{
-    background-color: aqua;
+    background-color: rgb(127, 31, 136);
     scale: 1.1;
-    /* color: #fff; */
 }
 
 body{
@@ -58,4 +76,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #332e2e;
+    font-family: "Montserrat", sans-serif;
+    color: azure;
 }
+  
