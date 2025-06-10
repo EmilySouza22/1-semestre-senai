@@ -4,44 +4,37 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    /* border: 1px solid #666; */
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     width: 300px;
     min-height: 300px;
-    background-color: #8e55d0;
-    border: 2px solid #4a1982;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497); */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497);
 }
 
 #cadastro{
+    /* display: flex; */
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border: 2px solid #4a1982;
-    background-color: #8e55d0;
+    border: 1px solid #666;
+    /* background-color: aqua; */
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     width: 300px;
     min-height: 100px;
+}
+
+#navbar{
+    display: none;
 }
 
 #produtos{
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    border: 2px solid #4a1982;
-    background-color: #8e55d0;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    min-height: 100px;
 }
 
 .containerInput{
@@ -53,22 +46,19 @@
 input{
     border-radius: 5px;
     height: 25px;
-    outline: 0;
-    border-style: none;
 }
 
 button{
-    background-color: #7a33cd;
+    background-color: #00ee00;
     height: 30px;
-    width: 100px;
     border-radius: 5px;
     border: none;
     padding: 10px;
-    color: azure;
 }
 button:hover{
-    background-color: rgb(127, 31, 136);
+    background-color: aqua;
     scale: 1.1;
+    /* color: #fff; */
 }
 
 body{
@@ -76,8 +66,22 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #332e2e;
-    font-family: "Montserrat", sans-serif;
-    color: azure;
 }
-  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bt-secundario{
+    background-color: #eee;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}

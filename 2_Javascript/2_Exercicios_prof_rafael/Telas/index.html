@@ -3,58 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');</style>
     <link rel="stylesheet" href="style.css">
     <title>Telas</title>
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <button onclick="mostrarLogin()">Login</button>
         <button onclick="mostrarCadastro()">Cadastro</button>
         <button onclick="mostrarProdutos()">Produtos</button>
     </nav>
-
-    <h1 class="title">login/register</h1>
-    <section id="login">
-        <h2>Login</h2>
-        <div class="containerInput">
-            <label for="">Nome</label>
-            <input type="text">
-        </div>
-        <div class="containerInput">
-            <label for="">Senha</label>
-            <input type="password">
-        </div>
-        <button>Logar</button>
-
-    </section>
-
-    <section id="cadastro">
-        
-        <h2 class="title">Cadastro</h2>
-        <div class="containerInput">
-            <label for="">Nome</label>
-            <input type="text">
-        </div>
-        <div class="containerInput">
-            <label for="">E-mail</label>
-            <input type="password">
-        </div>
-        <div class="containerInput">
-            <label for="">Senha</label>
-            <input type="password">
-        </div>
-
-        <button>Logar</button>
-    </section>
-
-    <section id="produtos">
-        <h2>Produtos</h2>
-        <div>
-
-        </div>
-    </section>
+    
+    <main>
+        <section id="login">
+            <h1>Login</h1>
+            <div class="containerInput">
+                <label for="">Nome</label>
+                <input type="text" id="inpLogNome">
+            </div>
+            <div class="containerInput">
+                <label for="">Senha</label>
+                <input type="password" id="inpLogSenha">
+            </div>
+            <button onclick="logar()">Logar</button>
+            <button onclick="mostrarCadastro()" class="bt-secundario">Não tem cadastro?</button>
+    
+        </section>
+    
+        <section id="cadastro">
+            <h1>Cadastro</h1>
+            <div class="containerInput">
+                <label for="">Nome</label>
+                <input type="text" id="inpCadNome">
+            </div>
+            <div class="containerInput">
+                <label for="">E-mail</label>
+                <input type="email" id="inpCadEmail">
+            </div>
+            <div class="containerInput">
+                <label for="">Senha</label>
+                <input type="password" id="inpCadSenha">
+            </div>
+            <button onclick="mostrarLogin()">Já tenho cadastro</button>
+            <button onclick="cadastrar()">Cadastrar</button>
+        </section>
+    
+    
+        <section id="produtos">
+            <h1>Produtos</h1>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+<!-- emmet vs code -->
