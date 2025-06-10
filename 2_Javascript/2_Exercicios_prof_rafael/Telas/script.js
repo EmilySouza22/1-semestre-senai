@@ -4,22 +4,21 @@ let usuarios = []
 
 let nomesTeste = ["Usuario 1", "Usuario 2", ]
 
-let usuario = {
-    nome: '',
-    email: '',
-    senha: ''
-}
-
 function cadastrar(){
-    usuario.nome = document.getElementById('inpCadNome').value
-    usuario.email = document.getElementById('inpCadEmail').value
-    usuario.senha = document.getElementById('inpCadSenha').value
-    alert("Cadastrado com sucesso!! :D")
 
-    console.log(usuario)
+    let usuario = {
+        nome: document.getElementById('inpCadNome').value,
+        email: document.getElementById('inpCadEmail').value,
+        senha: document.getElementById('inpCadSenha').value
+    }
 
+    usuarios.push(usuario)
     limparInputs()
     mostrarLogin()
+
+    alert("Cadastrado com sucesso!! :D")
+
+    console.log(usuarios)
     
 }
 
