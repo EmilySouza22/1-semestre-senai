@@ -1,3 +1,15 @@
+//13. Filtre os números pares de um array com .filter().
+
+const numbers = [1,2,3,5,7,12,14,15,17,33,34,56,89,90];
+
+const filterOdd = numbers.filter(numbersOdd);
+
+function numbersOdd(numbersodd){
+    return numbersodd % 2 === 0;
+}
+
+console.log(filterOdd)
+
 // 27. coloque a primeira letra de cada palavra em maiuscula
 
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
