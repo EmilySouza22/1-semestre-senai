@@ -25,6 +25,17 @@ const numerosSomados = numeros.reduce((acumulador, valorAtual) => {
 });
 console.log('Exercício 14:', numerosSomados)
 
+//15. Encontre o maior número de um array.
+let maior = numeros[0]
+const maiorNumero = numeros.forEach(numero => {
+    if(numero > maior){
+        maior = numero
+    }
+    return maior
+});
+console.log('Exercício 15:', maior)
+
+
 
 // 27. coloque a primeira letra de cada palavra em maiuscula
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
