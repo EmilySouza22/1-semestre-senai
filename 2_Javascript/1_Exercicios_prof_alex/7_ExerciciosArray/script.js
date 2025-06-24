@@ -35,7 +35,6 @@ const maiorNumero = numeros.forEach(numero => {
 });
 console.log('Exercício 15:', maior)
 
-
 //16. Encontre o menor número de um array.
 let menor = numeros[0]
 const menorNumero = numeros.forEach(numero => {
@@ -51,6 +50,16 @@ let numerosArrayInvertido = numeros.reduce((acumulador , valorAtual) => {
     return [valorAtual, ...acumulador];
 }, []);
 console.log('Exercício 17:', numerosArrayInvertido);
+
+//18. Junte dois arrays em um só usando .concat() ou spread [...].
+
+
+//19. Ordene um array de strings em ordem alfabética.
+
+
+//20. Ordene um array de números do maior para o menor.
+
+
 
 // 27. Coloque a primeira letra de cada palavra em maiuscula
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
