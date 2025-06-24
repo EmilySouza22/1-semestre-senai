@@ -11,4 +11,7 @@ localStorage.setItem('usuario', JSON.stringify(usuario));
 // console.log(JSON.parse(localStorage.getItem('usuario')));
 
 const usuarioLocalStorage = JSON.parse(localStorage.getItem('endereco'));
-console.log(usuarioLocalStorage.nome)
+console.log(usuarioLocalStorage.nome);
+
+//exemplo real
+
