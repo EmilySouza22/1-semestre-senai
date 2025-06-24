@@ -36,6 +36,17 @@ const maiorNumero = numeros.forEach(numero => {
 console.log('Exercício 15:', maior)
 
 
+//16. Encontre o menor número de um array.
+let menor = numeros[0]
+const menorNumero = numeros.forEach(numero => {
+    if(numero < menor){
+        menor = numero
+    }
+    return menor;
+});
+console.log('Exercício 16:', menor)
+
+
 
 // 27. coloque a primeira letra de cada palavra em maiuscula
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
