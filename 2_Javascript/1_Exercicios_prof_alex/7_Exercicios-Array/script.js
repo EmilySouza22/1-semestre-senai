@@ -46,9 +46,13 @@ const menorNumero = numeros.forEach(numero => {
 });
 console.log('Exercício 16:', menor)
 
+//17. Inverta os elementos de um array sem usar .reverse().
+let numerosArrayInvertido = numeros.reduce((acumulador , valorAtual) => {
+    return [valorAtual, ...acumulador];
+}, []);
+console.log('Exercício 17:', numerosArrayInvertido);
 
-
-// 27. coloque a primeira letra de cada palavra em maiuscula
+// 27. Coloque a primeira letra de cada palavra em maiuscula
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
 let palavrasMaiusculo = palavras2.map((palavra)=> {
     let [primeira, ...restante] = palavra
@@ -72,7 +76,7 @@ let arraydearray = [34,21,[32,21,58],[2,4,7]]
 let arrays = arraydearray.flat();
 console.log('Exercício 30:', arrays);
 
-// 32.Crie uma função que recebe um arrau de números e retorna a média
+// 32.Crie uma função que recebe um array de números e retorna a média
 let notas = [5,6,7,8,10]
 function calcularMedia(array){
     let soma = array.reduce((acumulador,atual)=> acumulador += atual ,0)
