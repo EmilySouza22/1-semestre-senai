@@ -1,3 +1,15 @@
+//11. Crie um array com 5 nomes e mostre apenas os que têm mais de 4 letras.
+
+const alunos = ['ana', 'gabriela', 'mary', 'emily'];
+
+const filtroNome = alunos.filter(nomesMaioresQue4Letras);
+
+function nomesMaioresQue4Letras(nomeAluno){
+    return nomeAluno.length > 4;
+}
+
+console.log(filtroNome)
+
 //13. Filtre os números pares de um array com .filter().
 
 const numbers = [1,2,3,5,7,12,14,15,17,33,34,56,89,90];
