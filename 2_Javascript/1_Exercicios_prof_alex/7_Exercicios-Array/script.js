@@ -1,31 +1,33 @@
 //11. Crie um array com 5 nomes e mostre apenas os que têm mais de 4 letras.
 
 const alunos = ['ana', 'gabriela', 'mary', 'emily'];
-
 const filtroNome = alunos.filter(nomesMaioresQue4Letras);
-
 function nomesMaioresQue4Letras(nomeAluno){
     return nomeAluno.length > 4;
 }
-
 console.log(filtroNome)
+
+//12. Dobre cada número de um array usando .map()
+
+const numeros = [1,2,3,4,100];
+const numerosDobro = numeros.map(numero => numero * 2);
+console.log(numerosDobro);
+
 
 //13. Filtre os números pares de um array com .filter().
 
 const numbers = [1,2,3,5,7,12,14,15,17,33,34,56,89,90];
-
 const filterOdd = numbers.filter(numbersOdd);
-
 function numbersOdd(numbersodd){
     return numbersodd % 2 === 0;
 }
-
 console.log(filterOdd)
+
+
 
 // 27. coloque a primeira letra de cada palavra em maiuscula
 
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
-
 let palavrasMaiusculo = palavras2.map((palavra)=> {
     let [primeira, ...restante] = palavra
     let novaletra = palavra[0].toUpperCase()
