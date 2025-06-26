@@ -57,6 +57,12 @@ let frase2 = ['apesar dos obstáculos'];
 const fraseCompleta = frase1.concat(frase2);
 console.log('Exercício 18:', fraseCompleta);
 
+//19. Ordene um array de strings em ordem alfabética.
+let times = ['atletico', 'fluminense', 'flamengo', 'criciuma', 'botafogo'];
+const timesOrdemAlfabetica = times.sort();
+console.log('Exercício 19:', timesOrdemAlfabetica);
+
+
 
 // 27. Coloque a primeira letra de cada palavra em maiuscula
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
