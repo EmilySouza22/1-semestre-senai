@@ -52,13 +52,10 @@ let numerosArrayInvertido = numeros.reduce((acumulador , valorAtual) => {
 console.log('Exercício 17:', numerosArrayInvertido);
 
 //18. Junte dois arrays em um só usando .concat() ou spread [...].
-
-
-//19. Ordene um array de strings em ordem alfabética.
-
-
-//20. Ordene um array de números do maior para o menor.
-
+let frase1 = ['Continue seguindo seu caminho'];
+let frase2 = ['apesar dos obstáculos'];
+const fraseCompleta = frase1.concat(frase2);
+console.log('Exercício 18:', fraseCompleta);
 
 
 // 27. Coloque a primeira letra de cada palavra em maiuscula
