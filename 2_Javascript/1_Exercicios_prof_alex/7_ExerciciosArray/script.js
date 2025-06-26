@@ -62,7 +62,10 @@ let times = ['atletico', 'fluminense', 'flamengo', 'criciuma', 'botafogo'];
 const timesOrdemAlfabetica = times.sort();
 console.log('Exercício 19:', timesOrdemAlfabetica);
 
-
+//20. Ordene um array de números do maior para o menor.
+let centenas = [300, 100, 500, 700, 800, 900, 200, 600, 400];
+const centenasEmOrdem = centenas.sort((a,b) => a - b);
+console.log('Exercício 20:', centenasEmOrdem);
 
 // 27. Coloque a primeira letra de cada palavra em maiuscula
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
