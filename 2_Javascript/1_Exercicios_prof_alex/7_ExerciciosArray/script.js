@@ -67,6 +67,12 @@ let centenas = [300, 100, 500, 700, 800, 900, 200, 600, 400];
 const centenasEmOrdem = centenas.sort((a,b) => a - b);
 console.log('Exercício 20:', centenasEmOrdem);
 
+//21. Remova valores duplicados de um array.
+const arrayComDuplicados = [1, 2, 2, 3, 4, 4, 5, 7, 7];
+const arraySemDuplicados = [...new Set(arrayComDuplicados)];
+// arraySemDuplicados será [1, 2, 3, 4, 5]
+console.log('Exercício 21:', arraySemDuplicados)
+
 // 27. Coloque a primeira letra de cada palavra em maiuscula
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
 let palavrasMaiusculo = palavras2.map((palavra)=> {
