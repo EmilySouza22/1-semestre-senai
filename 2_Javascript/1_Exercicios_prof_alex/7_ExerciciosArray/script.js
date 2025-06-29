@@ -73,6 +73,13 @@ const arraySemDuplicados = [...new Set(arrayComDuplicados)];
 // arraySemDuplicados será [1, 2, 3, 4, 5]
 console.log('Exercício 21:', arraySemDuplicados)
 
+//22. Conte quantas vezes um valor aparece em um array.
+const numDuplicados = [1,2,3,3,3,3,4,5];
+const numeroRepetido = 3
+let resultado = numDuplicados.filter((numero) => numero === numeroRepetido);
+console.log('Exercício 22: Número repetido:', numeroRepetido , ', quantidade:', resultado.length)
+
+
 // 27. Coloque a primeira letra de cada palavra em maiuscula
 let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
 let palavrasMaiusculo = palavras2.map((palavra)=> {
