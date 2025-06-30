@@ -51,18 +51,18 @@ const livro = {
     emprestar(){
         if (this.statusDeEmprestimo === 'Disponível') {
             this.statusDeEmprestimo = 'Emprestado';
-            console.log(`O livro "${this.titulo}" foi emprestado.`);
+            console.log(`O livro ${this.titulo} foi emprestado.`);
         } else {
-            console.log(`O livro "${this.titulo}" já está emprestado.`);
+            console.log(`O livro ${this.titulo} já está emprestado.`);
         }
     },
 
     devolver(){
         if(this.statusDeEmprestimo === 'Emprestado'){
             this.statusDeEmprestimo = 'Disponível'
-            console.log(`O livro "${this.titulo}" foi devolvido.`);
+            console.log(`O livro ${this.titulo} foi devolvido.`);
         }else{
-            console.log(`O livro "${this.titulo}" está disponível.`);
+            console.log(`O livro ${this.titulo} está disponível.`);
         }
     }
 }
@@ -70,7 +70,6 @@ livro.devolver();
 livro.emprestar();
 livro.emprestar();
 livro.devolver();
-
 
 /* 3. Conversor de Temperatura
 Crie um objeto com métodos celsiusParaFahrenheit e fahrenheitParaCelsius, que retornem os valores convertidos. */
@@ -87,19 +86,82 @@ console.log(conversorTemperatura.fahrenheitParaCelsius(32));
 
 /* 4. Agenda de Contatos
 Crie um objeto agenda que contenha uma lista de contatos. Implemente funções para adicionar, remover e listar contatos. */
-
+const agendaContatos = {
+    contatos: [],
+    adicionar(nome, telefone) {
+        this.contatos.push({nome, telefone});
+    },
+    remover(nome) {
+        this.contatos = this.contatos.filter(contato => contato.nome !== nome);
+    },
+    listar() {
+        console.log("Lista de contatos:");
+        this.contatos.forEach(contato => {
+            console.log(`Contato: ${contato.nome}: ${contato.telefone}`);
+        });
+    }
+};
+agendaContatos.adicionar("Katy", "1234-5678");
+agendaContatos.adicionar("Anne", "9876-5432");
+agendaContatos.remover("Anne");
+agendaContatos.listar();
 
 /* 5. Relatório de Notas
 Crie um objeto aluno com notas em várias disciplinas. Implemente um método media() que retorna a média geral. */
-
+const aluno = {
+    nome: 'Emily',
+    notas: {
+        matematica: 8,
+        artes: 7,
+        portugues: 10,
+        geografia: 5,
+    },
+    media() {
+        const soma = Object.values(this.notas).reduce((acc, nota) => acc + nota, 0);
+        return (soma / Object.keys(this.notas).length).toFixed(2);
+    },
+};
+console.log(`Média da aluna ${aluno.nome}: ${aluno.media()}`);
 
 /* 6. Carrinho de Compras
-Implemente um objeto carrinho com um array de itens. Cada item tem nome, quantidade e valor. Crie métodos para adicionarItem , removerItem e total . */
-
+Implemente um objeto carrinho com um array de itens. Cada item tem nome, quantidade e valor. Crie métodos para adicionarItem , remover Item e total . */
+const carrinho = {
+    itens: [],
+    adicionarItem(nome, quantidade, valor) {
+        this.itens.push({nome, quantidade, valor});
+    },
+    removerItem(nome) {
+        this.itens = this.itens.filter(item => item.nome !== nome);
+    },
+    total() {
+        return this.itens.reduce((total, item) => total + item.quantidade * item.valor, 0).toFixed(2);
+    },
+    listarItens() {
+        console.log('Itens no carrinho:');
+        this.itens.forEach(item => {
+            console.log(`- ${item.nome} (${item.quantidade}x): R$ ${(item.quantidade * item.valor).toFixed(2)}`);
+        });
+    }
+};
+carrinho.adicionarItem("Arroz", 2, 5.50);
+carrinho.adicionarItem("Feijão", 1, 7.00);
+carrinho.removerItem("Feijão");
+carrinho.listarItens();
+console.log("Total: R$", carrinho.total());
 
 /* 7. Filtrar Alunos Aprovados
 Dado um array de objetos alunos , filtre apenas os que têm média acima de 6 e retorne seus nomes. */
-
+const alunos = [
+    { nome: 'Naiara', media: 7.5 },
+    { nome: 'Alice', media: 9.0 },
+    { nome: 'Emilie', media: 4.1 },
+    { nome: 'Emily', media: 10.0 },
+    { nome: 'Giovanna', media: 8.1 }
+];
+const aprovados = alunos
+    .filter(aluno => aluno.media > 6)
+    .map(aluno => aluno.nome);
+console.log('Alunos aprovados Ihull:', aprovados);
 
 /* 8. Conversor de Moedas com Objeto 
 Crie um objeto moeda com taxas de conversão e um método converter(valor, de, para) que retorna o valor convertido. */
@@ -120,10 +182,9 @@ const moeda = {
         return valorConvertido.toFixed(2);
     }
 };
-console.log(moeda.converter(100, "BRL", "USD"));
-console.log(moeda.converter(50, "USD", "EUR"));
-console.log(moeda.converter(1000, "JPY", "GBP"));
-
+console.log(moeda.converter(100, 'BRL', 'USD'));
+console.log(moeda.converter(50, 'USD', 'EUR'));
+console.log(moeda.converter(1000, 'JPY', 'GBP'));
 
 
 // Segunda Parte
@@ -218,9 +279,11 @@ function gerarPersonagem(nome) {
     };
 }
 const personagens = [
-    gerarPersonagem("Thor"),
-    gerarPersonagem("Luna"),
-    gerarPersonagem("Gromm"),
+    gerarPersonagem("Luke Skywalker"),
+    gerarPersonagem("Grogu"),
+    gerarPersonagem("Mandaloriano"),
+    gerarPersonagem("Ahsoka"),
+    gerarPersonagem("Darth Vader"),
 ];
 console.log("Personagens criados:");
 console.log(personagens);
