@@ -4,6 +4,25 @@
 Crie um contador com botões “+” e “−”. O número deve ser
 salvo no localStorage e restaurado ao recarregar a página. */
 
+function exercicio1(){
+    const contadorElemento = document.getElementById('contador');
+    const botaoMais = document.getElementById('mais');
+    const botaoMenos = document.getElementById('menos');
+    let chaveContador = 'valorContador';
+
+    let contador = parseInt(localStorage.getItem(chaveContador)) || 0;
+    contadorElemento.textContent = contador;
+
+    function atualizarContador(valor) {
+        contador += valor;
+        contadorElemento.textContent = contador;
+        localStorage.setItem(chaveContador, contador);
+    }
+
+    botaoMais.addEventListener('click', () => atualizarContador(1))
+    botaoMenos.addEventListener('click', () => atualizarContador(-1))
+}
+
 /* 2. Texto Salvo
 Crie um <textarea> onde o texto digitado seja salvo
 automaticamente no localStorage a cada digitação. Ao
