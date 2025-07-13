@@ -3,8 +3,8 @@ const usuario = {
     idade: 20
 }
 
-const endereco = 'Floripa';
-localStorage.setItem("endereco" , endereco)
+const endereco = 'canasvieiras';
+localStorage.setItem('endereco' , endereco)
 localStorage.setItem('usuario', JSON.stringify(usuario));
 
 // console.log(localStorage.getItem('endereco'))

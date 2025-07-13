@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f0fa;
+  padding: 20px;
+  color: #4b0082;
+}
+
+h2 {
+  color: #6a0dad;
+}
+
+input[type="checkbox"] {
+  accent-color: #6a0dad;
+}
+
+textarea {
+  width: 90%;
+  height: 200px;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #b57edc;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #4b0082;
+}

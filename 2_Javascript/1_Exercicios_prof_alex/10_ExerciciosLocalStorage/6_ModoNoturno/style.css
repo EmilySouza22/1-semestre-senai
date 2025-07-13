@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  background: white;
+  color: #4b0082;
+  transition: 0.3s;
+}
+
+.escuro {
+  background: #1e1e2f;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d9b3ff;
+  border: none;
+  border-radius: 10px;
+  color: #4b0082;
+  cursor: pointer;
+  border: 1px solid #4b0082;
+}
+
+button:hover {
+  background-color: #c285ff;
+}
+
+

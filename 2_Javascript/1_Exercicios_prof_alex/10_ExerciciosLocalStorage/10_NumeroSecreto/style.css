@@ -1,0 +1,38 @@
+*{
+  outline: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #f5f0fa;
+  color: #4b0082;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  border: 2px solid #b57edc;
+  background-color: #fff;
+  color: #4b0082;
+}
+
+button {
+  border: none;
+  background-color: #b57edc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9c4de0;
+}
+
+#mensagem {
+  margin-top: 15px;
+  font-weight: bold;
+}

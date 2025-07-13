@@ -1,0 +1,41 @@
+*{
+  outline: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  background-color: #f5f0fa;
+  color: #4b0082;
+}
+
+.contador {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 32px;
+  border-radius: 10px;
+  border: none;
+  background-color: #b57edc;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9c4de0;
+}
+
+#valor {
+  min-width: 60px;
+  display: inline-block;
+  text-align: center;
+}
