@@ -57,12 +57,32 @@ const menorNumero = numeros.reduce((a, b) => (a < b ? a : b));
 console.log('16. menorNumero:', menorNumero);
 
 //17. Inverta os elementos de um array sem usar .reverse().
+const numerosBinarios = [0, 1, 10, 11, 100, 101, 110, 111, 1000];
+const numerosBinariosInvertidos = numerosBinarios.reduce((acc, elemento) => {
+	acc.unshift(elemento);
+	return acc;
+}, []);
+console.log('17. numerosBinariosInvertidos:', numerosBinariosInvertidos);
 
 //18. Junte dois arrays em um só usando .concat() ou spread [...].
+const coresPrimarias = ['azul', 'vermelho', 'amarelo'];
+const coresSecundarias = ['laranja', 'verde', 'roxo'];
+//com concat;
+const cores = coresPrimarias.concat(coresSecundarias);
+console.log('18. cores:', cores);
+//com spread;
+const cores2 = [...coresPrimarias, ...coresSecundarias];
+console.log('18. cores2:', cores2);
 
 //19. Ordene um array de strings em ordem alfabética.
+const palavras = ['Xis', 'Cachorro-quente', 'Pastel', 'Hambúrguer'];
+const palavrasAlfabeticas = palavras.sort();
+console.log('19. palavrasAlfabeticas:', palavrasAlfabeticas);
 
 //20. Ordene um array de números do maior para o menor.
+const numeros3 = [4, 8, 16, 32, 64, 128, 256];
+const numerosDecrescente = numeros3.sort((a, b) => b - a);
+console.log('20. numerosDecrescente:', numerosDecrescente);
 
 //21. Remova valores duplicados de um array.
 
