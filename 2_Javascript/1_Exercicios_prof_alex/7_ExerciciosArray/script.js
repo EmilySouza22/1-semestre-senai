@@ -89,8 +89,17 @@ console.log('20. numerosDecrescente:', numerosDecrescente);
 //22. Conte quantas vezes um valor aparece em um array.
 
 //23. Transforme todos os itens do array em uma única string separada por vírgulas com .join().
+const itensdeViagem = ['mala', 'roupas', 'laptop', 'passagem', 'carteira'];
+const unicaStringItens = itensdeViagem.join(', ');
+console.log('23. unicaStringItens:', unicaStringItens);
 
-//24. Substitua todas as ocorrências de "banana" por "maçã" em um array
+//24. Substitua todas as ocorrências de "banana" por "maçã" em um array.
+const frutas = ['banana', 'uva', 'banana', 'maçã', 'pera'];
+const frutasBananaParaMaca = frutas.map((fruta) => {
+	fruta === 'banana' ? (fruta = 'maçã') : fruta;
+	return fruta;
+});
+console.log('24. frutasBananaParaMaca:', frutasBananaParaMaca);
 
 //25. Encontre o índice de um valor específico com .indexOf().
 
