@@ -106,6 +106,15 @@ console.log('24. frutasBananaParaMaca:', frutasBananaParaMaca);
 //26. Crie um novo array contendo apenas as strings de um array com tipos mistos.
 
 //27. Coloque a primeira letra de cada palavra em maiúscula.
+const palavras2 = ['joão', 'maria', 'Janaína', 'ana'];
+const palavrasMaiuscula = palavras2.map((p) => {
+	p = p.split('');
+	if (p[0] != p[0].toUpperCase()) {
+		p[0] = p[0].toUpperCase();
+	}
+	return p.join('');
+});
+console.log('27. palavrasMaiuscula:', palavrasMaiuscula);
 
 //28. Verifique se todos os elementos são números com .every().
 
