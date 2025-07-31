@@ -102,8 +102,14 @@ const frutasBananaParaMaca = frutas.map((fruta) => {
 console.log('24. frutasBananaParaMaca:', frutasBananaParaMaca);
 
 //25. Encontre o índice de um valor específico com .indexOf().
+const produtos = ['Melancia', 'Pão', 'Arroz', 'Biscoito', 'Miojo'];
+const procurandoIndice = produtos.indexOf('Pão');
+console.log('25. procurandoIndice:', procurandoIndice);
 
 //26. Crie um novo array contendo apenas as strings de um array com tipos mistos.
+const misto = ['a', 1, 'verdade', 3, 5, 'é', true, 'true', 100];
+const justStrings = misto.filter((element) => typeof element === 'string');
+console.log('26. justStrings:', justStrings);
 
 //27. Coloque a primeira letra de cada palavra em maiúscula.
 const palavras2 = ['joão', 'maria', 'Janaína', 'ana'];
@@ -117,8 +123,18 @@ const palavrasMaiuscula = palavras2.map((p) => {
 console.log('27. palavrasMaiuscula:', palavrasMaiuscula);
 
 //28. Verifique se todos os elementos são números com .every().
+const nums = [1, 2, 3, 4, 5];
+const apenasNumeros = nums.every((value) => typeof value === 'number');
+console.log('28. apenasNumeros:', apenasNumeros);
+
+const misturados = ['Chocolate', 1, 5, 'Doces', 8, 0];
+const apenasNumeros2 = misturados.every((value) => typeof value === 'number');
+console.log('28. apenasNumeros2:', apenasNumeros2);
 
 //29. Verifique se ao menos um número é maior que 100 usando .some().
+const nums2 = [1, 11, 110, 1, 1, 11, 100];
+const someNumGreaterThan100 = nums2.some((num) => num > 100);
+console.log('29. someNumGreaterThan100:', someNumGreaterThan100);
 
 //30. "Achatamento": transforme um array com subarrays em um único array plano (um nível só).
 
