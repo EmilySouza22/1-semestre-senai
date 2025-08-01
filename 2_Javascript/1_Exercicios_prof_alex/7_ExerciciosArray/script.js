@@ -67,12 +67,14 @@ console.log('17. numerosBinariosInvertidos:', numerosBinariosInvertidos);
 //18. Junte dois arrays em um só usando .concat() ou spread [...].
 const coresPrimarias = ['azul', 'vermelho', 'amarelo'];
 const coresSecundarias = ['laranja', 'verde', 'roxo'];
+
 //com concat;
 const cores = coresPrimarias.concat(coresSecundarias);
-console.log('18. cores:', cores);
+console.log('18.1. cores:', cores);
+
 //com spread;
 const cores2 = [...coresPrimarias, ...coresSecundarias];
-console.log('18. cores2:', cores2);
+console.log('18.2. cores2:', cores2);
 
 //19. Ordene um array de strings em ordem alfabética.
 const palavras = ['Xis', 'Cachorro-quente', 'Pastel', 'Hambúrguer'];
@@ -85,6 +87,17 @@ const numerosDecrescente = numeros3.sort((a, b) => b - a);
 console.log('20. numerosDecrescente:', numerosDecrescente);
 
 //21. Remova valores duplicados de um array.
+const arrayDuplicados = [1, 1, 2, 2, 3, 4, 5, 4, 2, 3, 6];
+
+//com Set
+const arrayUnicos = [...new Set(arrayDuplicados)];
+console.log('21.1. arrayUnicos:', arrayUnicos);
+
+//com filter
+const arrayUnicos2 = arrayDuplicados.filter(
+	(item, index, array) => array.indexOf(item) === index
+);
+console.log('21.2. arrayUnicos2:', arrayUnicos2);
 
 //22. Conte quantas vezes um valor aparece em um array.
 
@@ -125,11 +138,11 @@ console.log('27. palavrasMaiuscula:', palavrasMaiuscula);
 //28. Verifique se todos os elementos são números com .every().
 const nums = [1, 2, 3, 4, 5];
 const apenasNumeros = nums.every((value) => typeof value === 'number');
-console.log('28. apenasNumeros:', apenasNumeros);
+console.log('28.1. apenasNumeros:', apenasNumeros);
 
 const misturados = ['Chocolate', 1, 5, 'Doces', 8, 0];
 const apenasNumeros2 = misturados.every((value) => typeof value === 'number');
-console.log('28. apenasNumeros2:', apenasNumeros2);
+console.log('28.2. apenasNumeros2:', apenasNumeros2);
 
 //29. Verifique se ao menos um número é maior que 100 usando .some().
 const nums2 = [1, 11, 110, 1, 1, 11, 100];
@@ -137,10 +150,25 @@ const someNumGreaterThan100 = nums2.some((num) => num > 100);
 console.log('29. someNumGreaterThan100:', someNumGreaterThan100);
 
 //30. "Achatamento": transforme um array com subarrays em um único array plano (um nível só).
+const arrayComSubarrays = [1, 2, 3, 4, [5, 6, [8, 9, 10], 11], 12, [13, 14]];
+const arrayAchatado = arrayComSubarrays.flat(1);
+console.log('30. arrayAchatado:', arrayAchatado);
 
 //31. A partir de uma lista de idades, retorne apenas os adultos (idade ≥ 18).
+const idades = [12, 17, 67, 18, 21, 30, 50, 1];
+const apenasAdultos = idades.filter((idade) => idade >= 18);
+console.log('31. apenasAdultos:', apenasAdultos);
 
 //32. Crie uma função que recebe um array de números e retorna a média.
+const notas = [7.5, 8.0, 10];
+const media = notas.reduce((acumulador, valorAtual, index, array) => {
+	acumulador = acumulador + valorAtual;
+	if (array.indexOf(valorAtual) === array.length - 1) {
+		return acumulador / array.length;
+	}
+	return acumulador;
+}, 0);
+console.log('32. media:', media);
 
 //33. Faça uma função que recebe um array e o devolve na ordem inversa (sem usar .reverse()).
 
