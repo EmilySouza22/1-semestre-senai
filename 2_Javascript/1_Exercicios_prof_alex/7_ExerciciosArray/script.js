@@ -264,8 +264,24 @@ const produtosEmAmbos = estoque1.filter((produto) =>
 console.log('40. produtosEmAmbos:', produtosEmAmbos);
 
 //41. Faça um array de objetos com nome e nota, e filtre os aprovados (nota ≥ 7).
+const alunos = [
+	{ nome: 'Emily', nota: 10 },
+	{ nome: 'Ana', nota: 8 },
+	{ nome: 'Gio', nota: 6 },
+	{ nome: 'Camila', nota: 7.5 },
+	{ nome: 'Maria', nota: 6.9 },
+	{ nome: 'Bianca', nota: 4 },
+	{ nome: 'Amy', nota: 7.0 },
+];
+const alunosAprovados = alunos.filter((obj) => obj.nota >= 7);
+console.log('41. alunosAprovados:', alunosAprovados);
 
 //42. Crie uma função que embaralha os elementos de um array.
+const arrayOrdenado = [0, 1, 2, 3, 4, 5];
+function embaralharArr(arr) {
+	return arr.sort(() => Math.random() - 0.5);
+}
+console.log('42. embaralharArr(arrayOrdenado):', embaralharArr(arrayOrdenado));
 
 //43. Verifique se um array está em ordem crescente.
 
@@ -274,8 +290,33 @@ console.log('40. produtosEmAmbos:', produtosEmAmbos);
 //45. Inverta as palavras de cada string de um array.
 
 //46. Crie um array com os dias da semana e exiba apenas os do fim de semana.
+const diasDaSemana = [
+	'segunda',
+	'terça',
+	'quarta',
+	'quinta',
+	'sexta',
+	'sábado',
+	'domingo',
+	'SÁBADO',
+	'sexta',
+	'sabado',
+];
+const diasFimDeSemana = diasDaSemana.filter((dia) => {
+	const diasFimSemana = ['sábado' ,'sabado', 'domingo'];
+	return diasFimSemana.includes(dia.toLowerCase());
+});
+console.log('46. diasFimDeSemana:', diasFimDeSemana);
 
 //47. Separe os números negativos e positivos de um array.
+const numerosNaturais = [-4, -3, -2, -1, 0, 1, 2, 3];
+const numerosSeparados = numerosNaturais.reduce((acc, num) => {
+	let tipo = num < 0 ? 'negativos' : 'positivos';
+	if (!acc[tipo]) acc[tipo] = [];
+	acc[tipo].push(num);
+	return acc;
+}, {});
+console.log('47. numerosSeparados:', numerosSeparados);
 
 //48. Crie uma função que retorna o segundo maior número de um array.
 
