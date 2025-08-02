@@ -103,7 +103,6 @@ console.log('21.2. arrayUnicos2:', arrayUnicos2);
 const valores = [1.0, 2.5, 1.0, 4.5, 2.0, 1.0, 3.0, 2.5, 1.0];
 const quantValores = valores.filter((num) => num === 4.5).length;
 console.log('22. quantValores:', quantValores);
-
 //22. Fazer com reduce(valor, contador)
 
 //23. Transforme todos os itens do array em uma única string separada por vírgulas com .join().
@@ -142,7 +141,6 @@ console.log('27. palavrasMaiuscula:', palavrasMaiuscula);
 
 //28. Verifique se todos os elementos são números com .every().
 const nums = [1, 2, 3, 4, 5];
-
 //Ex. todos são numeros;
 const apenasNumeros = nums.every((value) => typeof value === 'number');
 console.log('28.1. apenasNumeros:', apenasNumeros);
@@ -200,7 +198,30 @@ const falsos = [false, 0, '', null, undefined, NaN, 'string'];
 const filtroFalsos = falsos.filter((value) => !!value);
 console.log('35. filtroFalsos:', filtroFalsos);
 
-//36. Agrupe os itens de um array por tipo (typeof).
+//36. Agrupe os itens de um array por tipo (typeof)
+const tiposMisturados = [
+	'string',
+	1,
+	true,
+	{},
+	2,
+	'a',
+	[],
+	false,
+	null,
+	undefined,
+	new Set(),
+];
+const tiposOrganizados = {};
+for (i = 0; i < tiposMisturados.length; i++) {
+	const item = tiposMisturados[i];
+	const tipo = typeof item;
+	if (!tiposOrganizados[tipo]) {
+		tiposOrganizados[tipo] = [];
+	}
+	tiposOrganizados[tipo].push(item);
+}
+console.log('36. tiposOrganizados:', tiposOrganizados);
 
 //37. Conte as vogais em cada string de um array.
 const words = [
@@ -235,6 +256,12 @@ const numerosQuadrado = numerosUmDez.map((num) => num * num);
 console.log('39. numerosQuadrado:', numerosQuadrado);
 
 //40. Compare dois arrays e retorne os elementos que existem em ambos.
+const estoque1 = ['prato', 'brinquedo', 'chinelo', 'caneca'];
+const estoque2 = ['chinelo', 'óculos', 'caderno', 'fios', 'prato'];
+const produtosEmAmbos = estoque1.filter((produto) =>
+	estoque2.includes(produto)
+);
+console.log('40. produtosEmAmbos:', produtosEmAmbos);
 
 //41. Faça um array de objetos com nome e nota, e filtre os aprovados (nota ≥ 7).
 
