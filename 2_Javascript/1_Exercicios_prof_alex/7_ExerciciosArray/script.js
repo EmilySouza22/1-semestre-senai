@@ -100,6 +100,11 @@ const arrayUnicos2 = arrayDuplicados.filter(
 console.log('21.2. arrayUnicos2:', arrayUnicos2);
 
 //22. Conte quantas vezes um valor aparece em um array.
+const valores = [1.0, 2.5, 1.0, 4.5, 2.0, 1.0, 3.0, 2.5, 1.0];
+const quantValores = valores.filter((num) => num === 4.5).length;
+console.log('22. quantValores:', quantValores);
+
+//22. Fazer com reduce(valor, contador)
 
 //23. Transforme todos os itens do array em uma única string separada por vírgulas com .join().
 const itensdeViagem = ['mala', 'roupas', 'laptop', 'passagem', 'carteira'];
@@ -137,9 +142,12 @@ console.log('27. palavrasMaiuscula:', palavrasMaiuscula);
 
 //28. Verifique se todos os elementos são números com .every().
 const nums = [1, 2, 3, 4, 5];
+
+//Ex. todos são numeros;
 const apenasNumeros = nums.every((value) => typeof value === 'number');
 console.log('28.1. apenasNumeros:', apenasNumeros);
 
+//Ex. string e numeros;
 const misturados = ['Chocolate', 1, 5, 'Doces', 8, 0];
 const apenasNumeros2 = misturados.every((value) => typeof value === 'number');
 console.log('28.2. apenasNumeros2:', apenasNumeros2);
@@ -171,18 +179,60 @@ const media = notas.reduce((acumulador, valorAtual, index, array) => {
 console.log('32. media:', media);
 
 //33. Faça uma função que recebe um array e o devolve na ordem inversa (sem usar .reverse()).
+const numeros4 = [0, 1, 2, 3, 4];
+function inverteArray(arr) {
+	let novoArr = [];
+	for (i = arr.length - 1; i >= 0; i--) {
+		novoArr.push(arr[i]);
+	}
+	return novoArr;
+}
+console.log('33. inverteArray(numeros4):', inverteArray(numeros4));
 
 //34. Rotacione os elementos de um array uma posição para a direita.
+const calcadosLoja = ['sandália', 'havaianas', 'tênis', 'bota'];
+let ultimo = calcadosLoja.pop();
+const rotacionaCalcadosLoja = calcadosLoja.unshift(ultimo);
+console.log('34. calcadosLoja:', calcadosLoja);
 
 //35. Remova todos os valores falsos do array (false, 0, "", null, undefined, NaN).
+const falsos = [false, 0, '', null, undefined, NaN, 'string'];
+const filtroFalsos = falsos.filter((value) => !!value);
+console.log('35. filtroFalsos:', filtroFalsos);
 
 //36. Agrupe os itens de um array por tipo (typeof).
 
 //37. Conte as vogais em cada string de um array.
+const words = [
+	'flores',
+	'coruja',
+	'paralelepipedo',
+	'pneumoultramicroscopicossilicovulcanoconiótico',
+];
+const charsetVowels = 'aeiouáéíóúâêîôûãõàèìòùäëïöüAEIOUÁÉÍÓÚÂÊÎÔÛÃÕÀÈÌÒÙÄËÏÖÜ';
+const countVowels = words.map((word) => {
+	let count = 0;
+	word = word.split('');
+	for (i = 0; i <= word.length; i++) {
+		if (charsetVowels.includes(word[i])) {
+			count++;
+		}
+	}
+	return count;
+});
+console.log('37. countVowels:', countVowels);
 
 //38. Gere um array com os 10 primeiros números pares.
+const numerosUmVinte = [
+	0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
+const DezNumsPares = numerosUmVinte.filter((num) => num % 2 === 0).slice(0, 10);
+console.log('38. DezNumsPares:', DezNumsPares);
 
 //39. Gere um array com os quadrados dos números de 1 a 10.
+const numerosUmDez = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numerosQuadrado = numerosUmDez.map((num) => num * num);
+console.log('39. numerosQuadrado:', numerosQuadrado);
 
 //40. Compare dois arrays e retorne os elementos que existem em ambos.
 
